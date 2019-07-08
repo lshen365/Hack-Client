@@ -21,6 +21,8 @@ public class Client {
 
 		System.out.println("Cancer");
 		System.out.println("Noobie");
+		
+		System.out.println("Libtard");
 
 
 		System.out.println("Test");
