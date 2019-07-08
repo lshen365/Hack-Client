@@ -14,7 +14,10 @@ public class Client {
 	/**
 	 * Build info getters
 	 */
-
+	
+	public static void initalizeGUI() {
+		
+	}
 	public Client getClient() {
 		return C1;
 	}
