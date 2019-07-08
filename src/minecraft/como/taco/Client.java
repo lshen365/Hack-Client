@@ -16,10 +16,19 @@ public class Client {
 	 */
 	
 	public static void initalizeGUI() {
+
 		System.out.println("Test");
 
 		System.out.println("Cancer");
 		System.out.println("Noobie");
+
+
+		System.out.println("Test");
+
+		System.out.println("Cancer");
+		
+		System.out.println("Leon is Racist");
+
 
 	}
 	public Client getClient() {
