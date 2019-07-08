@@ -17,23 +17,6 @@ public class Client {
 	
 	public static void initalizeGUI() {
 
-		System.out.println("Test");
-
-		System.out.println("Cancer");
-		System.out.println("Noobie");
-		
-		System.out.println("Allahu Akbar");
-		System.out.println("Libtard");
-
-
-		System.out.println("Test");
-
-		System.out.println("Cancer");
-		
-		System.out.println("Leon is Racist");
-		System.out.println("lol");
-		System.out.println("Hamilton is a noobie");
-
 	}
 	public Client getClient() {
 		return C1;
