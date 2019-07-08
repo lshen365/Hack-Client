@@ -21,6 +21,8 @@ public class Client {
 
 		System.out.println("Cancer");
 		System.out.println("Noobie");
+		
+		System.out.println("Libtard");
 
 
 		System.out.println("Test");
@@ -29,6 +31,7 @@ public class Client {
 		
 		System.out.println("Leon is Racist");
 		System.out.println("lol");
+		System.out.println("Hamilton is a noobie");
 
 	}
 	public Client getClient() {
