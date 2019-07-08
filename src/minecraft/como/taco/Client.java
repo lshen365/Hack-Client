@@ -10,13 +10,22 @@ public class Client {
 	private int version = 1;
 
 	private final String Name = "LSux";
+	
+	/**
+	 * ingameGUI Initializer
+	 */
+	private static ingameGUI gui;
 
 	/**
 	 * Build info getters
 	 */
 	
 	public static void initalizeGUI() {
-
+		gui = new ingameGUI();
+	}
+	
+	public static void drawGUI() {
+		gui.draw();
 	}
 	public Client getClient() {
 		return C1;

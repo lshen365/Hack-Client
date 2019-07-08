@@ -5,6 +5,9 @@ import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Ordering;
+
+import como.taco.Client;
+
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
@@ -393,6 +396,8 @@ public class GuiIngame extends Gui
         {
             this.overlayPlayerList.updatePlayerList(false);
         }
+        //TacoHacks
+        Client.drawGUI();
 
         GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
         GlStateManager.disableLighting();
