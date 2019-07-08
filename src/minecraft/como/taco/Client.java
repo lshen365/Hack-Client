@@ -16,7 +16,7 @@ public class Client {
 	 */
 	
 	public static void initalizeGUI() {
-		
+		System.out.println("Cancer");
 	}
 	public Client getClient() {
 		return C1;
