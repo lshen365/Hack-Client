@@ -16,7 +16,11 @@ public class Client {
 	 */
 	
 	public static void initalizeGUI() {
+<<<<<<< HEAD
 		System.out.println("Test");
+=======
+		System.out.println("Cancer");
+>>>>>>> 8a4251dc7e9f60972d8e02346e636f7ed08e1047
 	}
 	public Client getClient() {
 		return C1;
