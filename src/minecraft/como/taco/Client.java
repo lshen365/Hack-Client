@@ -30,6 +30,7 @@ public class Client {
 		addAllMods();
 	}
 	
+	//Called in GUIIngame
 	public static void drawGUI() {
 		gui.draw();
 	}
@@ -56,12 +57,18 @@ public class Client {
 		checkEnabledModules();
 	}
 	
+	/**
+	 * In the EntityRenderer Class the hook has been placed 
+	 */
 	public static void onRender() {
 		for(Modules mod: enabledMods) {
 			mod.onRender();
 		}
 	}
 	
+	/**
+	 * In the EntityPlayerSP Class the hook has been placed
+	 */
 	public static void onUpdate() {
 		for(Modules mod: enabledMods) {
 			mod.onUpdate();
@@ -83,12 +90,12 @@ public class Client {
 	/**
 	 * Shuts down the client
 	 */
-	public void endClient() {
-		Runtime.getRuntime().addShutdownHook(new Thread() {
-			public void run() {
-				System.out.println("Shutting Down Client");
-			}
-		});
-	}
+//	public void endClient() {
+//		Runtime.getRuntime().addShutdownHook(new Thread() {
+//			public void run() {
+//				System.out.println("Shutting Down Client");
+//			}
+//		});
+//	}
 
 }
