@@ -4,7 +4,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 public class ingameGUI {
 	private Minecraft mc = Minecraft.getMinecraft();
-	private int x = 0;
 	public void draw() {
 		mc.fontRendererObj.drawStringWithShadow(Client.getName(), 0, 0, 0x3611CA);
 		int y = 0;
