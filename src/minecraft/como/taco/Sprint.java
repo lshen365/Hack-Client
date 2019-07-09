@@ -10,10 +10,11 @@ public class Sprint extends Modules{
 	}
 	
 	public void onUpdate() {
-		if((mc.player.movementInput.moveForward > 0) && getStatus() == true) {
+		if((mc.player.movementInput.moveForward > 0) && getStatus()) {
 			mc.player.setSprinting(true);
+			
 		}else {
-			mc.player.setSprinting(false);
+			mc.player.capabilities.setPlayerWalkSpeed(0f);
 
 		}
 	}
