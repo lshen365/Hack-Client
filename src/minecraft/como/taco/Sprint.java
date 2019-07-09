@@ -10,7 +10,6 @@ public class Sprint extends Modules{
 	}
 	
 	public void onUpdate() {
-		super.onUpdate();
 		if((mc.player.movementInput.moveForward > 0) && getStatus() == true) {
 			mc.player.setSprinting(true);
 		}else {
@@ -18,4 +17,11 @@ public class Sprint extends Modules{
 
 		}
 	}
+	@Override
+	public void onRender() {
+		/**
+		 * Nothing Rendered
+		 */
+	}
+
 }
