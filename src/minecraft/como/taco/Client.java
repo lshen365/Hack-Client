@@ -1,5 +1,7 @@
 package como.taco;
 
+import java.util.ArrayList;
+
 public class Client {
 
 	/**
@@ -11,18 +13,21 @@ public class Client {
 
 	private static final String Name = "LSux";
 	
-	/**
-	 * ingameGUI Initializer
-	 */
+	
+	//In-Game Initializer 
 	private static ingameGUI gui;
 
-	/**
-	 * Build info getters
-	 */
+	//List of all Hacks
+	public static ArrayList<Modules> modList;
+	public static ArrayList<Modules> enabledMods;
 	
 	public static void init() {
 		gui = new ingameGUI();
 		C1 = new Client();
+		modList = new ArrayList<Modules>();
+		enabledMods = new ArrayList<Modules>();
+		
+		addAllMods();
 	}
 	
 	public static void drawGUI() {
@@ -40,10 +45,41 @@ public class Client {
 		return Name;
 	}
 
-	public void startClient() {
-
+//	public void startClient() {
+//	Probably not necessary because I made an initialize function 
+//	}
+	
+	public static void onKeyPressed(int key) {
+		for(Modules mod: modList) {
+			mod.onPressed(key);
+		}
+		checkEnabledModules();
 	}
-
+	
+	public static void onRender() {
+		for(Modules mod: enabledMods) {
+			mod.onRender();
+		}
+	}
+	
+	public static void onUpdate() {
+		for(Modules mod: enabledMods) {
+			mod.onUpdate();
+		}
+	}
+	
+	public static void checkEnabledModules() {
+		for(Modules mod: modList) {
+			if(mod.getStatus() == true) {
+				enabledMods.add(mod);
+			}
+		}
+	}
+	
+	
+	public static void addAllMods() {
+		modList.add(new Sprint());
+	}
 	/**
 	 * Shuts down the client
 	 */
@@ -54,4 +90,5 @@ public class Client {
 			}
 		});
 	}
+
 }

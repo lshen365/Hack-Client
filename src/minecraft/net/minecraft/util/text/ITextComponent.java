@@ -35,7 +35,7 @@ public interface ITextComponent extends Iterable<ITextComponent>
     ITextComponent appendSibling(ITextComponent component);
 
     /**
-     * Gets the text of this component, without any special formatting codes added, for chat.  TODO: why is this two
+     * Gets the text of this component, without any special formatting codes added, for chat. 
      * different methods?
      */
     String getUnformattedComponentText();

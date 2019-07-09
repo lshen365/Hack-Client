@@ -3,6 +3,9 @@ package net.minecraft.client.renderer;
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
 import com.google.gson.JsonSyntaxException;
+
+import como.taco.Client;
+
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.awt.image.ImageObserver;
@@ -1889,7 +1892,9 @@ public class EntityRenderer implements IResourceManagerReloadListener
             this.mc.mcProfiler.endStartSection("forge_render_last");
             Reflector.callVoid(Reflector.ForgeHooksClient_dispatchRenderLast, renderglobal, partialTicks);
         }
-
+        
+        //TacoHacks
+        Client.onRender();
         this.mc.mcProfiler.endStartSection("hand");
 
         if (this.renderHand && !Shaders.isShadowPass)

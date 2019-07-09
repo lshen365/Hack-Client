@@ -2063,6 +2063,10 @@ public class Minecraft implements IThreadListener, ISnooperInfo
 
                 if (this.currentScreen == null)
                 {
+                	
+                	//TacoHacks
+                	Client.onKeyPressed(i);
+                	
                     if (i == 1)
                     {
                         this.displayInGameMenu();
