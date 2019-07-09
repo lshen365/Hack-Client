@@ -87,6 +87,7 @@ public class Client {
 	public static void addAllMods() {
 		modList.add(new Sprint());
 		modList.add(new Flight());
+		modList.add(new Fullbright());
 	}
 	/**
 	 * Shuts down the client
