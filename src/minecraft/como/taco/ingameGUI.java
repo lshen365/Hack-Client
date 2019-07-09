@@ -6,7 +6,8 @@ public class ingameGUI {
 	private Minecraft mc = Minecraft.getMinecraft();
 	
 	public void draw() {
-		mc.fontRendererObj.drawStringWithShadow("TacoHacks", 0, 0, 0x3611CA);
+		//System.out.println(name);
+		mc.fontRendererObj.drawStringWithShadow(Client.getName(), 0, 0, 0x3611CA);
 	}
 	
 	

@@ -5,11 +5,11 @@ public class Client {
 	/**
 	 * Information regarding this build
 	 */
-	private static final Client C1 = new Client();
+	private static Client C1;
 
 	private int version = 1;
 
-	private final String Name = "LSux";
+	private static final String Name = "LSux";
 	
 	/**
 	 * ingameGUI Initializer
@@ -20,8 +20,9 @@ public class Client {
 	 * Build info getters
 	 */
 	
-	public static void initalizeGUI() {
+	public static void init() {
 		gui = new ingameGUI();
+		C1 = new Client();
 	}
 	
 	public static void drawGUI() {
@@ -35,7 +36,7 @@ public class Client {
 		return version;
 	}
 
-	public String getName() {
+	public static String getName() {
 		return Name;
 	}
 
