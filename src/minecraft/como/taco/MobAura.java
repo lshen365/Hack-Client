@@ -2,6 +2,7 @@ package como.taco;
 
 import org.lwjgl.input.Keyboard;
 
+import como.taco.GUI.ModCategories;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.monster.EntityCreeper;
@@ -12,19 +13,27 @@ import net.minecraft.entity.monster.EntitySpider;
 import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.util.EnumHand;
 import net.minecraft.client.multiplayer.PlayerControllerMP;
-public class MobAura extends Modules{
-	private double total = 10000000;
-	private double subtract;
+public class MobAura extends Hack{
+	private long Time0; //Keeps track of current Time
+	private long Time1; //Secondary time used later for subtraction
+	private EntityLivingBase target;
+	
+	//private float yaw,pitch;
 	public MobAura() {
-		super("MobAura", Keyboard.KEY_R);
+		super("MobAura", Keyboard.KEY_R,ModCategories.COMBAT);
 	}
 	 
 	private void attack(Entity mob) {
 		mc.player.swingArm(EnumHand.MAIN_HAND);
 		mc.playerController.attackEntity(mc.player,mob);
-		Thread.sleep();
+
 	}
 	
+	private long getCurrentTime() {
+		return System.currentTimeMillis();
+	}
+	
+
 	public EntityLivingBase getClosestEntity(double range) {
 		EntityLivingBase target = null;
 		for(Object obj:mc.world.loadedEntityList) {
@@ -40,35 +49,31 @@ public class MobAura extends Modules{
 		return null;
 	}
 	
-	private void reset() {
-		total = 10000000;
-	}
-	
 	@Override
 	public void onUpdate() {
-		//mc.world.loadedEntityList;
-		System.out.println();
 		
 		if(getStatus()) {
-			while(total > 0) {
-				total--;
+			Time0 = getCurrentTime();
+			target = getClosestEntity(mc.playerController.getBlockReachDistance());
+			if( target != null){
+				if(Time0 - Time1 > 100) {
+					attack(target);
+					Time1 = getCurrentTime();
+				}
 			}
-			if(getClosestEntity(mc.playerController.getBlockReachDistance()) != null)
-				attack(getClosestEntity(mc.playerController.getBlockReachDistance()));
 		}
-		
+
 		
 	}
 
 	@Override
 	public void onRender() {
-		// TODO Auto-generated method stub
 		
 	}
-
+	
 	@Override
 	public void onDisable() {
-		// TODO Auto-generated method stub
+
 		
 	}
 

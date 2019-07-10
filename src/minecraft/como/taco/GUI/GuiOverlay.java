@@ -29,7 +29,7 @@ public class GuiOverlay extends Modules {
 
 	@Override
 	public void onDisable() {
-		mc.displayGuiScreen((GuiScreen) null);
+		
 	}
 
 }
