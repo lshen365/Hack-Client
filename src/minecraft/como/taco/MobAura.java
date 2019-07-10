@@ -22,6 +22,7 @@ public class MobAura extends Modules{
 	private void attack(Entity mob) {
 		mc.player.swingArm(EnumHand.MAIN_HAND);
 		mc.playerController.attackEntity(mc.player,mob);
+		Thread.sleep();
 	}
 	
 	public EntityLivingBase getClosestEntity(double range) {
