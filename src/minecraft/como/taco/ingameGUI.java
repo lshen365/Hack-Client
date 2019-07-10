@@ -9,7 +9,6 @@ public class ingameGUI {
 		int y = 10;
 		for(Modules mod:Client.modList) {
 			if(mod.getStatus() == true) {
-				System.out.println("Test");
 				mc.fontRendererObj.drawStringWithShadow(mod.getName(), 0, y, 0xE54216);
 				y+=10;
 			}

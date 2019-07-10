@@ -1,5 +1,6 @@
 package como.taco;
 
+import como.taco.GUI.ModCategories;
 import net.minecraft.client.Minecraft;
 
 public abstract class Modules {
@@ -36,12 +37,19 @@ public abstract class Modules {
 
 	public void changeStatus() { // Toggles the hacks to the opposite of what it was
 		this.status = !this.status;
+		if(status == false) {
+			onDisable();
+		}
 	}
+	
+	public abstract void onDisable();
 
 	public void onPressed(int key) {
 		if (keybind == key)
 			changeStatus();
 	}
+	
+	
 
 	public abstract void onUpdate();
 

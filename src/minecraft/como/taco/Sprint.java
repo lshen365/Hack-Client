@@ -2,15 +2,17 @@ package como.taco;
 
 import org.lwjgl.input.Keyboard;
 
-public class Sprint extends Modules{
+import como.taco.GUI.ModCategories;
+
+public class Sprint extends Hack {
 
 	public Sprint() {
-		super("Sprint", Keyboard.KEY_C);
-		
+		super("Sprint", Keyboard.KEY_C, ModCategories.MOVEMENT);
+
 	}
-	
+
 	public void onUpdate() {
-		if((mc.player.movementInput.moveForward > 0) && getStatus()) {
+		if ((mc.player.movementInput.moveForward > 0) && getStatus()) {
 			mc.player.setSprinting(true);
 		}
 //Not Necessary			
@@ -19,11 +21,18 @@ public class Sprint extends Modules{
 //
 //		}
 	}
+
 	@Override
 	public void onRender() {
 		/**
 		 * Nothing Rendered
 		 */
+	}
+
+	@Override
+	public void onDisable() {
+		mc.player.setSprinting(false);
+
 	}
 
 }

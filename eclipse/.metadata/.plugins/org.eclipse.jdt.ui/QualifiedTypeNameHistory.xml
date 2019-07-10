@@ -2,7 +2,15 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+<fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings"/>
+<fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings.Options"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="como.taco.Modules"/>
+<fullyQualifiedTypeName name="como.taco.GUI.ModCategories"/>
+<fullyQualifiedTypeName name="como.taco.Hack"/>
+<fullyQualifiedTypeName name="como.taco.GUI.GuiOverlay"/>
 <fullyQualifiedTypeName name="como.taco.Client"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
-<fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
 </qualifiedTypeNameHistroy>
