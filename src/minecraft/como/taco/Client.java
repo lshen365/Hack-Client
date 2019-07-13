@@ -117,6 +117,7 @@ public class Client {
 		modList.add(new Flight());
 		modList.add(new Fullbright());
 		modList.add(new FreeCam());
+		modList.add(new MobAura());
 	}
 	/**
 	 * Shuts down the client

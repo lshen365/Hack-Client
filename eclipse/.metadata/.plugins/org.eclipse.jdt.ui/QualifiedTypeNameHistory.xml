@@ -2,6 +2,7 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings"/>
 <fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings.Options"/>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
@@ -9,7 +10,11 @@
 <fullyQualifiedTypeName name="como.taco.GUI.ModCategories"/>
 <fullyQualifiedTypeName name="como.taco.Hack"/>
 <fullyQualifiedTypeName name="como.taco.GUI.GuiOverlay"/>
+=======
+<fullyQualifiedTypeName name="como.taco.Client"/>
+>>>>>>> refs/remotes/origin/master
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="net.minecraft.client.gui.ScaledResolution"/>
 <fullyQualifiedTypeName name="org.lwjgl.opengl.Display"/>
 <fullyQualifiedTypeName name="como.taco.Events.Event"/>
@@ -21,4 +26,17 @@
 <fullyQualifiedTypeName name="como.taco.Events.EventSendPacket"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
 <fullyQualifiedTypeName name="net.minecraft.client.entity.EntityOtherPlayerMP"/>
+=======
+<fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.monster.EntityZombie"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.monster.EntitySkeleton"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.monster.EntityEnderman"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.monster.EntityCreeper"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.monster.EntitySpider"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.monster.EntityMob"/>
+<fullyQualifiedTypeName name="net.minecraft.client.multiplayer.PlayerControllerMP"/>
+<fullyQualifiedTypeName name="net.minecraft.util.EnumHand"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
+>>>>>>> refs/remotes/origin/master
 </qualifiedTypeNameHistroy>

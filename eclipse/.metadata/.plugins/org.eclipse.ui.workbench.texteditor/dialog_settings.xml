@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+<<<<<<< HEAD
 		<item key="selection" value="noClip"/>
+=======
+		<item key="selection" value="attackEntity"/>
+>>>>>>> refs/remotes/origin/master
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 			<item value="noclip"/>
 			<item value="addentitytoworld"/>
 			<item value="addentity"/>
@@ -23,15 +28,41 @@
 			<item value="setflyspeed"/>
 			<item value="set"/>
 			<item value="displaymode.getwidth"/>
+=======
+			<item value="attackEntity"/>
+			<item value="leftclickcounter"/>
+			<item value="Main_Hand"/>
+			<item value="main"/>
+			<item value="hand"/>
+			<item value="updateArm"/>
+			<item value="swing"/>
+			<item value="Main"/>
+			<item value="Hand"/>
+			<item value="get"/>
+			<item value="taco"/>
+			<item value="AttackEntity"/>
+			<item value=" "/>
+			<item value="reach"/>
+			<item value="name"/>
+>>>>>>> refs/remotes/origin/master
 		</list>
 		<list key="replacehistory">
+			<item value="LoadedEntity"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+<<<<<<< HEAD
 		<item key="DIALOG_X_ORIGIN" value="709"/>
 		<item key="DIALOG_Y_ORIGIN" value="499"/>
 		<item key="DIALOG_WIDTH" value="277"/>
 		<item key="DIALOG_HEIGHT" value="370"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+=======
+		<item key="DIALOG_X_ORIGIN" value="783"/>
+		<item key="DIALOG_Y_ORIGIN" value="381"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+>>>>>>> refs/remotes/origin/master
 	</section>
 </section>
