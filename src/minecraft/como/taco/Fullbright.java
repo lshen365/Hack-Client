@@ -40,4 +40,10 @@ public class Fullbright extends Hack {
 		
 	}
 
+	@Override
+	public void onEnable() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

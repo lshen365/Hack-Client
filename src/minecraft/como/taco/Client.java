@@ -2,8 +2,11 @@ package como.taco;
 
 import java.util.ArrayList;
 
+import org.lwjgl.opengl.Display;
+
 import como.taco.GUI.GuiOverlay;
 import net.minecraft.client.Minecraft;
+import net.minecraft.util.math.BlockPos;
 
 public class Client {
 
@@ -12,7 +15,7 @@ public class Client {
 	 */
 	private static Client C1;
 
-	private int version = 1;
+	private static int version = 1;
 
 	private static final String Name = "LSux";
 
@@ -24,6 +27,7 @@ public class Client {
 	public static ArrayList<Modules> enabledMods;
 
 	public static void init() {
+		Display.setTitle(Name + " v. " + version);
 		gui = new ingameGUI();
 		C1 = new Client();
 		modList = new ArrayList<Modules>();
@@ -76,6 +80,15 @@ public class Client {
 		for (Modules mod : enabledMods) {
 			mod.onUpdate();
 		}
+		findDisabledMods();
+	}
+
+	public static void findDisabledMods() {
+		for (int i = 0; i < enabledMods.size(); i++) {
+			if (enabledMods.get(i).getStatus() == false) {
+				enabledMods.remove(i);
+			}
+		}
 	}
 
 	public static void checkEnabledModules() {
@@ -83,7 +96,19 @@ public class Client {
 			if (mod.getStatus() == true) {
 				enabledMods.add(mod);
 			}
+			if (mod.getStatus() == false) {
+				enabledMods.remove(mod);
+			}
 		}
+	}
+
+	public static boolean checkForModule(Modules m) {
+		for (Modules c : enabledMods) {
+			if (c.getName().equals(m.getName())) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	public static void addAllMods() {
@@ -92,6 +117,8 @@ public class Client {
 		modList.add(new Flight());
 		modList.add(new Fullbright());
 		modList.add(new MobAura()); //Index spot 4
+		modList.add(new FreeCam());
+		
 	}
 	/**
 	 * Shuts down the client

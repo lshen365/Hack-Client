@@ -1,6 +1,6 @@
 package como.taco;
 
-import como.taco.GUI.ModCategories;
+import como.taco.Events.Event;
 import net.minecraft.client.Minecraft;
 
 public abstract class Modules {
@@ -13,6 +13,10 @@ public abstract class Modules {
 	public Modules(String name, int key) {
 		this.name = name;
 		keybind = key;
+	}
+	
+	public Modules(String name) {
+		this.name = name;
 	}
 
 	public String getName() {
@@ -37,18 +41,26 @@ public abstract class Modules {
 
 	public void changeStatus() { // Toggles the hacks to the opposite of what it was
 		this.status = !this.status;
+		if(status == true) {
+			onEnable();
+		}
 		if(status == false) {
 			onDisable();
 		}
 	}
 	
 	public abstract void onDisable();
+	
+	public abstract void onEnable();
 
 	public void onPressed(int key) {
 		if (keybind == key)
 			changeStatus();
 	}
 	
+	public void Event(Event e) {
+		
+	}
 	
 
 	public abstract void onUpdate();

@@ -100,7 +100,7 @@ public class GuiSliderFixed extends GuiButton
                 this.responder.setEntryValue(this.id, this.getSliderValue());
             }
             changeModValue((Client.modList.get(4)), this.getSliderValue());
-
+            
             GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
             this.drawTexturedModalRect(this.xPosition + (int)(this.sliderPosition * (float)(this.width - 8)), this.yPosition, 0, 66, 4, 20);
             this.drawTexturedModalRect(this.xPosition + (int)(this.sliderPosition * (float)(this.width - 8)) + 4, this.yPosition, 196, 66, 4, 20);
@@ -148,6 +148,7 @@ public class GuiSliderFixed extends GuiButton
     
     public void changeModValue(Modules name,float position) {
     	name.changeVariable((int)position);
+    	System.out.println(name.getName());
     	try {
 			changeFile(name.getName());
 		} catch (IOException e) {
@@ -161,16 +162,7 @@ public class GuiSliderFixed extends GuiButton
 		File readFile = new File(filePath);
 		Scanner readInput = new Scanner(readFile);
 		FileWriter writeOutput = new FileWriter(filePath,false);
-		switch(name) {
-
-		case "MobAura":
-			writeOutput.write("MobAura "+this.getSliderValue());
-		
-		default:
-			
-			
-		}
-		
+		writeOutput.write("MobAura "+this.getSliderValue());
 		writeOutput.flush();
 	}
 

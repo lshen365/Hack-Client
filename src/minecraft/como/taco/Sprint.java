@@ -6,6 +6,7 @@ import como.taco.GUI.ModCategories;
 
 public class Sprint extends Hack {
 
+
 	public Sprint() {
 		super("Sprint", Keyboard.KEY_C, ModCategories.MOVEMENT);
 
@@ -37,6 +38,12 @@ public class Sprint extends Hack {
 
 	@Override
 	public void changeVariable(int num) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onEnable() {
 		// TODO Auto-generated method stub
 		
 	}

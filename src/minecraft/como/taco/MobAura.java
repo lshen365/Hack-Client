@@ -50,7 +50,7 @@ public class MobAura extends Hack{
 	
 	public void editDelay(int num) {
 		delayTimer = 1000/num;
-
+		System.out.println("run");
 
 	}
 	
@@ -88,6 +88,11 @@ public class MobAura extends Hack{
 		editDelay(num);
 
 		
+	}
+
+	@Override
+	public void onEnable() {
+		onUpdate();
 	}
 
 
