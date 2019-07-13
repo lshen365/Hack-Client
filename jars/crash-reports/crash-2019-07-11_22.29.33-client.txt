@@ -1,0 +1,120 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 7/11/19 10:29 PM
+Description: Ticking entity
+
+java.lang.NoClassDefFoundError: como/taco/GUI/ClickGUI$2
+	at como.taco.GUI.ClickGUI.initGui(ClickGUI.java:79)
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:521)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:1018)
+	at como.taco.GUI.GuiOverlay.onUpdate(GuiOverlay.java:21)
+	at como.taco.Client.onUpdate(Client.java:77)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:261)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:251)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1987)
+	at net.minecraft.world.World.updateEntity(World.java:1951)
+	at net.minecraft.world.World.updateEntities(World.java:1794)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1759)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1092)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:470)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+Caused by: java.lang.ClassNotFoundException: como.taco.GUI.ClickGUI$2
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 15 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at como.taco.GUI.ClickGUI.initGui(ClickGUI.java:79)
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:521)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:1018)
+	at como.taco.GUI.GuiOverlay.onUpdate(GuiOverlay.java:21)
+	at como.taco.Client.onUpdate(Client.java:77)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:261)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:251)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1987)
+	at net.minecraft.world.World.updateEntity(World.java:1951)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityPlayerSP)
+	Entity ID: 117
+	Entity Name: Player603
+	Entity's Exact location: 285.06, 68.00, 493.94
+	Entity's Block location: World: (285,68,493), Chunk: (at 13,4,13 in 17,30; contains blocks 272,0,480 to 287,255,495), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1794)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player603'/117, l='MpServer', x=285.06, y=68.00, z=493.94]]
+	Chunk stats: MultiplayerChunkCache: 289, 289
+	Level seed: 0
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 112327 game time, 65921 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 50 total; [EntityRabbit['Rabbit'/256, l='MpServer', x=346.79, y=73.00, z=525.46], EntityHusk['Husk'/257, l='MpServer', x=351.50, y=73.00, z=537.07], EntitySkeleton['Skeleton'/259, l='MpServer', x=345.50, y=72.00, z=546.50], EntityRabbit['Rabbit'/262, l='MpServer', x=361.20, y=69.00, z=445.43], EntityRabbit['Rabbit'/263, l='MpServer', x=352.46, y=71.00, z=497.29], EntityRabbit['Rabbit'/264, l='MpServer', x=354.77, y=71.00, z=512.30], EntityRabbit['Rabbit'/265, l='MpServer', x=362.07, y=71.00, z=530.41], EntityHusk['Husk'/266, l='MpServer', x=354.75, y=72.00, z=537.55], EntityPlayerSP['Player603'/117, l='MpServer', x=285.06, y=68.00, z=493.94], EntityRabbit['Rabbit'/170, l='MpServer', x=207.19, y=64.00, z=433.39], EntitySpider['Spider'/171, l='MpServer', x=207.50, y=63.00, z=458.50], EntityRabbit['Rabbit'/174, l='MpServer', x=207.37, y=64.00, z=541.57], EntitySpider['Spider'/181, l='MpServer', x=213.00, y=63.00, z=443.39], EntityCreeper['Creeper'/183, l='MpServer', x=217.50, y=63.00, z=530.50], EntityRabbit['Rabbit'/184, l='MpServer', x=210.74, y=64.00, z=544.62], EntityRabbit['Rabbit'/192, l='MpServer', x=236.40, y=64.00, z=446.54], EntityRabbit['Rabbit'/193, l='MpServer', x=234.26, y=65.00, z=453.01], EntityCreeper['Creeper'/194, l='MpServer', x=228.50, y=64.00, z=448.50], EntitySkeleton['Skeleton'/195, l='MpServer', x=235.48, y=64.00, z=462.29], EntityRabbit['Rabbit'/196, l='MpServer', x=224.50, y=63.00, z=483.03], EntityZombie['Zombie'/197, l='MpServer', x=237.50, y=64.00, z=519.50], EntityRabbit['Rabbit'/206, l='MpServer', x=244.87, y=66.00, z=424.92], EntityRabbit['Rabbit'/207, l='MpServer', x=247.86, y=67.00, z=417.24], EntitySkeleton['Skeleton'/208, l='MpServer', x=246.64, y=68.00, z=499.87], EntityZombie['Zombie'/209, l='MpServer', x=245.45, y=36.00, z=542.23], EntityRabbit['Rabbit'/218, l='MpServer', x=266.32, y=68.00, z=422.81], EntityRabbit['Rabbit'/219, l='MpServer', x=266.65, y=69.00, z=430.66], EntitySkeleton['Skeleton'/220, l='MpServer', x=256.50, y=67.00, z=550.50], EntityHusk['Husk'/221, l='MpServer', x=258.93, y=67.00, z=564.13], EntityRabbit['Rabbit'/225, l='MpServer', x=280.50, y=70.00, z=465.50], EntityCreeper['Creeper'/226, l='MpServer', x=281.31, y=46.00, z=508.74], EntitySkeleton['Skeleton'/227, l='MpServer', x=274.78, y=44.00, z=516.49], EntityRabbit['Rabbit'/228, l='MpServer', x=272.78, y=69.00, z=539.38], EntityRabbit['Rabbit'/229, l='MpServer', x=276.54, y=68.00, z=548.99], EntityCreeper['Creeper'/230, l='MpServer', x=274.51, y=42.00, z=564.31], EntitySpider['Spider'/232, l='MpServer', x=295.50, y=69.00, z=426.50], EntityRabbit['Rabbit'/233, l='MpServer', x=297.65, y=68.00, z=436.04], EntityWitch['Witch'/235, l='MpServer', x=301.48, y=46.00, z=496.72], EntityBat['Bat'/239, l='MpServer', x=316.61, y=64.88, z=439.59], EntityBat['Bat'/240, l='MpServer', x=309.47, y=46.96, z=491.38], EntityRabbit['Rabbit'/241, l='MpServer', x=314.50, y=70.00, z=501.98], EntityRabbit['Rabbit'/243, l='MpServer', x=317.70, y=72.00, z=526.50], EntityRabbit['Rabbit'/247, l='MpServer', x=325.41, y=72.00, z=439.60], EntitySpider['Spider'/248, l='MpServer', x=328.00, y=68.00, z=461.60], EntitySkeleton['Skeleton'/249, l='MpServer', x=331.50, y=45.00, z=480.50], EntityRabbit['Rabbit'/250, l='MpServer', x=323.74, y=74.00, z=511.47], EntityRabbit['Rabbit'/251, l='MpServer', x=326.55, y=75.00, z=516.78], EntityPig['Pig'/252, l='MpServer', x=321.54, y=74.00, z=519.25], EntityRabbit['Rabbit'/253, l='MpServer', x=327.60, y=64.00, z=561.14], EntityRabbit['Rabbit'/255, l='MpServer', x=349.77, y=70.00, z=435.57]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:518)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2592)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:483)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_211, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 875367728 bytes (834 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 7, tcache: 0, allocated: 13, tallocated: 99
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) UHD Graphics 620 GL version 4.5.0 - Build 24.20.100.6286, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+	OptiFine Version: OptiFine_1.12_HD_U_A0_pre
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.5.0 - Build 24.20.100.6286
+	OpenGlRenderer: Intel(R) UHD Graphics 620
+	OpenGlVendor: Intel
+	CpuCount: 8

@@ -35,4 +35,10 @@ public class Sprint extends Hack {
 
 	}
 
+	@Override
+	public void changeVariable(int num) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

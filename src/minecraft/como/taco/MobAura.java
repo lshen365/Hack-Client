@@ -17,8 +17,7 @@ public class MobAura extends Hack{
 	private long Time0; //Keeps track of current Time
 	private long Time1; //Secondary time used later for subtraction
 	private EntityLivingBase target;
-	
-	//private float yaw,pitch;
+	private int delayTimer = 500; 
 	public MobAura() {
 		super("MobAura", Keyboard.KEY_R,ModCategories.COMBAT);
 	}
@@ -49,6 +48,12 @@ public class MobAura extends Hack{
 		return null;
 	}
 	
+	public void editDelay(int num) {
+		delayTimer = 1000/num;
+
+
+	}
+	
 	@Override
 	public void onUpdate() {
 		
@@ -56,9 +61,10 @@ public class MobAura extends Hack{
 			Time0 = getCurrentTime();
 			target = getClosestEntity(mc.playerController.getBlockReachDistance());
 			if( target != null){
-				if(Time0 - Time1 > 100) {
+				if(Time0 - Time1 > delayTimer) { //100 = 10 Hits per sec
 					attack(target);
 					Time1 = getCurrentTime();
+
 				}
 			}
 		}
@@ -76,5 +82,14 @@ public class MobAura extends Hack{
 
 		
 	}
+
+	@Override
+	public void changeVariable(int num) {
+		editDelay(num);
+
+		
+	}
+
+
 
 }

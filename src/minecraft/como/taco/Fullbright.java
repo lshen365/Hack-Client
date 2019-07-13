@@ -33,4 +33,11 @@ public class Fullbright extends Hack {
 
 	}
 
+
+	@Override
+	public void changeVariable(int num) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

@@ -1,0 +1,94 @@
+---- Minecraft Crash Report ----
+// I feel sad now :(
+
+Time: 7/11/19 11:56 PM
+Description: Updating screen events
+
+java.lang.NullPointerException: Updating screen events
+	at como.taco.GUI.GuiSliderFixed.mousePressed(GuiSliderFixed.java:126)
+	at net.minecraft.client.gui.GuiScreen.mouseClicked(GuiScreen.java:472)
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:581)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:550)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1690)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1092)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:470)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at como.taco.GUI.GuiSliderFixed.mousePressed(GuiSliderFixed.java:126)
+	at net.minecraft.client.gui.GuiScreen.mouseClicked(GuiScreen.java:472)
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:581)
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:550)
+
+-- Affected screen --
+Details:
+	Screen name: como.taco.GUI.ClickGUI
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player994'/117, l='MpServer', x=285.06, y=68.00, z=493.94]]
+	Chunk stats: MultiplayerChunkCache: 289, 289
+	Level seed: 0
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 155175 game time, 108769 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: true), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 29 total; [EntityRabbit['Rabbit'/195, l='MpServer', x=244.87, y=66.00, z=424.92], EntityRabbit['Rabbit'/196, l='MpServer', x=247.52, y=68.00, z=417.12], EntityRabbit['Rabbit'/208, l='MpServer', x=266.32, y=68.00, z=422.81], EntityRabbit['Rabbit'/209, l='MpServer', x=267.17, y=69.00, z=430.65], EntityRabbit['Rabbit'/210, l='MpServer', x=259.56, y=69.00, z=463.59], EntityRabbit['Rabbit'/215, l='MpServer', x=272.78, y=69.00, z=539.38], EntityRabbit['Rabbit'/216, l='MpServer', x=275.97, y=68.00, z=548.85], EntityRabbit['Rabbit'/219, l='MpServer', x=297.65, y=68.00, z=436.04], EntityRabbit['Rabbit'/224, l='MpServer', x=311.58, y=68.00, z=497.32], EntityPlayerSP['Player994'/117, l='MpServer', x=285.06, y=68.00, z=493.94], EntityRabbit['Rabbit'/226, l='MpServer', x=317.70, y=72.00, z=526.50], EntityPig['Pig'/228, l='MpServer', x=318.25, y=73.00, z=528.50], EntityRabbit['Rabbit'/231, l='MpServer', x=325.41, y=72.00, z=439.60], EntityRabbit['Rabbit'/232, l='MpServer', x=326.06, y=74.00, z=509.54], EntityRabbit['Rabbit'/233, l='MpServer', x=327.16, y=75.00, z=520.13], EntityRabbit['Rabbit'/234, l='MpServer', x=327.60, y=64.00, z=561.14], EntityRabbit['Rabbit'/170, l='MpServer', x=207.09, y=64.00, z=433.29], EntityRabbit['Rabbit'/171, l='MpServer', x=205.45, y=64.00, z=472.27], EntityRabbit['Rabbit'/236, l='MpServer', x=349.77, y=70.00, z=435.57], EntityRabbit['Rabbit'/237, l='MpServer', x=346.27, y=73.00, z=525.46], EntityRabbit['Rabbit'/173, l='MpServer', x=207.37, y=64.00, z=541.57], EntityRabbit['Rabbit'/240, l='MpServer', x=361.20, y=69.00, z=445.43], EntityRabbit['Rabbit'/241, l='MpServer', x=352.46, y=71.00, z=497.30], EntityRabbit['Rabbit'/242, l='MpServer', x=354.77, y=71.00, z=512.30], EntityRabbit['Rabbit'/243, l='MpServer', x=365.03, y=70.00, z=530.12], EntityRabbit['Rabbit'/179, l='MpServer', x=211.02, y=64.00, z=545.15], EntityRabbit['Rabbit'/185, l='MpServer', x=236.22, y=64.00, z=445.82], EntityRabbit['Rabbit'/186, l='MpServer', x=234.26, y=65.00, z=453.01], EntityRabbit['Rabbit'/187, l='MpServer', x=224.50, y=63.00, z=483.03]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:518)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2592)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:483)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_211, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 663335864 bytes (632 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 4, tcache: 0, allocated: 13, tallocated: 99
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) UHD Graphics 620 GL version 4.5.0 - Build 24.20.100.6286, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+	OptiFine Version: OptiFine_1.12_HD_U_A0_pre
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.5.0 - Build 24.20.100.6286
+	OpenGlRenderer: Intel(R) UHD Graphics 620
+	OpenGlVendor: Intel
+	CpuCount: 8

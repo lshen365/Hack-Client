@@ -54,5 +54,7 @@ public abstract class Modules {
 	public abstract void onUpdate();
 
 	public abstract void onRender();
+	
+	public abstract void changeVariable(int num);
 
 }

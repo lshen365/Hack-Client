@@ -23,4 +23,11 @@ public class Flight extends Hack {
 		// TODO Auto-generated method stub
 		
 	}
+	
+
+	@Override
+	public void changeVariable(int num) {
+		// TODO Auto-generated method stub
+		
+	}
 }

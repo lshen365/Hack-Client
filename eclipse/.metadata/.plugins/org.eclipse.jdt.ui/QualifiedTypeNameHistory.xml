@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="como.taco.Client"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
 <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
@@ -15,4 +14,23 @@
 <fullyQualifiedTypeName name="net.minecraft.client.multiplayer.PlayerControllerMP"/>
 <fullyQualifiedTypeName name="net.minecraft.util.EnumHand"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiOptionSlider"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiPageButtonList.GuiResponder"/>
+<fullyQualifiedTypeName name="org.apache.http.FormattedHeader"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiPageButtonList"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiSlider"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiPageButtonList.GuiSlideEntry"/>
+<fullyQualifiedTypeName name="como.taco.Client"/>
+<fullyQualifiedTypeName name="como.taco.Modules"/>
+<fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
+<fullyQualifiedTypeName name="java.awt.event.MouseEvent"/>
+<fullyQualifiedTypeName name="como.taco.GUI.GuiSliderFixed"/>
+<fullyQualifiedTypeName name="como.taco.GUI.GuiSliderFixed.FormatHelper"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiSlider.FormatHelper"/>
+<fullyQualifiedTypeName name="como.taco.MobAura"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.nio.file.Path"/>
+<fullyQualifiedTypeName name="java.nio.file.Paths"/>
 </qualifiedTypeNameHistroy>

@@ -91,7 +91,7 @@ public class Client {
 		modList.add(new Sprint());
 		modList.add(new Flight());
 		modList.add(new Fullbright());
-		modList.add(new MobAura());
+		modList.add(new MobAura()); //Index spot 4
 	}
 	/**
 	 * Shuts down the client

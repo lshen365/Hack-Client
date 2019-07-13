@@ -15,7 +15,9 @@ public class GuiOverlay extends Modules {
 
 	@Override
 	public void onUpdate() {
+		
 		if (getStatus()) {
+			
 			mc.displayGuiScreen(new ClickGUI());
 			changeStatus();
 		}
@@ -29,6 +31,14 @@ public class GuiOverlay extends Modules {
 
 	@Override
 	public void onDisable() {
+		//changeStatus();
+	}
+
+
+
+	@Override
+	public void changeVariable(int num) {
+		// TODO Auto-generated method stub
 		
 	}
 

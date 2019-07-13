@@ -1856,6 +1856,7 @@ public class Minecraft implements IThreadListener, ISnooperInfo {
 					if (i == 59) {
 						this.gameSettings.hideGUI = !this.gameSettings.hideGUI;
 					}
+					
 				}
 
 				if (flag1) {

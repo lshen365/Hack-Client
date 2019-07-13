@@ -1,16 +1,86 @@
 package como.taco.GUI;
 
+import java.awt.event.MouseEvent;
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import como.taco.Client;
 import como.taco.Hack;
+import como.taco.MobAura;
 import como.taco.Modules;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
+import net.minecraft.client.gui.GuiListButton;
+import net.minecraft.client.gui.GuiPageButtonList;
+import net.minecraft.client.gui.GuiPageButtonList.GuiResponder;
+import net.minecraft.client.gui.GuiPageButtonList.GuiSlideEntry;
+import net.minecraft.client.gui.GuiSlider.FormatHelper;
+import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.gui.GuiSlider;
 import net.minecraft.client.gui.ScaledResolution;
 
-public class ClickGUI extends GuiScreen {
+public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper{
+	//Creates new Responder and formatter which will be used for all Sliders
+	private GuiPageButtonList.GuiResponder guiResponder;
+	private FormatHelper formatter;
+	
+	//Keeps track of all Slider positions
+	private float mobAuraSliderPosition, flightSpeed;
+	//All the Slider names
+	private GuiSliderFixed mobAuraSlider;
+	
+	
+	public void setGuiResponder()
+	{
+		guiResponder = new GuiResponder() {
+			
+			@Override
+			public void setEntryValue(int id, String value) {
 
+				
+			}
+			
+			@Override
+			public void setEntryValue(int id, float value) {
+
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void setEntryValue(int id, boolean value) {
+
+
+				// TODO Auto-generated method stub
+				
+			}
+		};
+
+	}
+
+	public void initSlider() {
+		try {
+			readFile();
+			ScaledResolution sr = new ScaledResolution(mc);
+			setGuiResponder();
+
+			mobAuraSlider = new GuiSliderFixed(guiResponder,Client.modList.get(4).getName().hashCode() , 5, sr.getScaledHeight() - 25, "Clicks Per Second", 3,14 , mobAuraSliderPosition, this);
+		} catch (FileNotFoundException e) {
+			System.out.println("GUISettings.txt is not found");
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+ 
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 		/*
 		 * Tints the background world.
@@ -44,6 +114,9 @@ public class ClickGUI extends GuiScreen {
 				buttonList.add(new GuiButton(i, modXPos((Hack) m), modYPos((Hack) m), 110, 14, m.getName()));
 			}
 		}
+		initSlider();
+		buttonList.add(mobAuraSlider);
+		
 	}
 
 	public void actionPerformed(GuiButton button) throws IOException {
@@ -52,7 +125,28 @@ public class ClickGUI extends GuiScreen {
 				Client.modList.get(i).changeStatus();
 			}
 		}
+		if(button.id == Client.modList.get(4).getName().hashCode()&&mobAuraSlider.isMouseDown) {
+			
+
+		}
+
 	}
+	
+	
+	private void readFile() throws FileNotFoundException {
+		String filePath = Paths.get("GUISettings.txt").toAbsolutePath().toString();
+		File readFile = new File(filePath);
+		Scanner readInput = new Scanner(readFile);
+		readInput.useDelimiter(" ");
+		while(readInput.hasNextLine()) {
+			readInput.next();
+			mobAuraSliderPosition = Float.parseFloat(readInput.next());
+		}
+		
+	}
+	
+
+	
 
 	public int modYPos(Hack m) {
 		switch (m.getType()) {
@@ -87,5 +181,27 @@ public class ClickGUI extends GuiScreen {
 		default:
 			return 0;
 		}
+	}
+	
+	//Function that rounds values for the getText which runs faster than Math.round
+	private static float round(float value, int scale) {
+	    int pow = 10;
+	    for (int i = 1; i < scale; i++) {
+	        pow *= 10;
+	    }
+	    float tmp = value * pow;
+	    float tmpSub = tmp - (int) tmp;
+
+	    return ( (float) ( (int) (
+	            value >= 0
+	            ? (tmpSub >= 0.5f ? tmp + 1 : tmp)
+	            : (tmpSub >= -0.5f ? tmp : tmp - 1)
+	            ) ) ) / pow;
+
+	}
+	@Override
+	public String getText(int id, String name, float value) {
+		
+		return name + ": " +round(value, 2);
 	}
 }

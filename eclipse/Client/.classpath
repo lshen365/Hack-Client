@@ -39,5 +39,6 @@
 	<classpathentry kind="lib" path="jars/libraries/org/lwjgl/lwjgl/lwjgl_util/2.9.4-nightly-20150209/lwjgl_util-2.9.4-nightly-20150209.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/com/mojang/text2speech/1.10.3/text2speech-1.10.3.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar" sourcepath="jars/libraries/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Leon/Documents/Hack-Client/jars/libraries/gradle/wrapper/gradle-wrapper.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
