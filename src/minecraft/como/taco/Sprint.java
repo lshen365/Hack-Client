@@ -6,6 +6,7 @@ import como.taco.GUI.ModCategories;
 
 public class Sprint extends Hack {
 
+
 	public Sprint() {
 		super("Sprint", Keyboard.KEY_C, ModCategories.MOVEMENT);
 
@@ -33,6 +34,12 @@ public class Sprint extends Hack {
 	public void onDisable() {
 		mc.player.setSprinting(false);
 
+	}
+
+	@Override
+	public void onEnable() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

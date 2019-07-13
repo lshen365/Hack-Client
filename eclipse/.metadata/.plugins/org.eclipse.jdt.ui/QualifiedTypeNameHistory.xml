@@ -2,15 +2,23 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
 <fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings"/>
 <fullyQualifiedTypeName name="net.minecraft.client.settings.GameSettings.Options"/>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="como.taco.Modules"/>
 <fullyQualifiedTypeName name="como.taco.GUI.ModCategories"/>
 <fullyQualifiedTypeName name="como.taco.Hack"/>
 <fullyQualifiedTypeName name="como.taco.GUI.GuiOverlay"/>
-<fullyQualifiedTypeName name="como.taco.Client"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.ScaledResolution"/>
+<fullyQualifiedTypeName name="org.lwjgl.opengl.Display"/>
+<fullyQualifiedTypeName name="como.taco.Events.Event"/>
+<fullyQualifiedTypeName name="como.taco.Client"/>
+<fullyQualifiedTypeName name="como.taco.Modules"/>
+<fullyQualifiedTypeName name="net.minecraft.network.Packet"/>
+<fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+<fullyQualifiedTypeName name="como.taco.Events.EventHandler"/>
+<fullyQualifiedTypeName name="como.taco.Events.EventSendPacket"/>
+<fullyQualifiedTypeName name="net.minecraft.util.math.BlockPos"/>
+<fullyQualifiedTypeName name="net.minecraft.client.entity.EntityOtherPlayerMP"/>
 </qualifiedTypeNameHistroy>

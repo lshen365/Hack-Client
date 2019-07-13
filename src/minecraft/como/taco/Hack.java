@@ -10,7 +10,12 @@ public abstract class Hack extends Modules {
 		super(name, key);
 		this.type = type;
 	}
-	
+
+	public Hack(String name, ModCategories type) {
+		super(name);
+		this.type = type;
+	}
+
 	public ModCategories getType() {
 		return type;
 	}
