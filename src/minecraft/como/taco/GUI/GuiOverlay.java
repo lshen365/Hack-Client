@@ -48,4 +48,10 @@ public class GuiOverlay extends Modules {
 		
 	}
 
+	@Override
+	public void onEnable() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

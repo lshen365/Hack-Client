@@ -23,6 +23,7 @@ public class Flight extends Hack {
 		// TODO Auto-generated method stub
 		
 	}
+<<<<<<< HEAD
 	
 
 	@Override
@@ -30,6 +31,8 @@ public class Flight extends Hack {
 		// TODO Auto-generated method stub
 		
 	}
+=======
+>>>>>>> branch 'master' of https://github.com/lshen365/Hack-Client.git
 
 	@Override
 	public void onEnable() {

@@ -33,6 +33,7 @@ public class Fullbright extends Hack {
 
 	}
 
+<<<<<<< HEAD
 
 	@Override
 	public void changeVariable(int num) {
@@ -40,6 +41,8 @@ public class Fullbright extends Hack {
 		
 	}
 
+=======
+>>>>>>> branch 'master' of https://github.com/lshen365/Hack-Client.git
 	@Override
 	public void onEnable() {
 		// TODO Auto-generated method stub

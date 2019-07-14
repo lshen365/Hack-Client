@@ -37,12 +37,15 @@ public class Sprint extends Hack {
 	}
 
 	@Override
+<<<<<<< HEAD
 	public void changeVariable(int num) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
+=======
+>>>>>>> branch 'master' of https://github.com/lshen365/Hack-Client.git
 	public void onEnable() {
 		// TODO Auto-generated method stub
 		

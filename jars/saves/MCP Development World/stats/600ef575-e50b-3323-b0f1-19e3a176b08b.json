@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 {"stat.walkOneCm":1598,"stat.jump":6,"stat.playOneMinute":6815,"stat.leaveGame":1,"stat.timeSinceDeath":6815}
 =======
 {"stat.flyOneCm":662,"stat.walkOneCm":1080,"stat.jump":3,"stat.playOneMinute":622,"stat.leaveGame":1,"stat.timeSinceDeath":622,"stat.sprintOneCm":12433}
 >>>>>>> refs/remotes/origin/master
+=======
+{"stat.flyOneCm":662,"stat.walkOneCm":1080,"stat.jump":3,"stat.playOneMinute":622,"stat.leaveGame":1,"stat.timeSinceDeath":622,"stat.sprintOneCm":12433}
+>>>>>>> branch 'master' of https://github.com/lshen365/Hack-Client.git
