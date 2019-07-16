@@ -37,6 +37,9 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper{
 	private GuiSliderFixed mobAuraSlider;
 	
 	
+	//Initializing KillAura buttons
+	MobAura ma = (MobAura)(Client.getNonEnabledMod(new MobAura()));
+	
 	public void setGuiResponder()
 	{
 		guiResponder = new GuiResponder() {
@@ -81,6 +84,7 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper{
 		
 	}
 	
+	
  
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 		/*
@@ -115,6 +119,10 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper{
 				buttonList.add(new GuiButton(i, modXPos((Hack) m), modYPos((Hack) m), 110, 14, m.getName()));
 			}
 		}
+		ScaledResolution sr = new ScaledResolution(mc);
+		buttonList.add(new GuiButton("Animal".hashCode(), 160, sr.getScaledHeight() -20, 100, 20, "Animals: "+ ma.getStatus(ma.getAnimal())));
+		buttonList.add(new GuiButton("Player".hashCode(), 160, sr.getScaledHeight() -40, 100, 20, "Player: "+ ma.getStatus(ma.getPlayers())));
+		buttonList.add(new GuiButton("Monster".hashCode(), 160, sr.getScaledHeight() - 60, 100, 20, "Mobs: "+ ma.getStatus(ma.getMobs())));
 		initSlider();
 		buttonList.add(mobAuraSlider);
 		
@@ -125,6 +133,19 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper{
 			if (button.id == i) {
 				Client.modList.get(i).changeStatus();
 			}
+
+		}
+		if(button.id == "Animal".hashCode()) {
+			ma.changeAnimal();
+			button.changeDisplayString("Animals: "+ma.getStatus(ma.getAnimal()));
+		}
+		if(button.id == "Player".hashCode()) {
+			ma.changePlayer();
+			button.changeDisplayString("Players: "+ma.getStatus(ma.getPlayers()));
+		}
+		if(button.id == "Monster".hashCode()) {
+			ma.changeMob();
+			button.changeDisplayString("Mobs: "+ma.getStatus(ma.getMobs()));
 		}
 
 	}

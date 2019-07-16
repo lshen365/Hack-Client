@@ -130,6 +130,15 @@ public class Client {
 		}
 		return null;
 	}
+	
+	public static Modules getNonEnabledMod(Modules m) {
+		for(Modules c: modList) {
+			if(c.getName().equals(m.getName())) {
+				return c;
+			}
+		}
+		return null;
+	}
 	/**
 	 * Shuts down the client
 	 */

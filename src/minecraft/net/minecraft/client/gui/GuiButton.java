@@ -1,5 +1,7 @@
 package net.minecraft.client.gui;
 
+import como.taco.Client;
+import como.taco.MobAura;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.PositionedSoundRecord;
 import net.minecraft.client.audio.SoundHandler;
@@ -170,5 +172,9 @@ public class GuiButton extends Gui {
 
 	public void setWidth(int width) {
 		this.width = width;
+	}
+	
+	public void changeDisplayString(String message) {
+		displayString = message;
 	}
 }
