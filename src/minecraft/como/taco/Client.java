@@ -116,14 +116,9 @@ public class Client {
 		modList.add(new Sprint());
 		modList.add(new Flight());
 		modList.add(new Fullbright());
-<<<<<<< HEAD
-		modList.add(new MobAura()); //Index spot 4
+		modList.add(new MobAura()); // Index spot 4
 		modList.add(new FreeCam());
-		
-=======
-		modList.add(new FreeCam());
-		modList.add(new MobAura());
->>>>>>> branch 'master' of https://github.com/lshen365/Hack-Client.git
+		modList.add(new Speed());
 	}
 	/**
 	 * Shuts down the client

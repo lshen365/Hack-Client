@@ -8,12 +8,11 @@ import net.minecraft.client.entity.EntityOtherPlayerMP;
 import net.minecraft.util.math.BlockPos;
 
 public class FreeCam extends Hack {
-
 	public BlockPos initialPos;
 	private EntityOtherPlayerMP fakePlayer = null;
 
 	public FreeCam() {
-		super("Freecam", Keyboard.KEY_V, ModCategories.WORLD);
+		super("Freecam", Keyboard.KEY_U, ModCategories.WORLD);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -67,13 +66,10 @@ public class FreeCam extends Hack {
 
 	}
 
-<<<<<<< HEAD
 	@Override
 	public void changeVariable(int num) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
-=======
->>>>>>> branch 'master' of https://github.com/lshen365/Hack-Client.git
 }
