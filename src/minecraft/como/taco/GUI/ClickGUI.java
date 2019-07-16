@@ -73,9 +73,10 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper{
 
 			mobAuraSlider = new GuiSliderFixed(guiResponder,Client.modList.get(4).getName().hashCode() , 5, sr.getScaledHeight() - 25, "Clicks Per Second", 3,14 , mobAuraSliderPosition, this);
 		} catch (FileNotFoundException e) {
-			System.out.println("GUISettings.txt is not found");
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
 		
 		
 	}
@@ -125,17 +126,15 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper{
 				Client.modList.get(i).changeStatus();
 			}
 		}
-		if(button.id == Client.modList.get(4).getName().hashCode()&&mobAuraSlider.isMouseDown) {
-			
-
-		}
 
 	}
 	
 	
 	private void readFile() throws FileNotFoundException {
-		String filePath = Paths.get("GUISettings.txt").toAbsolutePath().toString();
-		File readFile = new File(filePath);
+		String computerName = System.getProperty("user.name"); //platform independent 
+	//	String filePath = Paths.get("GUISettings.txt").toAbsolutePath().toString();
+		File readFile = new File("C:\\Users\\"+computerName+"\\Appdata\\Roaming\\.minecraft\\GUISettings.txt");
+		
 		Scanner readInput = new Scanner(readFile);
 		readInput.useDelimiter(" ");
 		while(readInput.hasNextLine()) {

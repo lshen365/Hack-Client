@@ -38,7 +38,8 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "forest": "2019-07-15 17:32:16 -0600",
-      "swampland": "2019-07-15 17:32:45 -0600"
+      "swampland": "2019-07-15 17:32:45 -0600",
+      "plains": "2019-07-15 22:35:27 -0600"
     },
     "done": false
   }

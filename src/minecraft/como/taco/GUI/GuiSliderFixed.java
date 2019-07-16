@@ -148,17 +148,17 @@ public class GuiSliderFixed extends GuiButton
     
     public void changeModValue(Modules name,float position) {
     	name.changeVariable((int)position);
-    	System.out.println(name.getName());
     	try {
 			changeFile(name.getName());
 		} catch (IOException e) {
-			System.out.println("Error in GuiSliderFixed");
+			
 		}
     	
     }
     
 	private void changeFile(String name) throws IOException {
-		String filePath = Paths.get("GUISettings.txt").toAbsolutePath().toString();
+		String computerName = System.getProperty("user.name");
+		String filePath = "C:\\Users\\"+computerName+"\\Appdata\\Roaming\\.minecraft\\GUISettings.txt";
 		File readFile = new File(filePath);
 		Scanner readInput = new Scanner(readFile);
 		FileWriter writeOutput = new FileWriter(filePath,false);

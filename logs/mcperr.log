@@ -1,2 +1,6 @@
 00:50:23 - "scalac" is not found on the PATH.  Scala files will not be recompiled
 00:57:40 - !! Missing server jar file. Aborting !!
+21:39:27 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+21:41:10 - !! Can not find server sources, try decompiling !!
+21:41:42 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+21:43:12 - !! Can not find server md5s !!
