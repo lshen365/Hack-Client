@@ -1,0 +1,11 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "forest": "2019-07-15 19:19:00 -0600",
+      "birch_forest": "2019-07-15 19:19:12 -0600",
+      "deep_ocean": "2019-07-15 19:18:51 -0600",
+      "forest_hills": "2019-07-15 19:19:13 -0600"
+    },
+    "done": false
+  }
+}

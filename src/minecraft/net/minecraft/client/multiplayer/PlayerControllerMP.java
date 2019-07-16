@@ -2,6 +2,9 @@ package net.minecraft.client.multiplayer;
 
 import io.netty.buffer.Unpooled;
 import java.util.List;
+
+import como.taco.Client;
+import como.taco.Criticals;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCommandBlock;
 import net.minecraft.block.BlockStructure;
@@ -535,6 +538,12 @@ public class PlayerControllerMP
 
         if (this.currentGameType != GameType.SPECTATOR)
         {
+        	// Taco -------
+    		if (Client.checkForModule(new Criticals())) {
+    			Criticals c = (Criticals) Client.getMod(new Criticals());
+    			c.Crit();
+    		}
+    		// -----------
             playerIn.attackTargetEntityWithCurrentItem(targetEntity);
             playerIn.resetCooldown();
         }

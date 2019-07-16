@@ -7,16 +7,16 @@ import como.taco.GUI.ModCategories;
 public class Speed extends Hack {
 
 	public Speed() {
-		super("Speed", Keyboard.KEY_V,ModCategories.MOVEMENT);
+		super("Speed", Keyboard.KEY_V, ModCategories.MOVEMENT);
 	}
 
 	public void onUpdate() {
 		mc.player.setSprinting(true);
-		if (mc.player.onGround) {
-			mc.player.jump();
-		} else {
-			mc.player.motionY = -0.5;
-		}
+			if (mc.player.onGround) {
+				mc.player.jump();
+			} else {
+				mc.player.motionY = -0.5;
+			}
 	}
 
 	@Override

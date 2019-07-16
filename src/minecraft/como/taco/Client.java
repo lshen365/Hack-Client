@@ -119,6 +119,16 @@ public class Client {
 		modList.add(new MobAura()); // Index spot 4
 		modList.add(new FreeCam());
 		modList.add(new Speed());
+		modList.add(new Criticals());
+	}
+	
+	public static Modules getMod(Modules m) {
+		for(Modules c: enabledMods) {
+			if(c.getName().equals(m.getName())) {
+				return c;
+			}
+		}
+		return null;
 	}
 	/**
 	 * Shuts down the client

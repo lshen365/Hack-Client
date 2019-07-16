@@ -5,6 +5,7 @@ import com.google.common.collect.Lists;
 import com.mojang.authlib.GameProfile;
 
 import como.taco.Client;
+import como.taco.Criticals;
 import como.taco.FreeCam;
 
 import java.nio.charset.StandardCharsets;
