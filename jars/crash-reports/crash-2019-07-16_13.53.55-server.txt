@@ -1,0 +1,83 @@
+---- Minecraft Crash Report ----
+// This is a token for 1 free hug. Redeem at your nearest Mojangsta: [~~HUG~~]
+
+Time: 7/16/19 1:53 PM
+Description: Ticking player
+
+java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at como.taco.Client.checkForModule(Client.java:106)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:246)
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:440)
+	at net.minecraft.network.NetHandlerPlayServer.update(NetHandlerPlayServer.java:188)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:276)
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:193)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:812)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:702)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:238)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:565)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at como.taco.Client.checkForModule(Client.java:106)
+	at net.minecraft.entity.player.EntityPlayer.onUpdate(EntityPlayer.java:246)
+
+-- Player being ticked --
+Details:
+	Entity Type: null (net.minecraft.entity.player.EntityPlayerMP)
+	Entity ID: 60
+	Entity Name: Player479
+	Entity's Exact location: -1635.57, 5.25, -186.91
+	Entity's Block location: World: (-1636,5,-187), Chunk: (at 12,0,5 in -103,-12; contains blocks -1648,0,-192 to -1633,255,-177), Region: (-4,-1; contains chunks -128,-32 to -97,-1, blocks -2048,0,-512 to -1537,255,-1)
+	Entity's Momentum: -0.13, 0.00, 0.09
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.entity.player.EntityPlayerMP.onUpdateEntity(EntityPlayerMP.java:440)
+	at net.minecraft.network.NetHandlerPlayServer.update(NetHandlerPlayServer.java:188)
+	at net.minecraft.network.NetworkManager.processReceivedPackets(NetworkManager.java:276)
+
+-- Ticking connection --
+Details:
+	Connection: net.minecraft.network.NetworkManager@77edfdf
+Stacktrace:
+	at net.minecraft.network.NetworkSystem.networkTick(NetworkSystem.java:193)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:812)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:702)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:238)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:565)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_144, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 739087936 bytes (704 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player479'/60, l='New World', x=-1635.57, y=5.25, z=-186.91]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated
+	OptiFine Version: OptiFine_1.12_HD_U_A0_pre
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.5.0 - Build 24.20.100.6293
+	OpenGlRenderer: Intel(R) HD Graphics 520
+	OpenGlVendor: Intel
+	CpuCount: 4

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiSlider"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
+=======
+<fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+<fullyQualifiedTypeName name="org.lwjgl.util.vector.Vector"/>
+<fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
+<fullyQualifiedTypeName name="como.taco.GUI.ModCategories"/>
+<fullyQualifiedTypeName name="net.minecraft.init.MobEffects"/>
+>>>>>>> branch 'master' of https://github.com/lshen365/Hack-Client.git
 </qualifiedTypeNameHistroy>

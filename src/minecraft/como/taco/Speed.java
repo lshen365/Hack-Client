@@ -11,7 +11,6 @@ public class Speed extends Hack {
 	}
 
 	public void onUpdate() {
-		mc.player.setSprinting(true);
 			if (mc.player.onGround) {
 				mc.player.jump();
 			} else {
@@ -21,8 +20,7 @@ public class Speed extends Hack {
 
 	@Override
 	public void onDisable() {
-		mc.player.setSprinting(false);
-
+		
 	}
 
 	@Override

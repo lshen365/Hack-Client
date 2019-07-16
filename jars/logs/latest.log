@@ -1,176 +1,176 @@
-[16:50:05] [Client thread/INFO]: Setting user: Player73
-[16:50:08] [Client thread/INFO]: [OptiFine] *** Reflector Forge ***
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.Attributes
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: mods.betterfoliage.client.BetterFoliageClient
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.asm.transformers.BlamingTransformer
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.event.world.ChunkWatchEvent$UnWatch
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.relauncher.CoreModManager
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.DimensionManager
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.GuiScreenEvent$DrawScreenEvent$Pre
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.GuiScreenEvent$DrawScreenEvent$Post
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.EntityViewRenderEvent$CameraSetup
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.EntityViewRenderEvent$FogColors
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.EntityViewRenderEvent$RenderFogEvent
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.Event
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.EventBus
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.Event$Result
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.property.ExtendedBlockState
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.client.FMLClientHandler
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.FMLCommonHandler
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.biome.Biome.getWaterColorMultiplier
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.addDestroyEffects
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.addHitEffects
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.canCreatureSpawn
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.canRenderInLayer
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.doesSideBlockRendering
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.getBedDirection
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.getExtendedState
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.getSoundType
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.hasTileEntity
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.isAir
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.isBed
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.isBedFoot
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.isSideSolid
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.ChunkCache.isSideSolid
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.entity.Entity.canRiderInteract
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Field not present: net.minecraft.entity.Entity.captureDrops
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Field not present: net.minecraft.entity.Entity.capturedDrops
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.entity.Entity.shouldRenderInPass
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.entity.Entity.shouldRiderSit
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.event.ForgeEventFactory
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.ForgeHooks
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ForgeHooksClient
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Field not present: net.minecraft.item.Item.delegate
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.getDurabilityForDisplay
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.getRGBDurabilityForDisplay
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.onEntitySwing
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.shouldCauseReequipAnimation
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.showDurabilityBar
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.block.model.ItemOverrideList.handleItemState
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.ItemArmor.hasOverlay
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.ItemRecord.getRecordResource
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.settings.KeyBinding.setKeyConflictContext
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.settings.KeyBinding.setKeyModifierAndCode
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.settings.KeyBinding.getKeyModifier
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.ForgeModContainer
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.potion.Potion.shouldRenderHUD
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.potion.Potion.renderHUDEffect
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.potion.PotionEffect.isCurativeItem
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.canRenderBreaking
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.getRenderBoundingBox
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.hasFastRenderer
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.shouldRenderInPass
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.vertex.VertexFormatElement$EnumUsage.preDraw
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.vertex.VertexFormatElement$EnumUsage.postDraw
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.World.countEntities
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.World.getPerWorldStorage
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.World.initCapabilities
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.WorldProvider.getCloudRenderer
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.WorldProvider.getSkyRenderer
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.WorldProvider.getWeatherRenderer
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.client.GuiModList
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.property.IExtendedBlockState
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.IModel
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.IRenderHandler
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ItemModelMesherForge
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.settings.KeyConflictContext
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.settings.KeyModifier
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraft.launchwrapper.Launch
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.pipeline.LightUtil
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.MinecraftForge
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.MinecraftForgeClient
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.ModelLoader
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.gui.NotificationModUpdateScreen
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderBlockOverlayEvent$OverlayType
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.client.registry.RenderingRegistry
-[16:50:08] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderItemInFrameEvent
-[16:50:09] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Pre
-[16:50:09] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Post
-[16:50:09] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Specials$Pre
-[16:50:09] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Specials$Post
-[16:50:09] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.ScreenshotEvent
-[16:50:09] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.client.SplashProgress
-[16:50:09] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.event.world.WorldEvent$Load
-[16:50:09] [Client thread/INFO]: [OptiFine] *** Reflector Vanilla ***
-[16:50:09] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: optifine.OptiFineClassTransformer
-[16:50:09] [Client thread/INFO]: LWJGL Version: 2.9.4
-[16:50:09] [Client thread/INFO]: [OptiFine] 
-[16:50:09] [Client thread/INFO]: [OptiFine] OptiFine_1.12_HD_U_A0_pre
-[16:50:09] [Client thread/INFO]: [OptiFine] Build: null
-[16:50:09] [Client thread/INFO]: [OptiFine] OS: Windows 10 (amd64) version 10.0
-[16:50:09] [Client thread/INFO]: [OptiFine] Java: 1.8.0_211, Oracle Corporation
-[16:50:09] [Client thread/INFO]: [OptiFine] VM: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-[16:50:09] [Client thread/INFO]: [OptiFine] LWJGL: 2.9.4
-[16:50:09] [Client thread/INFO]: [OptiFine] OpenGL: Intel(R) UHD Graphics 620, version 4.5.0 - Build 24.20.100.6286, Intel
-[16:50:09] [Client thread/INFO]: [OptiFine] OpenGL Version: 4.5.0
-[16:50:09] [Client thread/INFO]: [OptiFine] OpenGL Fancy fog: Not available (GL_NV_fog_distance)
-[16:50:09] [Client thread/INFO]: [OptiFine] Maximum texture size: 16384x16384
-[16:50:09] [Thread-3/INFO]: [OptiFine] Checking for new version
-[16:50:09] [Client thread/INFO]: [Shaders] ShadersMod version: 2.4.12
-[16:50:09] [Client thread/INFO]: [Shaders] OpenGL Version: 4.5.0 - Build 24.20.100.6286
-[16:50:09] [Client thread/INFO]: [Shaders] Vendor:  Intel
-[16:50:09] [Client thread/INFO]: [Shaders] Renderer: Intel(R) UHD Graphics 620
-[16:50:09] [Client thread/INFO]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
-[16:50:09] [Client thread/INFO]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
-[16:50:09] [Client thread/INFO]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
-[16:50:09] [Client thread/INFO]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 32
-[16:50:09] [Client thread/INFO]: [Shaders] Load ShadersMod configuration.
-[16:50:09] [Client thread/INFO]: [Shaders] Save ShadersMod configuration.
-[16:50:09] [Client thread/INFO]: [Shaders] No shaderpack loaded.
-[16:50:09] [Client thread/INFO]: Reloading ResourceManager: Default
-[16:50:10] [Thread-3/INFO]: [OptiFine] Version found: C7
-[16:50:10] [Client thread/INFO]: [OptiFine] *** Reloading textures ***
-[16:50:10] [Client thread/INFO]: [OptiFine] Resource packs: Default
-[16:50:11] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[16:50:11] [Thread-4/INFO]: Initializing LWJGL OpenAL
-[16:50:11] [Thread-4/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[16:50:11] [Thread-4/INFO]: OpenAL initialized.
-[16:50:11] [Sound Library Loader/INFO]: Sound engine started
-[16:50:14] [Client thread/INFO]: [OptiFine] Mipmap levels: 4
-[16:50:14] [Client thread/INFO]: [OptiFine] Multitexture: false
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_pane_white.properties
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_white.properties
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_pane_purple.properties
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_purple.properties
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_blue.properties
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_pane_blue.properties
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_brown.properties
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_pane_brown.properties
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_green.properties
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_pane_green.properties
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_pane_red.properties
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_red.properties
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_black.properties
-[16:50:14] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_pane_black.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_orange.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_pane_orange.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_magenta.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_pane_magenta.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_light_blue.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_pane_light_blue.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_pane_yellow.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_yellow.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_lime.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_pane_lime.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pane_pink.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pink.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/7_glass_gray/glass_gray.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/7_glass_gray/glass_pane_gray.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_pane_silver.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_silver.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_cyan.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_pane_cyan.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/bookshelf.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/glass.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/glasspane.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/sandstone.properties
-[16:50:15] [Client thread/INFO]: [OptiFine] Multipass connected textures: false
-[16:50:15] [Client thread/INFO]: [OptiFine] BetterGrass: Parsing default configuration optifine/bettergrass.properties
-[16:50:17] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[16:50:20] [Client thread/INFO]: Narrator library for x64 successfully loaded
-[16:50:20] [Client thread/INFO]: [OptiFine] *** Reloading custom textures ***
-[16:50:22] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[16:51:05] [Client thread/ERROR]: Exception reading .\saves\MCP Development World\level.dat
+[17:02:54] [Client thread/INFO]: Setting user: Player362
+[17:02:57] [Client thread/INFO]: [OptiFine] *** Reflector Forge ***
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.Attributes
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: mods.betterfoliage.client.BetterFoliageClient
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.asm.transformers.BlamingTransformer
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.event.world.ChunkWatchEvent$UnWatch
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.relauncher.CoreModManager
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.DimensionManager
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.GuiScreenEvent$DrawScreenEvent$Pre
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.GuiScreenEvent$DrawScreenEvent$Post
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.EntityViewRenderEvent$CameraSetup
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.EntityViewRenderEvent$FogColors
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.EntityViewRenderEvent$RenderFogEvent
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.Event
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.EventBus
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.eventhandler.Event$Result
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.property.ExtendedBlockState
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.client.FMLClientHandler
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.FMLCommonHandler
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.biome.Biome.getWaterColorMultiplier
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.addDestroyEffects
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.addHitEffects
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.canCreatureSpawn
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.canRenderInLayer
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.doesSideBlockRendering
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.getBedDirection
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.getExtendedState
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.getSoundType
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.hasTileEntity
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.isAir
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.isBed
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.isBedFoot
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.block.Block.isSideSolid
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.ChunkCache.isSideSolid
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.entity.Entity.canRiderInteract
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Field not present: net.minecraft.entity.Entity.captureDrops
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Field not present: net.minecraft.entity.Entity.capturedDrops
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.entity.Entity.shouldRenderInPass
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.entity.Entity.shouldRiderSit
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.event.ForgeEventFactory
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.ForgeHooks
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ForgeHooksClient
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Field not present: net.minecraft.item.Item.delegate
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.getDurabilityForDisplay
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.getRGBDurabilityForDisplay
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.onEntitySwing
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.shouldCauseReequipAnimation
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.Item.showDurabilityBar
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.block.model.ItemOverrideList.handleItemState
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.ItemArmor.hasOverlay
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.item.ItemRecord.getRecordResource
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.settings.KeyBinding.setKeyConflictContext
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.settings.KeyBinding.setKeyModifierAndCode
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.settings.KeyBinding.getKeyModifier
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.ForgeModContainer
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.potion.Potion.shouldRenderHUD
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.potion.Potion.renderHUDEffect
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.potion.PotionEffect.isCurativeItem
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.canRenderBreaking
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.getRenderBoundingBox
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.hasFastRenderer
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.tileentity.TileEntity.shouldRenderInPass
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.vertex.VertexFormatElement$EnumUsage.preDraw
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.client.renderer.vertex.VertexFormatElement$EnumUsage.postDraw
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.World.countEntities
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.World.getPerWorldStorage
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.World.initCapabilities
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.WorldProvider.getCloudRenderer
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.WorldProvider.getSkyRenderer
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Method not present: net.minecraft.world.WorldProvider.getWeatherRenderer
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.client.GuiModList
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.property.IExtendedBlockState
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.IModel
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.IRenderHandler
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.ItemModelMesherForge
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.settings.KeyConflictContext
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.settings.KeyModifier
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraft.launchwrapper.Launch
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.pipeline.LightUtil
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.common.MinecraftForge
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.MinecraftForgeClient
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.model.ModelLoader
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.gui.NotificationModUpdateScreen
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderBlockOverlayEvent$OverlayType
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.client.registry.RenderingRegistry
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderItemInFrameEvent
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Pre
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Post
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Specials$Pre
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.RenderLivingEvent$Specials$Post
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.client.event.ScreenshotEvent
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.client.SplashProgress
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.event.world.WorldEvent$Load
+[17:02:57] [Client thread/INFO]: [OptiFine] *** Reflector Vanilla ***
+[17:02:57] [Client thread/INFO]: [OptiFine] (Reflector) Class not present: optifine.OptiFineClassTransformer
+[17:02:57] [Client thread/INFO]: LWJGL Version: 2.9.4
+[17:02:57] [Client thread/INFO]: [OptiFine] 
+[17:02:57] [Client thread/INFO]: [OptiFine] OptiFine_1.12_HD_U_A0_pre
+[17:02:57] [Client thread/INFO]: [OptiFine] Build: null
+[17:02:57] [Client thread/INFO]: [OptiFine] OS: Windows 10 (amd64) version 10.0
+[17:02:57] [Client thread/INFO]: [OptiFine] Java: 1.8.0_211, Oracle Corporation
+[17:02:57] [Client thread/INFO]: [OptiFine] VM: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+[17:02:57] [Client thread/INFO]: [OptiFine] LWJGL: 2.9.4
+[17:02:57] [Client thread/INFO]: [OptiFine] OpenGL: Intel(R) UHD Graphics 620, version 4.5.0 - Build 24.20.100.6286, Intel
+[17:02:57] [Client thread/INFO]: [OptiFine] OpenGL Version: 4.5.0
+[17:02:57] [Client thread/INFO]: [OptiFine] OpenGL Fancy fog: Not available (GL_NV_fog_distance)
+[17:02:57] [Client thread/INFO]: [OptiFine] Maximum texture size: 16384x16384
+[17:02:57] [Thread-3/INFO]: [OptiFine] Checking for new version
+[17:02:57] [Client thread/INFO]: [Shaders] ShadersMod version: 2.4.12
+[17:02:57] [Client thread/INFO]: [Shaders] OpenGL Version: 4.5.0 - Build 24.20.100.6286
+[17:02:57] [Client thread/INFO]: [Shaders] Vendor:  Intel
+[17:02:57] [Client thread/INFO]: [Shaders] Renderer: Intel(R) UHD Graphics 620
+[17:02:57] [Client thread/INFO]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
+[17:02:57] [Client thread/INFO]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
+[17:02:57] [Client thread/INFO]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
+[17:02:57] [Client thread/INFO]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[17:02:57] [Client thread/INFO]: [Shaders] Load ShadersMod configuration.
+[17:02:57] [Client thread/INFO]: [Shaders] Save ShadersMod configuration.
+[17:02:57] [Client thread/INFO]: [Shaders] No shaderpack loaded.
+[17:02:58] [Client thread/INFO]: Reloading ResourceManager: Default
+[17:02:58] [Client thread/INFO]: [OptiFine] *** Reloading textures ***
+[17:02:58] [Client thread/INFO]: [OptiFine] Resource packs: Default
+[17:02:58] [Thread-3/INFO]: [OptiFine] Version found: C7
+[17:02:59] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[17:02:59] [Thread-4/INFO]: Initializing LWJGL OpenAL
+[17:02:59] [Thread-4/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[17:02:59] [Thread-4/INFO]: OpenAL initialized.
+[17:02:59] [Sound Library Loader/INFO]: Sound engine started
+[17:03:02] [Client thread/INFO]: [OptiFine] Mipmap levels: 4
+[17:03:02] [Client thread/INFO]: [OptiFine] Multitexture: false
+[17:03:02] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_pane_white.properties
+[17:03:02] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_white.properties
+[17:03:02] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_pane_purple.properties
+[17:03:02] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_purple.properties
+[17:03:02] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_blue.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_pane_blue.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_brown.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_pane_brown.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_green.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_pane_green.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_pane_red.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_red.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_black.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_pane_black.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_orange.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_pane_orange.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_magenta.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_pane_magenta.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_light_blue.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_pane_light_blue.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_pane_yellow.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_yellow.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_lime.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_pane_lime.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pane_pink.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pink.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/7_glass_gray/glass_gray.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/7_glass_gray/glass_pane_gray.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_pane_silver.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_silver.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_cyan.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_pane_cyan.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/bookshelf.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/glass.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/glasspane.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/sandstone.properties
+[17:03:03] [Client thread/INFO]: [OptiFine] Multipass connected textures: false
+[17:03:03] [Client thread/INFO]: [OptiFine] BetterGrass: Parsing default configuration optifine/bettergrass.properties
+[17:03:05] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[17:03:08] [Client thread/INFO]: Narrator library for x64 successfully loaded
+[17:03:08] [Client thread/INFO]: [OptiFine] *** Reloading custom textures ***
+[17:03:10] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[17:03:15] [Client thread/ERROR]: Exception reading .\saves\MCP Development World\level.dat
 java.io.EOFException: null
 	at java.util.zip.GZIPInputStream.readUByte(Unknown Source) ~[?:1.8.0_211]
 	at java.util.zip.GZIPInputStream.readUShort(Unknown Source) ~[?:1.8.0_211]
@@ -196,7 +196,7 @@ java.io.EOFException: null
 	at net.minecraft.client.Minecraft.run(Minecraft.java:470) [bin/:?]
 	at net.minecraft.client.main.Main.main(Main.java:115) [bin/:?]
 	at Start.main(Start.java:11) [bin/:?]
-[16:51:05] [Client thread/ERROR]: Exception reading .\saves\MCP Development World\level.dat_old
+[17:03:15] [Client thread/ERROR]: Exception reading .\saves\MCP Development World\level.dat_old
 java.io.EOFException: null
 	at java.util.zip.GZIPInputStream.readUByte(Unknown Source) ~[?:1.8.0_211]
 	at java.util.zip.GZIPInputStream.readUShort(Unknown Source) ~[?:1.8.0_211]
@@ -222,67 +222,816 @@ java.io.EOFException: null
 	at net.minecraft.client.Minecraft.run(Minecraft.java:470) [bin/:?]
 	at net.minecraft.client.main.Main.main(Main.java:115) [bin/:?]
 	at Start.main(Start.java:11) [bin/:?]
-[16:51:06] [Server thread/INFO]: Starting integrated minecraft server version 1.12
-[16:51:06] [Server thread/INFO]: Generating keypair
-[16:51:07] [Server thread/INFO]: Loaded 488 advancements
-[16:51:07] [Server thread/INFO]: Preparing start region for level 0
-[16:51:08] [Server thread/INFO]: Preparing spawn area: 3%
-[16:51:09] [Server thread/WARN]: Keeping entity minecraft:cow that already exists with UUID 843e847b-a72e-4be2-a691-6db1ff1452ab
-[16:51:09] [Server thread/WARN]: Keeping entity minecraft:pig that already exists with UUID f8bbe932-05ef-4df6-9ea7-4237f97af50c
-[16:51:09] [Server thread/WARN]: Keeping entity minecraft:cow that already exists with UUID e76dd6b6-b493-444b-a641-f85d80951114
-[16:51:09] [Server thread/WARN]: Keeping entity minecraft:sheep that already exists with UUID 777c1812-233d-4b61-9d4b-43ba9e40e1c8
-[16:51:09] [Server thread/INFO]: Preparing spawn area: 52%
-[16:51:09] [Server thread/WARN]: Keeping entity minecraft:pig that already exists with UUID 6213f229-cf1c-472e-bb0a-eb0506e79e2c
-[16:51:09] [Server thread/WARN]: Keeping entity minecraft:zombie that already exists with UUID ac619322-3f4f-4d5a-96b6-d23a51328bed
-[16:51:09] [Server thread/WARN]: Keeping entity minecraft:zombie that already exists with UUID ac619322-3f4f-4d5a-96b6-d23a51328bed
-[16:51:09] [Server thread/WARN]: Keeping entity minecraft:zombie that already exists with UUID ee647a3a-68d2-4aed-9950-be8f30a3e8fb
-[16:51:09] [Server thread/WARN]: Keeping entity minecraft:sheep that already exists with UUID 2aa2d54e-1109-40e7-ad96-42a3cbb3337d
-[16:51:09] [Server thread/WARN]: Keeping entity minecraft:skeleton that already exists with UUID 711d2a4c-09fc-4cd2-ad63-8485488ff144
-[16:51:10] [Server thread/WARN]: Keeping entity minecraft:cow that already exists with UUID cf1991f3-340f-4036-b086-c2a56ca0124f
-[16:51:10] [Server thread/WARN]: Keeping entity minecraft:pig that already exists with UUID 25cd8751-fdfd-4ba0-84a8-3cb49e7a92da
-[16:51:10] [Server thread/WARN]: Keeping entity minecraft:pig that already exists with UUID 7b76f4f5-6c12-46ea-9efb-22530bf2f508
-[16:51:10] [Server thread/WARN]: Keeping entity minecraft:pig that already exists with UUID 375e5e8e-c75a-4870-8a77-d2ec97040623
-[16:51:10] [Server thread/WARN]: Keeping entity minecraft:pig that already exists with UUID 375e5e8e-c75a-4870-8a77-d2ec97040623
-[16:51:10] [Server thread/WARN]: Keeping entity minecraft:pig that already exists with UUID 786eddf6-8aa2-4616-92f7-023e156a6a97
-[16:51:10] [Server thread/WARN]: Keeping entity minecraft:pig that already exists with UUID 5a0ccce4-d826-4e32-bfaa-5c823ef71203
-[16:51:10] [Server thread/WARN]: Keeping entity minecraft:cow that already exists with UUID dac116b5-c80f-43c0-a1e9-73e8348e4274
-[16:51:10] [Server thread/INFO]: Changing view distance to 8, from 10
-[16:51:12] [Server thread/INFO]: Player73[local:E:20ee8b77] logged in with entity id 349 at (-20.30000001192093, 62.0, 260.3000000119209)
-[16:51:12] [Server thread/INFO]: Player73 joined the game
-[16:51:12] [Server thread/INFO]: Saving and pausing game...
-[16:51:12] [Client thread/INFO]: [CHAT] A new §eOptiFine§f version is available: §eHD Ultra C7§f
-[16:51:12] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
-[16:51:13] [Client thread/INFO]: Loaded 7 advancements
-[16:51:13] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
-[16:51:13] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
-[16:51:13] [Server thread/INFO]: Saving and pausing game...
-[16:51:13] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
-[16:51:14] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
-[16:51:14] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
-[16:53:23] [Server thread/INFO]: Saving and pausing game...
-[16:53:23] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
-[16:53:23] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
-[16:53:23] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
-[16:55:17] [Server thread/INFO]: Player73 has made the advancement [Monster Hunter]
-[16:55:17] [Client thread/INFO]: [CHAT] Player73 has made the advancement [Monster Hunter]
-[16:55:17] [Client thread/INFO]: Loaded 17 advancements
-[16:56:09] [Server thread/INFO]: Saving and pausing game...
-[16:56:09] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
-[16:56:09] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
-[16:56:09] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
-[16:56:21] [Server thread/INFO]: Saving and pausing game...
-[16:56:21] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
-[16:56:21] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
-[16:56:21] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
-[16:56:34] [Client thread/INFO]: Stopping!
-[16:56:34] [Client thread/INFO]: SoundSystem shutting down...
-[16:56:34] [Server thread/INFO]: Stopping server
-[16:56:34] [Server thread/INFO]: Saving players
-[16:56:34] [Server thread/INFO]: Player73 lost connection: Disconnected
-[16:56:34] [Server thread/INFO]: Player73 left the game
-[16:56:34] [Server thread/INFO]: Stopping singleplayer server as player logged out
-[16:56:34] [Server thread/INFO]: Saving worlds
-[16:56:34] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
-[16:56:34] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
-[16:56:34] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
-[16:56:34] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[17:03:15] [Client thread/ERROR]: Exception reading .\saves\New World\level.dat
+java.io.EOFException: null
+	at java.util.zip.GZIPInputStream.readUByte(Unknown Source) ~[?:1.8.0_211]
+	at java.util.zip.GZIPInputStream.readUShort(Unknown Source) ~[?:1.8.0_211]
+	at java.util.zip.GZIPInputStream.readHeader(Unknown Source) ~[?:1.8.0_211]
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source) ~[?:1.8.0_211]
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source) ~[?:1.8.0_211]
+	at net.minecraft.nbt.CompressedStreamTools.readCompressed(CompressedStreamTools.java:29) ~[bin/:?]
+	at net.minecraft.world.storage.SaveFormatOld.getWorldData(SaveFormatOld.java:107) [bin/:?]
+	at net.minecraft.world.storage.SaveFormatOld.getWorldInfo(SaveFormatOld.java:89) [bin/:?]
+	at net.minecraft.world.chunk.storage.AnvilSaveConverter.getSaveList(AnvilSaveConverter.java:59) [bin/:?]
+	at net.minecraft.client.gui.GuiListWorldSelection.refreshList(GuiListWorldSelection.java:38) [bin/:?]
+	at net.minecraft.client.gui.GuiListWorldSelection.<init>(GuiListWorldSelection.java:28) [bin/:?]
+	at net.minecraft.client.gui.GuiWorldSelection.initGui(GuiWorldSelection.java:41) [bin/:?]
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:521) [bin/:?]
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:1018) [bin/:?]
+	at net.minecraft.client.gui.GuiMainMenu.actionPerformed(GuiMainMenu.java:336) [bin/:?]
+	at net.minecraft.client.gui.GuiScreen.mouseClicked(GuiScreen.java:476) [bin/:?]
+	at net.minecraft.client.gui.GuiMainMenu.mouseClicked(GuiMainMenu.java:730) [bin/:?]
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:581) [bin/:?]
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:550) [bin/:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1690) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1092) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:470) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:115) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[17:03:15] [Client thread/ERROR]: Exception reading .\saves\New World\level.dat_old
+java.io.EOFException: null
+	at java.util.zip.GZIPInputStream.readUByte(Unknown Source) ~[?:1.8.0_211]
+	at java.util.zip.GZIPInputStream.readUShort(Unknown Source) ~[?:1.8.0_211]
+	at java.util.zip.GZIPInputStream.readHeader(Unknown Source) ~[?:1.8.0_211]
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source) ~[?:1.8.0_211]
+	at java.util.zip.GZIPInputStream.<init>(Unknown Source) ~[?:1.8.0_211]
+	at net.minecraft.nbt.CompressedStreamTools.readCompressed(CompressedStreamTools.java:29) ~[bin/:?]
+	at net.minecraft.world.storage.SaveFormatOld.getWorldData(SaveFormatOld.java:107) [bin/:?]
+	at net.minecraft.world.storage.SaveFormatOld.getWorldInfo(SaveFormatOld.java:98) [bin/:?]
+	at net.minecraft.world.chunk.storage.AnvilSaveConverter.getSaveList(AnvilSaveConverter.java:59) [bin/:?]
+	at net.minecraft.client.gui.GuiListWorldSelection.refreshList(GuiListWorldSelection.java:38) [bin/:?]
+	at net.minecraft.client.gui.GuiListWorldSelection.<init>(GuiListWorldSelection.java:28) [bin/:?]
+	at net.minecraft.client.gui.GuiWorldSelection.initGui(GuiWorldSelection.java:41) [bin/:?]
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:521) [bin/:?]
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:1018) [bin/:?]
+	at net.minecraft.client.gui.GuiMainMenu.actionPerformed(GuiMainMenu.java:336) [bin/:?]
+	at net.minecraft.client.gui.GuiScreen.mouseClicked(GuiScreen.java:476) [bin/:?]
+	at net.minecraft.client.gui.GuiMainMenu.mouseClicked(GuiMainMenu.java:730) [bin/:?]
+	at net.minecraft.client.gui.GuiScreen.handleMouseInput(GuiScreen.java:581) [bin/:?]
+	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:550) [bin/:?]
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1690) [bin/:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1092) [bin/:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:470) [bin/:?]
+	at net.minecraft.client.main.Main.main(Main.java:115) [bin/:?]
+	at Start.main(Start.java:11) [bin/:?]
+[17:03:16] [Server thread/INFO]: Starting integrated minecraft server version 1.12
+[17:03:16] [Server thread/INFO]: Generating keypair
+[17:03:16] [Server thread/INFO]: Loaded 488 advancements
+[17:03:17] [Server thread/INFO]: Preparing start region for level 0
+[17:03:17] [Server thread/WARN]: Keeping entity minecraft:chicken that already exists with UUID 24d758e5-0118-4c57-88d6-af24a968fe13
+[17:03:17] [Server thread/INFO]: Changing view distance to 8, from 10
+[17:03:19] [Server thread/INFO]: Player362[local:E:efb5de5e] logged in with entity id 42 at (-2004.084388888204, 4.796735600668692, -1850.527768124568)
+[17:03:19] [Server thread/INFO]: Player362 joined the game
+[17:03:19] [Client thread/INFO]: [CHAT] A new §eOptiFine§f version is available: §eHD Ultra C7§f
+[17:03:25] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:25] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:27] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:27] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:27] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:27] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:29] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:30] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:31] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:39] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:39] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:40] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:41] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:43] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:44] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:45] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:51] [Client thread/INFO]: [STDOUT]: Test SpeedTick Successful
+[17:03:58] [Client thread/INFO]: Stopping!
+[17:03:58] [Client thread/INFO]: SoundSystem shutting down...
+[17:03:58] [Server thread/INFO]: Stopping server
+[17:03:58] [Server thread/INFO]: Saving players
+[17:03:58] [Server thread/INFO]: Player362 lost connection: Disconnected
+[17:03:58] [Server thread/INFO]: Player362 left the game
+[17:03:58] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[17:03:58] [Server thread/INFO]: Saving worlds
+[17:03:58] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
+[17:03:58] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
+[17:03:58] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
+[17:03:58] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

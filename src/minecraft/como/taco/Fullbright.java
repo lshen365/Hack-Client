@@ -9,7 +9,7 @@ import net.minecraft.client.settings.GameSettings.Options;
 public class Fullbright extends Hack {
 
 	public Fullbright() {
-		super("Brightness", Keyboard.KEY_B, ModCategories.RENDER);
+		super("Brightness", ModCategories.RENDER);
 	}
 
 	@Override

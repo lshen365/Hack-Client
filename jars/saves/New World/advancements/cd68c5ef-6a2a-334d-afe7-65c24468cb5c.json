@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "minecraft:recipes/redstone/stone_button": {
     "criteria": {
       "has_stone": "2019-07-16 15:34:17 -0600"
@@ -38,6 +39,47 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "forest": "2019-07-16 15:34:19 -0600"
+=======
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "entered_water": "2019-07-16 13:45:32 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "entered_water": "2019-07-16 13:45:32 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "entered_water": "2019-07-16 13:45:32 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/boat": {
+    "criteria": {
+      "entered_water": "2019-07-16 13:45:32 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "entered_water": "2019-07-16 13:45:32 -0600"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "entered_water": "2019-07-16 13:45:32 -0600"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "swampland": "2019-07-16 13:45:33 -0600"
+>>>>>>> branch 'master' of https://github.com/lshen365/Hack-Client.git
     },
     "done": false
   }
