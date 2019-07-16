@@ -120,11 +120,12 @@ public class Client {
 		modList.add(new FreeCam());
 		modList.add(new Speed());
 		modList.add(new Criticals());
+		modList.add(new LongJump());
 	}
-	
+
 	public static Modules getMod(Modules m) {
-		for(Modules c: enabledMods) {
-			if(c.getName().equals(m.getName())) {
+		for (Modules c : enabledMods) {
+			if (c.getName().equals(m.getName())) {
 				return c;
 			}
 		}
