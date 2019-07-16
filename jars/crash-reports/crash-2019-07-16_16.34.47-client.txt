@@ -1,0 +1,114 @@
+---- Minecraft Crash Report ----
+// I'm sorry, Dave.
+
+Time: 7/16/19 4:34 PM
+Description: Ticking entity
+
+java.lang.ClassCastException: como.taco.GUI.GuiButtonFixed cannot be cast to java.util.Collection
+	at como.taco.GUI.ClickGUI.initGui(ClickGUI.java:119)
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:521)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:1018)
+	at como.taco.GUI.GuiOverlay.onUpdate(GuiOverlay.java:21)
+	at como.taco.Client.onUpdate(Client.java:81)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:277)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:266)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1987)
+	at net.minecraft.world.World.updateEntity(World.java:1951)
+	at net.minecraft.world.World.updateEntities(World.java:1794)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1759)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1092)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:470)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at como.taco.GUI.ClickGUI.initGui(ClickGUI.java:119)
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:521)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:1018)
+	at como.taco.GUI.GuiOverlay.onUpdate(GuiOverlay.java:21)
+	at como.taco.Client.onUpdate(Client.java:81)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:277)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:266)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1987)
+	at net.minecraft.world.World.updateEntity(World.java:1951)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityPlayerSP)
+	Entity ID: 349
+	Entity Name: Player429
+	Entity's Exact location: -26.30, 62.00, 257.70
+	Entity's Block location: World: (-27,62,257), Chunk: (at 5,3,1 in -2,16; contains blocks -32,0,256 to -17,255,271), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1794)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player429'/349, l='MpServer', x=-26.30, y=62.00, z=257.70]]
+	Chunk stats: MultiplayerChunkCache: 289, 289
+	Level seed: 0
+	Level generator: ID 00 - default, ver 1. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-36,64,252), Chunk: (at 12,4,12 in -3,15; contains blocks -48,0,240 to -33,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Level time: 56255 game time, 56255 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 73 total; [EntityCreeper['Creeper'/128, l='MpServer', x=-48.50, y=23.00, z=261.50], EntityPig['Pig'/256, l='MpServer', x=41.18, y=70.00, z=186.44], EntityCow['Cow'/129, l='MpServer', x=-50.53, y=69.00, z=318.79], EntityPig['Pig'/257, l='MpServer', x=38.11, y=70.00, z=188.43], EntityPig['Pig'/259, l='MpServer', x=36.62, y=70.00, z=190.59], EntityPig['Pig'/263, l='MpServer', x=46.50, y=72.00, z=200.75], EntityPig['Pig'/264, l='MpServer', x=41.45, y=72.00, z=195.26], EntitySpider['Spider'/265, l='MpServer', x=43.50, y=35.00, z=241.50], EntitySheep['Sheep'/266, l='MpServer', x=45.46, y=78.00, z=253.43], EntitySheep['Sheep'/267, l='MpServer', x=46.55, y=79.00, z=253.25], EntityPig['Pig'/268, l='MpServer', x=40.25, y=87.00, z=271.51], EntityPig['Pig'/270, l='MpServer', x=38.56, y=84.00, z=284.50], EntityPig['Pig'/271, l='MpServer', x=33.51, y=83.00, z=278.93], EntitySkeleton['Skeleton'/272, l='MpServer', x=38.50, y=21.00, z=321.50], EntityCow['Cow'/153, l='MpServer', x=-37.48, y=67.00, z=177.78], EntityPig['Pig'/154, l='MpServer', x=-44.32, y=69.00, z=188.51], EntityCow['Cow'/156, l='MpServer', x=-42.55, y=69.00, z=190.53], EntityPig['Pig'/284, l='MpServer', x=51.51, y=74.00, z=207.32], EntityPig['Pig'/157, l='MpServer', x=-41.54, y=64.00, z=217.29], EntitySheep['Sheep'/285, l='MpServer', x=53.46, y=74.00, z=239.26], EntityPig['Pig'/158, l='MpServer', x=-35.29, y=64.00, z=221.42], EntitySheep['Sheep'/286, l='MpServer', x=49.27, y=69.00, z=244.47], EntitySkeleton['Skeleton'/159, l='MpServer', x=-39.63, y=32.00, z=237.24], EntityPig['Pig'/287, l='MpServer', x=51.45, y=78.00, z=283.71], EntityCreeper['Creeper'/160, l='MpServer', x=-32.20, y=39.00, z=246.70], EntitySkeleton['Skeleton'/161, l='MpServer', x=-45.33, y=23.00, z=262.62], EntityCreeper['Creeper'/162, l='MpServer', x=-45.22, y=23.00, z=261.09], EntityPig['Pig'/290, l='MpServer', x=50.16, y=89.00, z=275.21], EntityBat['Bat'/163, l='MpServer', x=-34.25, y=38.10, z=298.47], EntityPig['Pig'/291, l='MpServer', x=49.03, y=80.00, z=285.59], EntityBat['Bat'/164, l='MpServer', x=-37.82, y=40.37, z=294.94], EntityPig['Pig'/292, l='MpServer', x=52.55, y=76.00, z=301.51], EntitySkeleton['Skeleton'/293, l='MpServer', x=53.50, y=66.00, z=318.50], EntitySheep['Sheep'/176, l='MpServer', x=-29.51, y=69.00, z=179.74], EntityChicken['Chicken'/177, l='MpServer', x=-27.15, y=69.00, z=193.50], EntityChicken['Chicken'/178, l='MpServer', x=-19.75, y=69.00, z=199.44], EntityZombie['Zombie'/180, l='MpServer', x=-30.70, y=39.00, z=250.26], EntityZombie['Zombie'/182, l='MpServer', x=-28.30, y=38.00, z=251.41], EntitySpider['Spider'/183, l='MpServer', x=-28.70, y=40.00, z=246.70], EntityZombie['Zombie'/185, l='MpServer', x=-27.80, y=40.00, z=248.48], EntitySkeleton['Skeleton'/187, l='MpServer', x=-22.47, y=22.00, z=266.83], EntityItem['item.item.porkchopRaw'/188, l='MpServer', x=-24.87, y=62.00, z=259.26], EntityXPOrb['Experience Orb'/189, l='MpServer', x=-26.33, y=62.00, z=259.25], EntityCreeper['Creeper'/190, l='MpServer', x=-22.80, y=41.00, z=272.44], EntityBat['Bat'/191, l='MpServer', x=-25.96, y=38.16, z=285.05], EntityBat['Bat'/192, l='MpServer', x=-17.38, y=16.82, z=320.92], EntityCow['Cow'/193, l='MpServer', x=-26.82, y=71.00, z=326.58], EntityChicken['Chicken'/197, l='MpServer', x=-12.82, y=69.00, z=211.50], EntityItem['item.item.egg'/198, l='MpServer', x=-8.88, y=69.00, z=210.28], EntitySkeleton['Skeleton'/199, l='MpServer', x=-15.30, y=62.00, z=251.70], EntitySkeleton['Skeleton'/200, l='MpServer', x=-15.30, y=62.00, z=249.25], EntityCreeper['Creeper'/202, l='MpServer', x=-3.50, y=31.00, z=310.50], EntitySkeleton['Skeleton'/203, l='MpServer', x=-2.14, y=26.00, z=317.24], EntitySkeleton['Skeleton'/204, l='MpServer', x=-5.19, y=26.00, z=315.80], EntityCow['Cow'/205, l='MpServer', x=-12.78, y=72.00, z=317.51], EntityPig['Pig'/220, l='MpServer', x=3.25, y=72.00, z=196.49], EntityCreeper['Creeper'/221, l='MpServer', x=11.50, y=17.00, z=245.50], EntityPlayerSP['Player429'/349, l='MpServer', x=-26.30, y=62.00, z=257.70], EntityCow['Cow'/222, l='MpServer', x=5.16, y=69.00, z=332.51], EntitySpider['Spider'/99, l='MpServer', x=-97.50, y=13.00, z=207.50], EntityCow['Cow'/106, l='MpServer', x=-83.45, y=64.00, z=296.18], EntityCow['Cow'/107, l='MpServer', x=-82.80, y=64.00, z=299.17], EntityPig['Pig'/110, l='MpServer', x=-73.75, y=63.00, z=180.41], EntityPig['Pig'/111, l='MpServer', x=-72.68, y=63.00, z=179.51], EntitySkeleton['Skeleton'/113, l='MpServer', x=-66.50, y=20.00, z=225.50], EntityCow['Cow'/114, l='MpServer', x=-73.27, y=64.00, z=289.13], EntityPig['Pig'/249, l='MpServer', x=16.70, y=71.00, z=181.50], EntityPig['Pig'/250, l='MpServer', x=31.49, y=81.00, z=266.45], EntityPig['Pig'/251, l='MpServer', x=19.88, y=78.00, z=282.46], EntityPig['Pig'/124, l='MpServer', x=-57.58, y=67.00, z=180.42], EntitySkeleton['Skeleton'/252, l='MpServer', x=17.50, y=27.00, z=305.50], EntityPig['Pig'/253, l='MpServer', x=30.78, y=78.00, z=309.51], EntitySpider['Spider'/127, l='MpServer', x=-63.50, y=20.00, z=226.50]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:518)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2592)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:483)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_211, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 696711800 bytes (664 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) UHD Graphics 620 GL version 4.5.0 - Build 24.20.100.6286, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+	OptiFine Version: OptiFine_1.12_HD_U_A0_pre
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.5.0 - Build 24.20.100.6286
+	OpenGlRenderer: Intel(R) UHD Graphics 620
+	OpenGlVendor: Intel
+	CpuCount: 8
