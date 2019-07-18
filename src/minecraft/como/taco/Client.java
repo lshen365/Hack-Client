@@ -32,7 +32,7 @@ public class Client {
 		C1 = new Client();
 		modList = new ArrayList<Modules>();
 		enabledMods = new ArrayList<Modules>();
-
+		EntityUtil.initFriends();
 		addAllMods();
 	}
 

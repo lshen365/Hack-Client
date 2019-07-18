@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<<<<<<< HEAD
 <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiSlider"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.passive.EntityAnimal"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.monster.EntityMob"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
+<fullyQualifiedTypeName name="como.taco.MobAura"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.FontRenderer"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
-=======
-<fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
-<fullyQualifiedTypeName name="org.lwjgl.util.vector.Vector"/>
-<fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
-<fullyQualifiedTypeName name="como.taco.GUI.ModCategories"/>
-<fullyQualifiedTypeName name="net.minecraft.init.MobEffects"/>
->>>>>>> branch 'master' of https://github.com/lshen365/Hack-Client.git
+<fullyQualifiedTypeName name="net.minecraft.util.math.MathHelper"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketEntityAction"/>
 </qualifiedTypeNameHistroy>

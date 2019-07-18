@@ -157,6 +157,7 @@ public class GuiSliderFixed extends GuiButton
     }
     
 	private void changeFile(String name) throws IOException {
+		Minecraft mc = Minecraft.getMinecraft();
 		String computerName = System.getProperty("user.name");
 		String filePath = "C:\\Users\\"+computerName+"\\Appdata\\Roaming\\.minecraft\\GUISettings.txt";
 		File readFile = new File(filePath);

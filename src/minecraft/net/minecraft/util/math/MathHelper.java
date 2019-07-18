@@ -58,11 +58,20 @@ public class MathHelper
     {
         return (float)Math.sqrt((double)value);
     }
+    
+    
 
     public static float sqrt(double value)
     {
         return (float)Math.sqrt(value);
     }
+    
+    //Taco
+    public static float sqrt_double(double num)
+    {
+        return (float)Math.sqrt(num);
+    }
+    //---
 
     /**
      * Returns the greatest integer less than or equal to the float argument
@@ -676,4 +685,23 @@ public class MathHelper
             ASINE_TAB[l] = d1;
         }
     }
+    
+    //Taco
+    public static float wrapAngleTo180_float(float p_76142_0_)
+    {
+        p_76142_0_ %= 360.0F;
+
+        if (p_76142_0_ >= 180.0F)
+        {
+            p_76142_0_ -= 360.0F;
+        }
+
+        if (p_76142_0_ < -180.0F)
+        {
+            p_76142_0_ += 360.0F;
+        }
+
+        return p_76142_0_;
+    }
+    //---
 }
