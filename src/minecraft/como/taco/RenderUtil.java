@@ -32,52 +32,6 @@ public class RenderUtil {
         GL11.glDepthMask(true);
         GL11.glDisable(GL11.GL_BLEND);
 	}
-	public static void mobESP(Entity entity)
-    {
-        GL11.glBlendFunc(770, 771);
-        GL11.glEnable(GL11.GL_BLEND);
-        GL11.glLineWidth(2.0F);
-        GL11.glDisable(GL11.GL_TEXTURE_2D);
-        GL11.glDisable(GL11.GL_DEPTH_TEST);
-        GL11.glDepthMask(false);
-        
-        Minecraft.getMinecraft().getRenderManager();
-        RenderGlobal.drawSelectionBoundingBox(
-            new AxisAlignedBB(
-                entity.boundingBox.minX
-                    - 0.05
-                    - entity.posX
-                    + (entity.posX - Minecraft.getMinecraft()
-                        .getRenderManager().renderPosX),
-                entity.boundingBox.minY
-                    - entity.posY
-                    + (entity.posY - Minecraft.getMinecraft()
-                        .getRenderManager().renderPosY),
-                entity.boundingBox.minZ
-                    - 0.05
-                    - entity.posZ
-                    + (entity.posZ - Minecraft.getMinecraft()
-                        .getRenderManager().renderPosZ),
-                entity.boundingBox.maxX
-                    + 0.05
-                    - entity.posX
-                    + (entity.posX - Minecraft.getMinecraft()
-                        .getRenderManager().renderPosX),
-                entity.boundingBox.maxY
-                    + 0.1
-                    - entity.posY
-                    + (entity.posY - Minecraft.getMinecraft()
-                        .getRenderManager().renderPosY),
-                entity.boundingBox.maxZ
-                    + 0.05
-                    - entity.posZ
-                    + (entity.posZ - Minecraft.getMinecraft()
-                        .getRenderManager().renderPosZ)), 0,0,1,0.5F);
-        GL11.glEnable(GL11.GL_TEXTURE_2D);
-        GL11.glEnable(GL11.GL_DEPTH_TEST);
-        GL11.glDepthMask(true);
-        GL11.glDisable(GL11.GL_BLEND);
-    }
 	public static void entityMobESP(Entity entity)
     {
         GL11.glBlendFunc(770, 771);

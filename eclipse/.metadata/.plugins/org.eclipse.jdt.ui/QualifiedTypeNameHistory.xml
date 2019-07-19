@@ -14,7 +14,6 @@
 <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
 <fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketEntityAction"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.MathHelper"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
 <fullyQualifiedTypeName name="como.taco.EntityUtil"/>
 <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
@@ -23,6 +22,9 @@
 <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 <fullyQualifiedTypeName name="como.taco.Tracer"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
-<fullyQualifiedTypeName name="como.taco.RenderUtil"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.monster.EntityMob"/>
+<fullyQualifiedTypeName name="net.minecraft.util.math.Vec3d"/>
+<fullyQualifiedTypeName name="como.taco.RenderUtil"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
+<fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
 </qualifiedTypeNameHistroy>
