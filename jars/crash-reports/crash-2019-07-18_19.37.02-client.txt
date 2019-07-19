@@ -1,0 +1,125 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 7/18/19 7:37 PM
+Description: Ticking entity
+
+java.lang.NumberFormatException: For input string: "14.0
+AntiKB"
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseFloat(Unknown Source)
+	at java.lang.Float.parseFloat(Unknown Source)
+	at como.taco.GUI.ClickGUI.readFile(ClickGUI.java:164)
+	at como.taco.GUI.ClickGUI.initSlider(ClickGUI.java:71)
+	at como.taco.GUI.ClickGUI.initGui(ClickGUI.java:127)
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:521)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:1018)
+	at como.taco.GUI.GuiOverlay.onUpdate(GuiOverlay.java:21)
+	at como.taco.Client.onUpdate(Client.java:81)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:278)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:267)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1987)
+	at net.minecraft.world.World.updateEntity(World.java:1951)
+	at net.minecraft.world.World.updateEntities(World.java:1794)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1759)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1092)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:470)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseFloat(Unknown Source)
+	at java.lang.Float.parseFloat(Unknown Source)
+	at como.taco.GUI.ClickGUI.readFile(ClickGUI.java:164)
+	at como.taco.GUI.ClickGUI.initSlider(ClickGUI.java:71)
+	at como.taco.GUI.ClickGUI.initGui(ClickGUI.java:127)
+	at net.minecraft.client.gui.GuiScreen.setWorldAndResolution(GuiScreen.java:521)
+	at net.minecraft.client.Minecraft.displayGuiScreen(Minecraft.java:1018)
+	at como.taco.GUI.GuiOverlay.onUpdate(GuiOverlay.java:21)
+	at como.taco.Client.onUpdate(Client.java:81)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdateWalkingPlayer(EntityPlayerSP.java:278)
+	at net.minecraft.client.entity.EntityPlayerSP.onUpdate(EntityPlayerSP.java:267)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1987)
+	at net.minecraft.world.World.updateEntity(World.java:1951)
+
+-- Entity being ticked --
+Details:
+	Entity Type: null (net.minecraft.client.entity.EntityPlayerSP)
+	Entity ID: 42
+	Entity Name: Player208
+	Entity's Exact location: -2120.34, 4.00, -2067.30
+	Entity's Block location: World: (-2121,4,-2068), Chunk: (at 7,0,12 in -133,-130; contains blocks -2128,0,-2080 to -2113,255,-2065), Region: (-5,-5; contains chunks -160,-160 to -129,-129, blocks -2560,0,-2560 to -2049,255,-2049)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1794)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player208'/42, l='MpServer', x=-2120.34, y=4.00, z=-2067.30]]
+	Chunk stats: MultiplayerChunkCache: 289, 289
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-1777,4,-219), Chunk: (at 15,0,5 in -112,-14; contains blocks -1792,0,-224 to -1777,255,-209), Region: (-4,-1; contains chunks -128,-32 to -97,-1, blocks -2048,0,-512 to -1537,255,-1)
+	Level time: 45198 game time, 9983 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 35 total; [EntitySlime['Slime'/64, l='MpServer', x=-2138.20, y=4.00, z=-2060.54], EntitySlime['Slime'/65, l='MpServer', x=-2128.38, y=4.00, z=-2039.57], EntitySlime['Slime'/13825, l='MpServer', x=-2142.51, y=4.14, z=-2045.47], EntitySlime['Slime'/66, l='MpServer', x=-2132.48, y=4.95, z=-2031.97], EntitySlime['Slime'/67, l='MpServer', x=-2140.59, y=4.92, z=-2015.92], EntitySlime['Slime'/68, l='MpServer', x=-2135.27, y=4.58, z=-1994.80], EntitySlime['Slime'/71, l='MpServer', x=-2128.40, y=4.00, z=-2052.61], EntitySlime['Slime'/72, l='MpServer', x=-2122.77, y=4.28, z=-2002.67], EntitySlime['Slime'/73, l='MpServer', x=-2127.42, y=4.11, z=-2014.85], EntitySlime['Slime'/74, l='MpServer', x=-2130.17, y=4.00, z=-2000.82], EntitySlime['Slime'/75, l='MpServer', x=-2121.58, y=4.33, z=-1998.44], EntitySlime['Slime'/76, l='MpServer', x=-2099.55, y=4.48, z=-2092.84], EntitySlime['Slime'/77, l='MpServer', x=-2099.97, y=4.18, z=-2095.56], EntitySlime['Slime'/78, l='MpServer', x=-2102.21, y=4.00, z=-2086.25], EntitySlime['Slime'/79, l='MpServer', x=-2095.99, y=4.14, z=-2082.50], EntityItem['item.item.string'/81, l='MpServer', x=-2100.68, y=4.00, z=-2041.96], EntityItem['item.item.arrow'/82, l='MpServer', x=-2105.93, y=4.00, z=-2015.32], EntitySlime['Slime'/84, l='MpServer', x=-2090.09, y=4.48, z=-2065.73], EntityItem['item.item.rottenFlesh'/85, l='MpServer', x=-2094.90, y=4.00, z=-2015.00], EntitySlime['Slime'/87, l='MpServer', x=-2063.58, y=5.06, z=-2119.59], EntitySlime['Slime'/88, l='MpServer', x=-2077.50, y=4.28, z=-2037.87], EntitySlime['Slime'/89, l='MpServer', x=-2050.47, y=4.78, z=-2099.29], EntitySlime['Slime'/90, l='MpServer', x=-2054.00, y=4.00, z=-2084.61], EntitySlime['Slime'/91, l='MpServer', x=-2051.60, y=5.06, z=-2034.80], EntitySlime['Slime'/51, l='MpServer', x=-2193.11, y=4.50, z=-2122.47], EntitySlime['Slime'/52, l='MpServer', x=-2197.16, y=4.50, z=-2119.64], EntityZombie['Zombie'/54, l='MpServer', x=-2187.35, y=4.00, z=-2005.46], EntitySlime['Slime'/56, l='MpServer', x=-2164.77, y=4.95, z=-2024.52], EntitySlime['Slime'/57, l='MpServer', x=-2160.06, y=4.92, z=-2062.51], EntitySlime['Slime'/58, l='MpServer', x=-2157.66, y=4.25, z=-2031.07], EntitySlime['Slime'/59, l='MpServer', x=-2153.74, y=4.14, z=-2023.51], EntitySlime['Slime'/60, l='MpServer', x=-2156.11, y=4.18, z=-2005.93], EntitySlime['Slime'/61, l='MpServer', x=-2149.26, y=5.00, z=-2001.91], EntityPlayerSP['Player208'/42, l='MpServer', x=-2120.34, y=4.00, z=-2067.30], EntitySlime['Slime'/63, l='MpServer', x=-2139.26, y=4.58, z=-2053.44]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:518)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2592)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:483)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_144, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 733783600 bytes (699 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) HD Graphics 520 GL version 4.5.0 - Build 24.20.100.6293, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz
+	OptiFine Version: OptiFine_1.12_HD_U_A0_pre
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.5.0 - Build 24.20.100.6293
+	OpenGlRenderer: Intel(R) HD Graphics 520
+	OpenGlVendor: Intel
+	CpuCount: 4

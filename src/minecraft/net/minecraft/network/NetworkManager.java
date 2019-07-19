@@ -4,6 +4,7 @@ import com.google.common.collect.Queues;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
 import como.taco.Events.EventHandler;
+import como.taco.Events.EventReceived;
 import como.taco.Events.EventSendPacket;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;

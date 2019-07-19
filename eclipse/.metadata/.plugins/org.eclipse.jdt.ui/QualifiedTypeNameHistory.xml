@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<<<<<<< HEAD
-<fullyQualifiedTypeName name="net.minecraft.client.gui.GuiSlider"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
-=======
-<fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
-<fullyQualifiedTypeName name="org.lwjgl.util.vector.Vector"/>
-<fullyQualifiedTypeName name="net.minecraft.potion.Potion"/>
-<fullyQualifiedTypeName name="como.taco.GUI.ModCategories"/>
-<fullyQualifiedTypeName name="net.minecraft.init.MobEffects"/>
->>>>>>> branch 'master' of https://github.com/lshen365/Hack-Client.git
+<fullyQualifiedTypeName name="como.taco.AirStrafe"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="como.taco.Client"/>
+<fullyQualifiedTypeName name="net.minecraft.client.entity.EntityPlayerSP"/>
+<fullyQualifiedTypeName name="net.minecraft.network.Packet"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketUseEntity"/>
+<fullyQualifiedTypeName name="net.minecraft.util.Timer"/>
+<fullyQualifiedTypeName name="como.taco.Events.Timer"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketPlayer"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketEntityAction"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.ai.EntityMoveHelper.Action"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketEntityAction.Action"/>
+<fullyQualifiedTypeName name="como.taco.Events.EventReceived"/>
+<fullyQualifiedTypeName name="como.taco.Events.EventHandler"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.server.SPacketEntityVelocity"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.Vector3d"/>
+<fullyQualifiedTypeName name="como.taco.AntiKB"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

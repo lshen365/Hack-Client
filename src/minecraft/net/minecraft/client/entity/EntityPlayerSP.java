@@ -3,6 +3,7 @@ package net.minecraft.client.entity;
 import java.util.List;
 import javax.annotation.Nullable;
 
+import como.taco.AirStrafe;
 import como.taco.Client;
 import como.taco.Events.EventHandler;
 import como.taco.Events.EventPostMotion;

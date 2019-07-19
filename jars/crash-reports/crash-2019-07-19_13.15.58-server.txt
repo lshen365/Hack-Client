@@ -1,0 +1,114 @@
+---- Minecraft Crash Report ----
+// Everything's going to plan. No, really, that was supposed to happen.
+
+Time: 7/19/19 1:15 PM
+Description: Ticking entity
+
+java.lang.NullPointerException: Ticking entity
+	at net.minecraft.entity.EntityLivingBase.canBePushed(EntityLivingBase.java:2427)
+	at net.minecraft.util.EntitySelectors$7.apply(EntitySelectors.java:73)
+	at net.minecraft.util.EntitySelectors$7.apply(EntitySelectors.java:1)
+	at com.google.common.base.Predicates$AndPredicate.apply(Predicates.java:384)
+	at net.minecraft.world.chunk.Chunk.getEntitiesWithinAABBForEntity(Chunk.java:984)
+	at net.minecraft.world.World.getEntitiesInAABBexcluding(World.java:3024)
+	at net.minecraft.entity.EntityLivingBase.collideWithNearbyEntities(EntityLivingBase.java:2290)
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2255)
+	at net.minecraft.entity.EntityLiving.onLivingUpdate(EntityLiving.java:672)
+	at net.minecraft.entity.EntityAgeable.onLivingUpdate(EntityAgeable.java:201)
+	at net.minecraft.entity.passive.EntityAnimal.onLivingUpdate(EntityAnimal.java:47)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2073)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:370)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1987)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:852)
+	at net.minecraft.world.World.updateEntity(World.java:1951)
+	at net.minecraft.world.World.updateEntities(World.java:1794)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:627)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:792)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:702)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:238)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:565)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.entity.EntityLivingBase.canBePushed(EntityLivingBase.java:2427)
+	at net.minecraft.util.EntitySelectors$7.apply(EntitySelectors.java:73)
+	at net.minecraft.util.EntitySelectors$7.apply(EntitySelectors.java:1)
+	at com.google.common.base.Predicates$AndPredicate.apply(Predicates.java:384)
+	at net.minecraft.world.chunk.Chunk.getEntitiesWithinAABBForEntity(Chunk.java:984)
+	at net.minecraft.world.World.getEntitiesInAABBexcluding(World.java:3024)
+	at net.minecraft.entity.EntityLivingBase.collideWithNearbyEntities(EntityLivingBase.java:2290)
+	at net.minecraft.entity.EntityLivingBase.onLivingUpdate(EntityLivingBase.java:2255)
+	at net.minecraft.entity.EntityLiving.onLivingUpdate(EntityLiving.java:672)
+	at net.minecraft.entity.EntityAgeable.onLivingUpdate(EntityAgeable.java:201)
+	at net.minecraft.entity.passive.EntityAnimal.onLivingUpdate(EntityAnimal.java:47)
+	at net.minecraft.entity.EntityLivingBase.onUpdate(EntityLivingBase.java:2073)
+	at net.minecraft.entity.EntityLiving.onUpdate(EntityLiving.java:370)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1987)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:852)
+	at net.minecraft.world.World.updateEntity(World.java:1951)
+
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:pig (net.minecraft.entity.passive.EntityPig)
+	Entity ID: 12
+	Entity Name: Pig
+	Entity's Exact location: 128.50, 65.00, 224.50
+	Entity's Block location: World: (128,65,224), Chunk: (at 0,4,0 in 8,14; contains blocks 128,0,224 to 143,255,239), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1794)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:627)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 0 total; []
+	Chunk stats: ServerChunkCache: 625 Drop: 0
+	Level seed: -6190954632055184890
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (242,64,212), Chunk: (at 2,4,4 in 15,13; contains blocks 240,0,208 to 255,255,223), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 1 game time, 1 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 92377 (now: false), thunder time: 93908 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:792)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:702)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:238)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:565)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_144, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 747750760 bytes (713 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated
+	OptiFine Version: OptiFine_1.12_HD_U_A0_pre
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.5.0 - Build 24.20.100.6293
+	OpenGlRenderer: Intel(R) HD Graphics 520
+	OpenGlVendor: Intel
+	CpuCount: 4

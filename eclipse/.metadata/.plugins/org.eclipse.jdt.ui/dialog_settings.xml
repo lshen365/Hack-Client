@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-<<<<<<< HEAD
-	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\Leon\Documents\Hack-Client\jars\libraries\com\mojang\realms\1.10.17"/>
-=======
 	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\Hamilton Lee\Desktop\Hack-Client\jars\libraries\com\mojang\realms\1.10.17"/>
->>>>>>> branch 'master' of https://github.com/lshen365/Hack-Client.git
 	<item key="TypeHierarchyViewPart.hierarchyview" value="2"/>
 	<item key="TypeHierarchyViewPart.qualifiednames" value="false"/>
 	<item key="TypeHierarchyViewPart.linkeditors" value="false"/>
@@ -46,48 +42,48 @@
 	</section>
 	<section name="JavaSearchPage">
 		<item key="CASE_SENSITIVE" value="false"/>
-		<item key="INCLUDE_MASK" value="11"/>
-		<item key="HISTORY_SIZE" value="6"/>
+		<item key="INCLUDE_MASK" value="15"/>
+		<item key="HISTORY_SIZE" value="12"/>
 		<section name="HISTORY0">
-			<item key="searchFor" value="4"/>
+			<item key="searchFor" value="0"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="noclip"/>
+			<item key="pattern" value="SPacket"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
 			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="11"/>
+			<item key="includeMask" value="15"/>
 			<list key="workingSets">
 			</list>
 		</section>
 		<section name="HISTORY1">
 			<item key="searchFor" value="0"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="eventhandler"/>
+			<item key="pattern" value="INetHandlerPlayServer"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
 			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="11"/>
+			<item key="includeMask" value="15"/>
 			<list key="workingSets">
 			</list>
 		</section>
 		<section name="HISTORY2">
 			<item key="searchFor" value="0"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="onpressed"/>
+			<item key="pattern" value="inethandler"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
 			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="11"/>
+			<item key="includeMask" value="15"/>
 			<list key="workingSets">
 			</list>
 		</section>
 		<section name="HISTORY3">
-			<item key="searchFor" value="0"/>
+			<item key="searchFor" value="1"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="sprint"/>
+			<item key="pattern" value="processPacket"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -99,7 +95,7 @@
 		<section name="HISTORY4">
 			<item key="searchFor" value="0"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="Velocity"/>
+			<item key="pattern" value="spacket"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -109,6 +105,78 @@
 			</list>
 		</section>
 		<section name="HISTORY5">
+			<item key="searchFor" value="4"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="knockback"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="11"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY6">
+			<item key="searchFor" value="4"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="noclip"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="11"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY7">
+			<item key="searchFor" value="0"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="eventhandler"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="11"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY8">
+			<item key="searchFor" value="0"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="onpressed"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="11"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY9">
+			<item key="searchFor" value="0"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="sprint"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="11"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY10">
+			<item key="searchFor" value="0"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="Velocity"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="11"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY11">
 			<item key="searchFor" value="0"/>
 			<item key="scope" value="0"/>
 			<item key="pattern" value="velocity"/>
@@ -131,169 +199,9 @@
 		<section name="DialogBoundsSettings">
 			<item key="DIALOG_HEIGHT" value="500"/>
 			<item key="DIALOG_WIDTH" value="600"/>
-<<<<<<< HEAD
-			<item key="DIALOG_X_ORIGIN" value="668"/>
-			<item key="DIALOG_Y_ORIGIN" value="215"/>
-			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
-		</section>
-	</section>
-	<section name="JavaEditorCodeMiningConfigurationBlock">
-		<item key="expanded0" value="true"/>
-	</section>
-	<section name="RenameInformationPopup">
-	</section>
-	<section name="JavaSearchPage">
-		<item key="CASE_SENSITIVE" value="false"/>
-		<item key="INCLUDE_MASK" value="15"/>
-		<item key="HISTORY_SIZE" value="12"/>
-		<section name="HISTORY0">
-			<item key="searchFor" value="3"/>
-			<item key="scope" value="0"/>
-			<item key="pattern" value="buttonlist"/>
-			<item key="limitTo" value="2"/>
-			<item key="matchLocations" value="0"/>
-			<item key="javaElement" value=""/>
-			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="15"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY1">
-			<item key="searchFor" value="3"/>
-			<item key="scope" value="0"/>
-			<item key="pattern" value="getFormatter"/>
-			<item key="limitTo" value="2"/>
-			<item key="matchLocations" value="0"/>
-			<item key="javaElement" value=""/>
-			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="15"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY2">
-			<item key="searchFor" value="0"/>
-			<item key="scope" value="0"/>
-			<item key="pattern" value="new GuiSlider"/>
-			<item key="limitTo" value="2"/>
-			<item key="matchLocations" value="0"/>
-			<item key="javaElement" value=""/>
-			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="15"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY3">
-			<item key="searchFor" value="4"/>
-			<item key="scope" value="0"/>
-			<item key="pattern" value="MouseListener"/>
-			<item key="limitTo" value="2"/>
-			<item key="matchLocations" value="0"/>
-			<item key="javaElement" value=""/>
-			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="15"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY4">
-			<item key="searchFor" value="0"/>
-			<item key="scope" value="0"/>
-			<item key="pattern" value="FormatHelper"/>
-			<item key="limitTo" value="2"/>
-			<item key="matchLocations" value="0"/>
-			<item key="javaElement" value=""/>
-			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="15"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY5">
-			<item key="searchFor" value="1"/>
-			<item key="scope" value="0"/>
-			<item key="pattern" value="modCategories"/>
-			<item key="limitTo" value="2"/>
-			<item key="matchLocations" value="0"/>
-			<item key="javaElement" value=""/>
-			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="15"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY6">
-			<item key="searchFor" value="1"/>
-			<item key="scope" value="0"/>
-			<item key="pattern" value="Delay"/>
-			<item key="limitTo" value="2"/>
-			<item key="matchLocations" value="0"/>
-			<item key="javaElement" value=""/>
-			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="15"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY7">
-			<item key="searchFor" value="1"/>
-			<item key="scope" value="0"/>
-			<item key="pattern" value="UpdateArmSwing"/>
-			<item key="limitTo" value="2"/>
-			<item key="matchLocations" value="0"/>
-			<item key="javaElement" value=""/>
-			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="15"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY8">
-			<item key="searchFor" value="0"/>
-			<item key="scope" value="0"/>
-			<item key="pattern" value="SwingItem"/>
-			<item key="limitTo" value="2"/>
-			<item key="matchLocations" value="0"/>
-			<item key="javaElement" value=""/>
-			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="15"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY9">
-			<item key="searchFor" value="0"/>
-			<item key="scope" value="0"/>
-			<item key="pattern" value="Attackentity"/>
-			<item key="limitTo" value="2"/>
-			<item key="matchLocations" value="0"/>
-			<item key="javaElement" value=""/>
-			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="15"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY10">
-			<item key="searchFor" value="0"/>
-			<item key="scope" value="0"/>
-			<item key="pattern" value="swing"/>
-			<item key="limitTo" value="2"/>
-			<item key="matchLocations" value="0"/>
-			<item key="javaElement" value=""/>
-			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="15"/>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY11">
-			<item key="searchFor" value="0"/>
-			<item key="scope" value="0"/>
-			<item key="pattern" value="blockreach"/>
-			<item key="limitTo" value="2"/>
-			<item key="matchLocations" value="0"/>
-			<item key="javaElement" value=""/>
-			<item key="isCaseSensitive" value="false"/>
-			<item key="includeMask" value="15"/>
-			<list key="workingSets">
-			</list>
-=======
 			<item key="DIALOG_X_ORIGIN" value="456"/>
 			<item key="DIALOG_Y_ORIGIN" value="153"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
->>>>>>> branch 'master' of https://github.com/lshen365/Hack-Client.git
 		</section>
 	</section>
 	<section name="JarPackageWizard">
@@ -316,14 +224,7 @@
 		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value=""/>
 		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
-<<<<<<< HEAD
-			<item value="C:\Users\Leon\AppData\Roaming\.minecraft\versions\TacoHacks\TacoHacks.jar"/>
-			<item value="C:\Users\Leon\Desktop\TacoHacks\TacoHacks.jar"/>
-			<item value="C:\Users\Leon\Documents\Taco\TacoHacks.jar"/>
-			<item value="C:\Users\Leon\Documents\Taco\tacos.jar"/>
-=======
 			<item value="C:\Users\Hamilton Lee\Desktop\TacoHacks.jar"/>
->>>>>>> branch 'master' of https://github.com/lshen365/Hack-Client.git
 		</list>
 	</section>
 	<section name="DialogBounds_SuperInterfaceSelectionDialog">

@@ -121,6 +121,8 @@ public class Client {
 		modList.add(new Speed());
 		modList.add(new Criticals());
 		modList.add(new LongJump());
+		modList.add(new AirStrafe());
+		modList.add(new AntiKB());
 	}
 
 	public static Modules getMod(Modules m) {
@@ -131,10 +133,10 @@ public class Client {
 		}
 		return null;
 	}
-	
+
 	public static Modules getNonEnabledMod(Modules m) {
-		for(Modules c: modList) {
-			if(c.getName().equals(m.getName())) {
+		for (Modules c : modList) {
+			if (c.getName().equals(m.getName())) {
 				return c;
 			}
 		}
