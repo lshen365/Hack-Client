@@ -121,6 +121,7 @@ public class Client {
 		modList.add(new Speed());
 		modList.add(new Criticals());
 		modList.add(new LongJump());
+		modList.add(new Tracer());
 	}
 
 	public static Modules getMod(Modules m) {

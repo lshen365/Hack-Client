@@ -38,24 +38,25 @@ public class MobAura extends Hack{
 	 
 	private void attack(Entity mob) {
 		EntityUtil.faceEntityClient((EntityLivingBase)mob);
-		mc.player.swingArm(EnumHand.MAIN_HAND);
-		mc.playerController.attackEntity(mc.player,mob);
+		if(Math.random() < 0.2D) {
+			System.out.println("Missed");
+		}else {
+			mc.player.swingArm(EnumHand.MAIN_HAND);
+			mc.playerController.attackEntity(mc.player,mob);
+		}
+		
+		
 
+
+	}
+	
+	private void missAttack() {
+		mc.player.swingArm(EnumHand.MAIN_HAND);
 	}
 	
 	private long getCurrentTime() {
 		return System.currentTimeMillis();
 		
-	}
-	private boolean isFriend(String name) {
-		
-		for(int i=0;i<EntityUtil.friends.size();i++) {
-			if(name.toLowerCase().equals(EntityUtil.getFriend(i).toLowerCase())) {
-				
-				return true;
-			}
-		}
-		return false;
 	}
 
 	public EntityLivingBase getClosestEntity(double range) {
@@ -68,7 +69,7 @@ public class MobAura extends Hack{
 				
 				double distanceToThing = mc.player.getDistanceToEntity(thing);
 				
-				if(thing.isEntityAlive() && thing != mc.player && isValidEntity(thing) && distanceToThing <= range && thing.getHealth() > 0 && !isInvisible(thing) && !isFriend(thing.getName())) {
+				if(thing.isEntityAlive() && thing != mc.player && isValidEntity(thing) && distanceToThing <= range && thing.getHealth() > 0 && !isInvisible(thing) && !EntityUtil.isFriend(thing.getName())) {
 					if(target == null || mc.player.getDistanceToEntity(thing) < mc.player.getDistanceToEntity(target))
 						target = thing;
 				}
@@ -166,6 +167,7 @@ public class MobAura extends Hack{
 	public void onUpdate() {
 
 		if(getStatus()) {
+			mc.gameSettings.viewBobbing = false;
 			Time0 = getCurrentTime();
 			target = getClosestEntity(mc.playerController.getBlockReachDistance());
 			
@@ -224,7 +226,7 @@ public class MobAura extends Hack{
 	
 	@Override
 	public void onDisable() {
-
+		mc.gameSettings.viewBobbing = true;
 		
 	}
 

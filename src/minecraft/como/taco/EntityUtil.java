@@ -40,8 +40,8 @@ public class EntityUtil {
     	float[] rotations = getRotationsNeeded(entity);
     	if (rotations != null)
     	{
-            Minecraft.getMinecraft().player.rotationYaw = limitAngleChange(Minecraft.getMinecraft().player.prevRotationYaw, rotations[0], 55);//NoCheat+ bypass!!!
-    		Minecraft.getMinecraft().player.rotationPitch = rotations[1];
+            Minecraft.getMinecraft().player.rotationYaw = limitAngleChange(Minecraft.getMinecraft().player.prevRotationYaw, rotations[0], 30);//NoCheat+ bypass!!!
+    		Minecraft.getMinecraft().player.rotationPitch = rotations[1] +12;
     	}
     }
 	
@@ -67,7 +67,17 @@ public class EntityUtil {
 		friends.add("starjust09");
 		friends.add("StonePick");
 	}
-	public static String getFriend(int index) {
+	private static String getFriend(int index) {
 		return (String) friends.get(index);
+	}
+	public static boolean isFriend(String name) {
+		
+		for(int i=0;i<EntityUtil.friends.size();i++) {
+			if(name.toLowerCase().equals(getFriend(i).toLowerCase())) {
+				
+				return true;
+			}
+		}
+		return false;
 	}
 }

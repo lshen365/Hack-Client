@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="send"/>
+		<item key="selection" value="Friend"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="friend"/>
+			<item value="drawrect"/>
+			<item value="getStatui"/>
+			<item value="DrawSelectionBounding"/>
+			<item value="drawSelection"/>
+			<item value="thePlayer"/>
+			<item value="limitAng"/>
+			<item value="canAttack"/>
+			<item value="block"/>
+			<item value="Minecraft.getMinecraft()."/>
+			<item value="rotation"/>
+			<item value="Fov"/>
 			<item value="send"/>
 			<item value="war"/>
 			<item value="wrap"/>
-			<item value="onLiving"/>
-			<item value="sqrt_double"/>
-			<item value="sqrt"/>
-			<item value="position"/>
-			<item value="recentlyHit"/>
-			<item value="getWittyComment"/>
-			<item value="file"/>
-			<item value="2"/>
-			<item value="getresource"/>
-			<item value="null"/>
-			<item value="resourcePacksGui"/>
-			<item value="resourcePackGui"/>
 		</list>
 		<list key="replacehistory">
+			<item value="player"/>
+			<item value="mc."/>
+			<item value="mc"/>
 			<item value="formatter"/>
 			<item value="Formatter"/>
 			<item value="format"/>

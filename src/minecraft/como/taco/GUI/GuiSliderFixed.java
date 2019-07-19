@@ -99,7 +99,10 @@ public class GuiSliderFixed extends GuiButton
                 this.displayString = this.getDisplayString();
                 this.responder.setEntryValue(this.id, this.getSliderValue());
             }
-            changeModValue((Client.modList.get(4)), this.getSliderValue());
+            if(this.id == Client.modList.get(4).getName().hashCode()) 
+            	changeModValue((Client.modList.get(4)), this.getSliderValue());
+            
+            
             
             GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
             this.drawTexturedModalRect(this.xPosition + (int)(this.sliderPosition * (float)(this.width - 8)), this.yPosition, 0, 66, 4, 20);

@@ -8,13 +8,21 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.passive.EntityAnimal"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.monster.EntityMob"/>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
 <fullyQualifiedTypeName name="como.taco.MobAura"/>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.FontRenderer"/>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.Gui"/>
-<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
-<fullyQualifiedTypeName name="net.minecraft.util.math.MathHelper"/>
 <fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketEntityAction"/>
+<fullyQualifiedTypeName name="net.minecraft.util.math.MathHelper"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
+<fullyQualifiedTypeName name="como.taco.EntityUtil"/>
+<fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.RenderGlobal"/>
+<fullyQualifiedTypeName name="net.minecraft.util.math.AxisAlignedBB"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="como.taco.Tracer"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="como.taco.RenderUtil"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.monster.EntityMob"/>
 </qualifiedTypeNameHistroy>

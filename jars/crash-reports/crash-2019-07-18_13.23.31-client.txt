@@ -1,0 +1,98 @@
+---- Minecraft Crash Report ----
+// I feel sad now :(
+
+Time: 7/18/19 1:23 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at net.minecraft.entity.Entity.getDistanceToEntity(Entity.java:1628)
+	at como.taco.MobAura.getClosestEntity(MobAura.java:60)
+	at como.taco.MobAura.onUpdate(MobAura.java:157)
+	at como.taco.MobAura.onEnable(MobAura.java:224)
+	at como.taco.Modules.changeStatus(Modules.java:45)
+	at como.taco.Modules.onPressed(Modules.java:58)
+	at como.taco.Client.onKeyPressed(Client.java:62)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:1847)
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1727)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1092)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:470)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.minecraft.entity.Entity.getDistanceToEntity(Entity.java:1628)
+	at como.taco.MobAura.getClosestEntity(MobAura.java:60)
+	at como.taco.MobAura.onUpdate(MobAura.java:157)
+	at como.taco.MobAura.onEnable(MobAura.java:224)
+	at como.taco.Modules.changeStatus(Modules.java:45)
+	at como.taco.Modules.onPressed(Modules.java:58)
+	at como.taco.Client.onKeyPressed(Client.java:62)
+	at net.minecraft.client.Minecraft.runTickKeyboard(Minecraft.java:1847)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['Player509'/62, l='MpServer', x=-2296.72, y=4.00, z=-2233.80]]
+	Chunk stats: MultiplayerChunkCache: 254, 254
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-1777,4,-219), Chunk: (at 15,0,5 in -112,-14; contains blocks -1792,0,-224 to -1777,255,-209), Region: (-4,-1; contains chunks -128,-32 to -97,-1, blocks -2048,0,-512 to -1537,255,-1)
+	Level time: 65484 game time, 22315 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 21 total; [EntityZombie['Zombie'/93326, l='MpServer', x=-2352.50, y=5.00, z=-2277.30], EntityCreeper['Creeper'/93343, l='MpServer', x=-2255.50, y=4.00, z=-2182.50], EntityCreeper['Creeper'/97, l='MpServer', x=-2289.40, y=4.00, z=-2195.78], EntitySpider['Spider'/105, l='MpServer', x=-2251.01, y=4.00, z=-2295.50], EntityVillager['Villager'/42, l='MpServer', x=-2327.25, y=5.00, z=-2308.54], EntitySkeleton['Skeleton'/209064, l='MpServer', x=-2296.50, y=4.00, z=-2235.50], EntityVillager['Villager'/44, l='MpServer', x=-2334.30, y=5.00, z=-2304.30], EntityVillager['Villager'/45, l='MpServer', x=-2334.30, y=5.00, z=-2304.30], EntityVillager['Villager'/47, l='MpServer', x=-2327.38, y=5.00, z=-2301.30], EntityVillager['Villager'/48, l='MpServer', x=-2327.15, y=5.00, z=-2300.45], EntityVillager['Villager'/49, l='MpServer', x=-2328.19, y=5.00, z=-2300.43], EntitySkeleton['Skeleton'/50, l='MpServer', x=-2321.36, y=4.00, z=-2290.77], EntityVillager['Villager'/51, l='MpServer', x=-2347.04, y=5.00, z=-2282.54], EntityVillager['Villager'/52, l='MpServer', x=-2357.70, y=5.00, z=-2283.62], EntityVillager['Villager'/53, l='MpServer', x=-2352.50, y=5.00, z=-2274.07], EntityPlayerSP['Player509'/62, l='MpServer', x=-2296.72, y=4.00, z=-2233.80], EntityVillager['Villager'/54, l='MpServer', x=-2361.26, y=3.94, z=-2302.51], EntityVillager['Villager'/55, l='MpServer', x=-2365.70, y=5.00, z=-2294.30], EntityVillager['Villager'/56, l='MpServer', x=-2364.65, y=4.00, z=-2292.60], EntitySpider['Spider'/93305, l='MpServer', x=-2239.50, y=4.00, z=-2224.50], EntityPig['Pig'/204670, l='MpServer', x=-2297.50, y=4.00, z=-2236.50]]
+	Retry entities: 0 total; []
+	Server brand: vanilla
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:518)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2592)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:490)
+	at net.minecraft.client.main.Main.main(Main.java:115)
+	at Start.main(Start.java:11)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_221, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 681923976 bytes (650 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Launched Version: mcp
+	LWJGL: 2.9.4
+	OpenGL: Intel(R) UHD Graphics 620 GL version 4.5.0 - Build 24.20.100.6286, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Very likely; Jar signature invalidated
+	Type: Client (map_client.txt)
+	Resource Packs: ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§aInfera ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§8[ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§7V2ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§8] ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§8Revamp ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§8[ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§7256xÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§8].zip (incompatible)
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 8x Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+	OptiFine Version: OptiFine_1.12_HD_U_A0_pre
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.5.0 - Build 24.20.100.6286
+	OpenGlRenderer: Intel(R) UHD Graphics 620
+	OpenGlVendor: Intel
+	CpuCount: 8

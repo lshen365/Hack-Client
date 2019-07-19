@@ -72,7 +72,7 @@
 		<section name="HISTORY0">
 			<item key="searchFor" value="3"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="buttonlist"/>
+			<item key="pattern" value="block"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -84,7 +84,7 @@
 		<section name="HISTORY1">
 			<item key="searchFor" value="3"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="getFormatter"/>
+			<item key="pattern" value="fov"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -94,9 +94,9 @@
 			</list>
 		</section>
 		<section name="HISTORY2">
-			<item key="searchFor" value="0"/>
+			<item key="searchFor" value="3"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="new GuiSlider"/>
+			<item key="pattern" value="buttonlist"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -106,9 +106,9 @@
 			</list>
 		</section>
 		<section name="HISTORY3">
-			<item key="searchFor" value="4"/>
+			<item key="searchFor" value="3"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="MouseListener"/>
+			<item key="pattern" value="getFormatter"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -120,7 +120,7 @@
 		<section name="HISTORY4">
 			<item key="searchFor" value="0"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="FormatHelper"/>
+			<item key="pattern" value="new GuiSlider"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -130,9 +130,9 @@
 			</list>
 		</section>
 		<section name="HISTORY5">
-			<item key="searchFor" value="1"/>
+			<item key="searchFor" value="4"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="modCategories"/>
+			<item key="pattern" value="MouseListener"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -142,9 +142,9 @@
 			</list>
 		</section>
 		<section name="HISTORY6">
-			<item key="searchFor" value="1"/>
+			<item key="searchFor" value="0"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="Delay"/>
+			<item key="pattern" value="FormatHelper"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -156,7 +156,7 @@
 		<section name="HISTORY7">
 			<item key="searchFor" value="1"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="UpdateArmSwing"/>
+			<item key="pattern" value="modCategories"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -166,9 +166,9 @@
 			</list>
 		</section>
 		<section name="HISTORY8">
-			<item key="searchFor" value="0"/>
+			<item key="searchFor" value="1"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="SwingItem"/>
+			<item key="pattern" value="Delay"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -178,9 +178,9 @@
 			</list>
 		</section>
 		<section name="HISTORY9">
-			<item key="searchFor" value="0"/>
+			<item key="searchFor" value="1"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="Attackentity"/>
+			<item key="pattern" value="UpdateArmSwing"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -192,7 +192,7 @@
 		<section name="HISTORY10">
 			<item key="searchFor" value="0"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="swing"/>
+			<item key="pattern" value="SwingItem"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
@@ -204,7 +204,7 @@
 		<section name="HISTORY11">
 			<item key="searchFor" value="0"/>
 			<item key="scope" value="0"/>
-			<item key="pattern" value="blockreach"/>
+			<item key="pattern" value="Attackentity"/>
 			<item key="limitTo" value="2"/>
 			<item key="matchLocations" value="0"/>
 			<item key="javaElement" value=""/>
