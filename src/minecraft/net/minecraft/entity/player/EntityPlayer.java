@@ -4,6 +4,8 @@ import com.google.common.base.Predicate;
 import com.google.common.collect.Lists;
 import com.mojang.authlib.GameProfile;
 
+import como.taco.AirStrafe;
+import como.taco.AntiKB;
 import como.taco.Client;
 import como.taco.Criticals;
 import como.taco.FreeCam;
@@ -17,6 +19,7 @@ import net.minecraft.block.BlockBed;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityList;
@@ -1626,6 +1629,12 @@ public abstract class EntityPlayer extends EntityLivingBase {
 	 * Causes this entity to do an upwards motion (jumping).
 	 */
 	public void jump() {
+		// Taco -------
+		AirStrafe jumpCancel = (AirStrafe) Client.getMod(new AirStrafe());
+		if (jumpCancel != null && Minecraft.getMinecraft().player.isAirBorne) {
+			return;
+		}
+		// --------
 		super.jump();
 		this.addStat(StatList.JUMP);
 
@@ -2060,6 +2069,12 @@ public abstract class EntityPlayer extends EntityLivingBase {
 	public abstract boolean isCreative();
 
 	public boolean isPushedByWater() {
+		// TACO --------
+		if (this.getEntityId() == Minecraft.getMinecraft().player.getEntityId()
+				&& Client.checkForModule(new AntiKB())) {
+			return false;
+		}
+		//
 		return !this.capabilities.isFlying;
 	}
 

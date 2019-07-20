@@ -121,6 +121,8 @@ public class Client {
 		modList.add(new Speed());
 		modList.add(new Criticals());
 		modList.add(new LongJump());
+		modList.add(new AirStrafe());
+		modList.add(new AntiKB());
 		modList.add(new Tracer());
 	}
 

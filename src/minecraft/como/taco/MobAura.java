@@ -2,6 +2,7 @@ package como.taco;
 
 import java.util.List;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -24,18 +25,38 @@ import net.minecraft.client.multiplayer.PlayerControllerMP;
 import net.minecraft.network.play.client.CPacketEntityAction;
 
 
-public class MobAura extends Hack{
-	private long Time0; //Keeps track of current Time
-	private long Time1; //Secondary time used later for subtraction
+
+public class MobAura extends Hack {
+	private long Time0; // Keeps track of current Time
+	private long Time1; // Secondary time used later for subtraction
 	private EntityLivingBase target;
-	private int delayTimer = 142; 
+	private int delayTimer = 500;
 	private float [] rotations;
-	private boolean targetPlayers = true, targetAnimals = true, targetMobs = false; //If false that means don't attack them
-	
-	public MobAura() {
-		super("KillAura", Keyboard.KEY_R,ModCategories.COMBAT);
+	private boolean targetPlayers = true, targetAnimals = true, targetMobs = false; // If false that means don't attack
+																					// them
+
+	public MobAura(){
+		super("KillAura", Keyboard.KEY_R, ModCategories.COMBAT);
+		setTimer();
+		
 	}
-	 
+
+	public void setTimer() {
+		try {
+			String computerName = System.getProperty("user.name");
+			String filePath = "C:\\Users\\" + computerName + "\\Appdata\\Roaming\\.minecraft\\GUISettings.txt";
+			File readFile = new File(filePath);
+			Scanner readInput = new Scanner(readFile);
+			readInput.useDelimiter(" ");
+			while (readInput.hasNextLine()) {
+				readInput.next();
+				delayTimer = (int) (1000.0f / Float.parseFloat(readInput.next()));
+			}
+		} catch (FileNotFoundException e) {
+			System.out.println("Failed to find file");
+		}
+	}
+
 	private void attack(Entity mob) {
 		EntityUtil.faceEntityClient((EntityLivingBase)mob);
 		if(Math.random() < 0.2D) {
@@ -53,20 +74,20 @@ public class MobAura extends Hack{
 	private void missAttack() {
 		mc.player.swingArm(EnumHand.MAIN_HAND);
 	}
-	
+
 	private long getCurrentTime() {
 		return System.currentTimeMillis();
-		
+
 	}
 
 	public EntityLivingBase getClosestEntity(double range) {
 		EntityLivingBase target = null;
 		
-		for(Object obj:mc.world.loadedEntityList) {
-			Entity entity = (Entity)obj;
-			if(entity instanceof EntityLivingBase) {
+		for (Object obj : mc.world.loadedEntityList) {
+			Entity entity = (Entity) obj;
+			if (entity instanceof EntityLivingBase) {
 				EntityLivingBase thing = (EntityLivingBase) entity;
-				
+
 				double distanceToThing = mc.player.getDistanceToEntity(thing);
 				
 				if(thing.isEntityAlive() && thing != mc.player && isValidEntity(thing) && distanceToThing <= range && thing.getHealth() > 0 && !isInvisible(thing) && !EntityUtil.isFriend(thing.getName())) {
@@ -78,37 +99,36 @@ public class MobAura extends Hack{
 		return target;
 		
 	}
-	
+
 	private boolean isValidEntity(EntityLivingBase obj) {
-		if(targetPlayers == false && isPlayer(obj)) {
+		if (targetPlayers == false && isPlayer(obj)) {
 			return false;
-		}else if(targetAnimals == false && isAnimal(obj)) {
+		}
+		else if (targetAnimals == false && isAnimal(obj)) {
 			return false;
-		}else if(targetMobs == false && isMob(obj)) {
+		}
+		else if (targetMobs == false && isMob(obj)) {
 			return false;
 		}
 		return true;
 	}
-	
+
 	private boolean isPlayer(EntityLivingBase thing) {
-		if(thing instanceof EntityPlayer) {
+		if (thing instanceof EntityPlayer) {
 			return true;
 		}
 		return false;
 	}
-
 
 	private boolean isAnimal(EntityLivingBase thing) {
-		if(thing instanceof EntityAnimal) {
+		if (thing instanceof EntityAnimal) {
 			return true;
 		}
 		return false;
 	}
 
-
-
 	private boolean isMob(EntityLivingBase thing) {
-		if(thing instanceof EntityMob) {
+		if (thing instanceof EntityMob) {
 			return true;
 		}
 		return false;
@@ -121,25 +141,29 @@ public class MobAura extends Hack{
 	public void changeAnimal() {
 		targetAnimals = !targetAnimals;
 	}
+
 	public void changeMob() {
 		targetMobs = !targetMobs;
 	}
+
 	public void changePlayer() {
 		targetPlayers = !targetPlayers;
 	}
-	
+
 	public boolean getAnimal() {
 		return targetAnimals;
 	}
+
 	public boolean getMobs() {
 		return targetMobs;
 	}
+
 	public boolean getPlayers() {
 		return targetPlayers;
 	}
-	public void editDelay(int num) {
 
-		delayTimer = (1000/num);
+	public void editDelay(int num) {
+		delayTimer = 1000 / num;
 	}
 	
 	private int speedRandomizer(int min) {
@@ -151,14 +175,14 @@ public class MobAura extends Hack{
 		}
 		return 1000/random;
 	}
-	
+
 	public String getStatus(boolean name) {
 		if (name) {
 			return "Enabled";
 		}
 		return "Disabled";
 	}
-	
+
 //	private boolean fovRange() {
 //		if(mc.player.getFovModifier())
 //	}
@@ -166,16 +190,13 @@ public class MobAura extends Hack{
 	@Override
 	public void onUpdate() {
 
-		if(getStatus()) {
+		if (getStatus()) {
 			mc.gameSettings.viewBobbing = false;
 			Time0 = getCurrentTime();
 			target = getClosestEntity(mc.playerController.getBlockReachDistance());
-			
-			if( target!=null && mc.player.canEntityBeSeen(target) && !target.isEntityInsideOpaqueBlock()){
-				
+			if (target != null && mc.player.canEntityBeSeen(target) && !target.isEntityInsideOpaqueBlock()) {
 				int delay = speedRandomizer((1000/delayTimer)-2);
-				if(Time0 - Time1 > delay ) { 
-					
+				if (Time0 - Time1 > delay) {
 					attack(target);
 					Time1 = getCurrentTime();
 					
@@ -183,7 +204,6 @@ public class MobAura extends Hack{
 			}
 		}
 
-		
 	}
 	
 	public void faceEntity(Entity thing) {
@@ -221,27 +241,23 @@ public class MobAura extends Hack{
 
 	@Override
 	public void onRender() {
-		
+
 	}
-	
+
 	@Override
 	public void onDisable() {
 		mc.gameSettings.viewBobbing = true;
-		
 	}
 
 	@Override
-	public void changeVariable(int num) {
-		editDelay(num);
+	public void changeVariable(float num) {
+		editDelay((int) num);
 
-		
 	}
 
 	@Override
 	public void onEnable() {
 		onUpdate();
 	}
-
-
 
 }

@@ -70,6 +70,6 @@ public abstract class Modules {
 
 	public abstract void onRender();
 	
-	public abstract void changeVariable(int num);
+	public abstract void changeVariable(float position);
 
 }

@@ -137,7 +137,7 @@ public class Tracer extends Hack{
 	}
 
 	@Override
-	public void changeVariable(int num) {
+	public void changeVariable(float position) {
 		// TODO Auto-generated method stub
 		
 	}

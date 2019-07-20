@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
+<fullyQualifiedTypeName name="como.taco.AirStrafe"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="como.taco.Client"/>
+<fullyQualifiedTypeName name="net.minecraft.client.entity.EntityPlayerSP"/>
+<fullyQualifiedTypeName name="net.minecraft.network.Packet"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketUseEntity"/>
+<fullyQualifiedTypeName name="net.minecraft.util.Timer"/>
+<fullyQualifiedTypeName name="como.taco.Events.Timer"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketPlayer"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketEntityAction"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.ai.EntityMoveHelper.Action"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketEntityAction.Action"/>
+<fullyQualifiedTypeName name="como.taco.Events.EventReceived"/>
+<fullyQualifiedTypeName name="como.taco.Events.EventHandler"/>
+<fullyQualifiedTypeName name="net.minecraft.network.play.server.SPacketEntityVelocity"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.Vector3d"/>
+<fullyQualifiedTypeName name="como.taco.AntiKB"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+=======
 <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiSlider"/>
 <fullyQualifiedTypeName name="java.util.Queue"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
@@ -27,4 +47,5 @@
 <fullyQualifiedTypeName name="como.taco.RenderUtil"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
 <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+>>>>>>> refs/remotes/origin/master
 </qualifiedTypeNameHistroy>
