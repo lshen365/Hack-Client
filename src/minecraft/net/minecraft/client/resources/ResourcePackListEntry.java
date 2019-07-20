@@ -23,6 +23,7 @@ public abstract class ResourcePackListEntry implements GuiListExtended.IGuiListE
 
     public ResourcePackListEntry(GuiScreenResourcePacks resourcePacksGUIIn)
     {
+    	
         this.resourcePacksGUI = resourcePacksGUIIn;
         this.mc = Minecraft.getMinecraft();
     }

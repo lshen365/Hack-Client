@@ -118,6 +118,7 @@ public class GuiScreenResourcePacks extends GuiScreen
             {
                 File file1 = this.mc.getResourcePackRepository().getDirResourcepacks();
                 OpenGlHelper.openFile(file1);
+                
             }
             else if (button.id == 1)
             {

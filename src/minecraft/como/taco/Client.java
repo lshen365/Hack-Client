@@ -32,7 +32,7 @@ public class Client {
 		C1 = new Client();
 		modList = new ArrayList<Modules>();
 		enabledMods = new ArrayList<Modules>();
-
+		EntityUtil.initFriends();
 		addAllMods();
 	}
 
@@ -133,10 +133,10 @@ public class Client {
 		}
 		return null;
 	}
-
+	
 	public static Modules getNonEnabledMod(Modules m) {
-		for (Modules c : modList) {
-			if (c.getName().equals(m.getName())) {
+		for(Modules c: modList) {
+			if(c.getName().equals(m.getName())) {
 				return c;
 			}
 		}

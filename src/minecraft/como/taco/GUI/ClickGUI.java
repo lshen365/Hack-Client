@@ -15,6 +15,7 @@ import como.taco.Client;
 import como.taco.Hack;
 import como.taco.MobAura;
 import como.taco.Modules;
+import como.taco.Tracer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiListButton;
@@ -40,6 +41,7 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper {
 
 	// Initializing KillAura buttons
 	MobAura ma = (MobAura) (Client.getNonEnabledMod(new MobAura()));
+	Tracer tracer = (Tracer) (Client.getNonEnabledMod(new Tracer()));
 
 	public void setGuiResponder() {
 		guiResponder = new GuiResponder() {
@@ -100,6 +102,8 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper {
 		mc.fontRendererObj.drawString("Combat", sr.getScaledWidth() * 4 / 6, 10, 0x01579B);
 		drawRect(sr.getScaledWidth() * 5 / 6 - 10, 8, sr.getScaledWidth() * 5 / 6 + 100, 20, 0x80333366);
 		mc.fontRendererObj.drawString("Other", sr.getScaledWidth() * 5 / 6, 10, 0x01579B);
+		drawRect(282, sr.getScaledHeight() - 62, 380, sr.getScaledHeight() - 80, 0x80333366);
+		mc.fontRendererObj.drawString("   Tracer Options", 280, sr.getScaledHeight() - 75, 0x01579B);
 		super.drawScreen(mouseX, mouseY, partialTicks);
 	}
 
@@ -124,6 +128,12 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper {
 				"Player: " + ma.getStatus(ma.getPlayers())));
 		buttonList.add(new GuiButton("Monster".hashCode(), 160, sr.getScaledHeight() - 60, 100, 20,
 				"Mobs: " + ma.getStatus(ma.getMobs())));
+		buttonList.add(new GuiButton("TracerPlayer".hashCode(), 280, sr.getScaledHeight() - 20, 100, 20,
+				"Players: " + tracer.printStatus(tracer.getPlayer())));
+		buttonList.add(new GuiButton("TracerFriend".hashCode(), 280, sr.getScaledHeight() - 40, 100, 20,
+				"Friends: " + tracer.printStatus(tracer.getFriend())));
+		buttonList.add(new GuiButton("TracerMob".hashCode(), 280, sr.getScaledHeight() - 60, 100, 20,
+				"Mobs: " + tracer.printStatus(tracer.getMob())));
 		initSlider();
 		buttonList.add(mobAuraSlider);
 		buttonList.add(AntiKBSlider);
@@ -150,6 +160,19 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper {
 			button.changeDisplayString("Mobs: " + ma.getStatus(ma.getMobs()));
 		}
 
+		if (button.id == "TracerPlayer".hashCode()) {
+			tracer.changePlayer();
+			button.changeDisplayString("Players: " + tracer.printStatus(tracer.getPlayer()));
+		}
+		if (button.id == "TracerFriend".hashCode()) {
+			tracer.changeFriend();
+			button.changeDisplayString("Friend: " + tracer.printStatus(tracer.getFriend()));
+		}
+		if (button.id == "TracerMob".hashCode()) {
+			tracer.changeMob();
+			button.changeDisplayString("Mob: " + tracer.printStatus(tracer.getMob()));
+		}
+
 	}
 
 	private void readFile() throws FileNotFoundException {
@@ -168,7 +191,6 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper {
 		}
 
 	}
-
 
 	public int modYPos(Hack m) {
 		switch (m.getType()) {

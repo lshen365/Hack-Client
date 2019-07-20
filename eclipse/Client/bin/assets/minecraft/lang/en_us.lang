@@ -531,7 +531,7 @@ key.categories.ui=Game Interface
 key.categories.inventory=Inventory
 key.categories.creative=Creative Mode
 
-resourcePack.openFolder=Open Resource Pack Folder
+resourcePack.openFolder=Open Texture Pack Folder
 resourcePack.title=Select Resource Packs
 resourcePack.available.title=Available Resource Packs
 resourcePack.selected.title=Selected Resource Packs
