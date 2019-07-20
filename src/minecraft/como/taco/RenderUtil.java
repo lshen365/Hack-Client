@@ -31,12 +31,13 @@ public class RenderUtil {
         GL11.glEnable( GL11.GL_DEPTH_TEST);
         GL11.glDepthMask(true);
         GL11.glDisable(GL11.GL_BLEND);
+
 	}
 	public static void entityMobESP(Entity entity)
     {
         GL11.glBlendFunc(770, 771);
         GL11.glEnable(GL11.GL_BLEND);
-        GL11.glLineWidth(2.0F);
+        GL11.glLineWidth(1.0F);
         GL11.glDisable(GL11.GL_TEXTURE_2D);
         GL11.glDisable(GL11.GL_DEPTH_TEST);
         GL11.glDepthMask(false);
@@ -77,12 +78,13 @@ public class RenderUtil {
         GL11.glEnable(GL11.GL_DEPTH_TEST);
         GL11.glDepthMask(true);
         GL11.glDisable(GL11.GL_BLEND);
+
     }
 	public static void playerESP(Entity entity)
     {
         GL11.glBlendFunc(770, 771);
         GL11.glEnable(GL11.GL_BLEND);
-        GL11.glLineWidth(2.0F);
+        GL11.glLineWidth(1.0F);
         GL11.glDisable(GL11.GL_TEXTURE_2D);
         GL11.glDisable(GL11.GL_DEPTH_TEST);
         GL11.glDepthMask(false);
@@ -131,7 +133,7 @@ public class RenderUtil {
     {
         GL11.glBlendFunc(770, 771);
         GL11.glEnable(GL11.GL_BLEND);
-        GL11.glLineWidth(2.0F);
+        GL11.glLineWidth(1.0F);
         GL11.glDisable(GL11.GL_TEXTURE_2D);
         GL11.glDisable(GL11.GL_DEPTH_TEST);
         GL11.glDepthMask(false);

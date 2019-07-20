@@ -1,0 +1,89 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 7/19/19 4:56 PM
+Description: Sending packet
+
+java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at como.taco.Events.EventHandler.onEvent(EventHandler.java:8)
+	at net.minecraft.network.NetworkManager.sendPacket(NetworkManager.java:162)
+	at net.minecraft.network.NetHandlerPlayServer.sendPacket(NetHandlerPlayServer.java:899)
+	at net.minecraft.server.management.PlayerChunkMapEntry.sendToPlayers(PlayerChunkMapEntry.java:136)
+	at net.minecraft.server.management.PlayerChunkMap.tick(PlayerChunkMap.java:211)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:229)
+	at net.minecraft.src.WorldServerOF.tick(WorldServerOF.java:25)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:781)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:702)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:238)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:565)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at como.taco.Events.EventHandler.onEvent(EventHandler.java:8)
+	at net.minecraft.network.NetworkManager.sendPacket(NetworkManager.java:162)
+
+-- Packet being sent --
+Details:
+	Packet class: net.minecraft.network.play.server.SPacketChunkData
+Stacktrace:
+	at net.minecraft.network.NetHandlerPlayServer.sendPacket(NetHandlerPlayServer.java:899)
+	at net.minecraft.server.management.PlayerChunkMapEntry.sendToPlayers(PlayerChunkMapEntry.java:136)
+	at net.minecraft.server.management.PlayerChunkMap.tick(PlayerChunkMap.java:211)
+	at net.minecraft.world.WorldServer.tick(WorldServer.java:229)
+	at net.minecraft.src.WorldServerOF.tick(WorldServerOF.java:25)
+
+-- Affected level --
+Details:
+	Level name: New World
+	All players: 1 total; [EntityPlayerMP['Player428'/60, l='New World', x=-2585.69, y=4.42, z=-2567.28]]
+	Chunk stats: ServerChunkCache: 577 Drop: 0
+	Level seed: 7096659847930960135
+	Level generator: ID 01 - flat, ver 0. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (-1777,4,-219), Chunk: (at 15,0,5 in -112,-14; contains blocks -1792,0,-224 to -1777,255,-209), Region: (-4,-1; contains chunks -128,-32 to -97,-1, blocks -2048,0,-512 to -1537,255,-1)
+	Level time: 131666 game time, 30842 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 1 (now: false), thunder time: 1 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:781)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:702)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:238)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:565)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_221, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 846455568 bytes (807 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player428'/60, l='New World', x=-2585.69, y=4.42, z=-2567.28]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated
+	OptiFine Version: OptiFine_1.12_HD_U_A0_pre
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.5.0 - Build 24.20.100.6286
+	OpenGlRenderer: Intel(R) UHD Graphics 620
+	OpenGlVendor: Intel
+	CpuCount: 8

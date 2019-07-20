@@ -97,7 +97,7 @@ public class Tracer extends Hack{
         double yPos = (entityLivingBase.lastTickPosY + (entityLivingBase.posY - entityLivingBase.lastTickPosY) * ticks) - renderPosY;
         double zPos = (entityLivingBase.lastTickPosZ + (entityLivingBase.posZ - entityLivingBase.lastTickPosZ) * ticks) - renderPosZ;
 //        LogHelper.info("X:" + x + " Y:" + y + " Z:" + z);
-        RenderUtil.tracer(xPos, yPos, zPos, 2, red, green, blue, alpha);
+        RenderUtil.tracer(xPos, yPos, zPos, 1, red, green, blue, alpha);
     }
 
 
