@@ -538,12 +538,6 @@ public class PlayerControllerMP
 
         if (this.currentGameType != GameType.SPECTATOR)
         {
-        	// Taco -------
-    		if (Client.checkForModule(new Criticals())) {
-    			Criticals c = (Criticals) Client.getMod(new Criticals());
-    			c.Crit();
-    		}
-    		// -----------
             playerIn.attackTargetEntityWithCurrentItem(targetEntity);
             playerIn.resetCooldown();
         }
