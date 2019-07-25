@@ -123,6 +123,7 @@ public class Client {
 		modList.add(new LongJump());
 		modList.add(new AirStrafe());
 		modList.add(new AntiKB());
+		modList.add(new Tracer());
 	}
 
 	public static Modules getMod(Modules m) {

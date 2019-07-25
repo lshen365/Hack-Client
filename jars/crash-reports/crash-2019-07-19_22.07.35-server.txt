@@ -1,0 +1,71 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 7/19/19 10:07 PM
+Description: Sending packet
+
+java.util.ConcurrentModificationException
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at como.taco.Events.EventHandler.onEvent(EventHandler.java:8)
+	at net.minecraft.network.NetworkManager.sendPacket(NetworkManager.java:163)
+	at net.minecraft.network.NetHandlerPlayServer.sendPacket(NetHandlerPlayServer.java:853)
+	at net.minecraft.entity.EntityTrackerEntry.sendPacketToTrackedPlayers(EntityTrackerEntry.java:364)
+	at net.minecraft.entity.EntityTrackerEntry.updatePlayerList(EntityTrackerEntry.java:289)
+	at net.minecraft.entity.EntityTracker.updateTrackedEntities(EntityTracker.java:290)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:803)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:702)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:238)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:565)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.ArrayList$Itr.checkForComodification(Unknown Source)
+	at java.util.ArrayList$Itr.next(Unknown Source)
+	at como.taco.Events.EventHandler.onEvent(EventHandler.java:8)
+	at net.minecraft.network.NetworkManager.sendPacket(NetworkManager.java:163)
+
+-- Packet being sent --
+Details:
+	Packet class: net.minecraft.network.play.server.SPacketEntity.S15PacketEntityRelMove
+Stacktrace:
+	at net.minecraft.network.NetHandlerPlayServer.sendPacket(NetHandlerPlayServer.java:853)
+	at net.minecraft.entity.EntityTrackerEntry.sendPacketToTrackedPlayers(EntityTrackerEntry.java:364)
+	at net.minecraft.entity.EntityTrackerEntry.updatePlayerList(EntityTrackerEntry.java:289)
+	at net.minecraft.entity.EntityTracker.updateTrackedEntities(EntityTracker.java:290)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:803)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:702)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:238)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:565)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_144, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 827461576 bytes (789 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 5, tcache: 0, allocated: 13, tallocated: 95
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player189'/42, l='Test', x=1565.99, y=72.00, z=-609.41]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated
+	OptiFine Version: OptiFine_1.12_HD_U_A0_pre
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.5.0 - Build 24.20.100.6293
+	OpenGlRenderer: Intel(R) HD Graphics 520
+	OpenGlVendor: Intel
+	CpuCount: 4

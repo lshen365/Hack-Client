@@ -1133,6 +1133,11 @@ public abstract class EntityPlayer extends EntityLivingBase {
 	public void attackTargetEntityWithCurrentItem(Entity targetEntity) {
 		if (targetEntity.canBeAttackedWithItem()) {
 			if (!targetEntity.hitByEntity(this)) {
+				// TACO --------
+				if (Client.checkForModule(new Criticals())) {
+					((Criticals) Client.getMod(new Criticals())).sendFallPacket();
+				}
+				// --------------
 				float f = (float) this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).getAttributeValue();
 				float f1;
 
@@ -1166,8 +1171,12 @@ public abstract class EntityPlayer extends EntityLivingBase {
 							&& !this.isInWater() && !this.isPotionActive(MobEffects.BLINDNESS) && !this.isRiding()
 							&& targetEntity instanceof EntityLivingBase;
 					flag2 = flag2 && !this.isSprinting();
-
-					if (flag2) {
+					boolean crit = false;
+					//TACO -----
+					if (Client.checkForModule(new Criticals())) {
+						crit = true;
+					}//-------
+					if (flag2 || crit) {
 						f *= 1.5F;
 					}
 
@@ -1248,13 +1257,12 @@ public abstract class EntityPlayer extends EntityLivingBase {
 							targetEntity.motionY = d2;
 							targetEntity.motionZ = d3;
 						}
-
-						if (flag2) {
+						//TACO ----- changed below to || crit
+						if (flag2 || crit) {
 							this.world.playSound((EntityPlayer) null, this.posX, this.posY, this.posZ,
 									SoundEvents.ENTITY_PLAYER_ATTACK_CRIT, this.getSoundCategory(), 1.0F, 1.0F);
 							this.onCriticalHit(targetEntity);
 						}
-
 						if (!flag2 && !flag3) {
 							if (flag) {
 								this.world.playSound((EntityPlayer) null, this.posX, this.posY, this.posZ,

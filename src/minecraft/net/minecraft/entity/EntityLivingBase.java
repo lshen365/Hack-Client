@@ -2423,12 +2423,12 @@ public abstract class EntityLivingBase extends Entity {
 	 * colliding.
 	 */
 	public boolean canBePushed() {
-		// TACO -------
-//		if (this.getEntityId() == Minecraft.getMinecraft().player.getEntityId()
-//				&& Client.checkForModule(new AntiKB())) {
-//			return false;
-//		}
-		// ------------
+		 //TACO -------
+		if (this.getEntityId() == Minecraft.getMinecraft().player.getEntityId()
+				&& Client.checkForModule(new AntiKB())) {
+			return false;
+		}
+		 //------------
 		return this.isEntityAlive() && !this.isOnLadder();
 	}
 

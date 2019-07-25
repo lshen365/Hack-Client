@@ -1,78 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-<<<<<<< HEAD
-		<item key="selection" value="Packet"/>
-=======
-		<item key="selection" value=""/>
->>>>>>> refs/remotes/origin/master
+		<item key="selection" value="Critical"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-<<<<<<< HEAD
+			<item value="critical"/>
+			<item value="getstatus"/>
+			<item value="onrender"/>
+			<item value="onpressed"/>
+			<item value="onkeypressed"/>
+			<item value="TACO"/>
+			<item value="crit"/>
 			<item value="velocity"/>
-			<item value="changevariable"/>
-			<item value="KB%"/>
-			<item value="name"/>
-			<item value="changeModValue"/>
-			<item value="changeFile"/>
-			<item value="readInput"/>
-			<item value="GUISettings"/>
-			<item value="delay"/>
-			<item value="delayTimer"/>
-			<item value="set"/>
-			<item value="getcurrentTime"/>
-			<item value="onupdate"/>
-			<item value="slider"/>
-			<item value="killaura"/>
-=======
-			<item value="vertex"/>
-			<item value="friend"/>
-			<item value="drawrect"/>
-			<item value="getStatui"/>
-			<item value="DrawSelectionBounding"/>
-			<item value="drawSelection"/>
-			<item value="thePlayer"/>
-			<item value="limitAng"/>
-			<item value="canAttack"/>
-			<item value="block"/>
-			<item value="Minecraft.getMinecraft()."/>
-			<item value="rotation"/>
-			<item value="Fov"/>
-			<item value="send"/>
-			<item value="war"/>
->>>>>>> refs/remotes/origin/master
+			<item value="updatefallstate"/>
+			<item value="spacketupdatetil"/>
+			<item value="damagesource"/>
+			<item value="attacktarget"/>
+			<item value="attackentitywithcurrent"/>
+			<item value="attackentity"/>
+			<item value="attack"/>
 		</list>
 		<list key="replacehistory">
-<<<<<<< HEAD
-=======
-			<item value="player"/>
-			<item value="mc."/>
-			<item value="mc"/>
-			<item value="formatter"/>
-			<item value="Formatter"/>
-			<item value="format"/>
-			<item value="Format"/>
-			<item value="LoadedEntity"/>
->>>>>>> refs/remotes/origin/master
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-<<<<<<< HEAD
 		<item key="DIALOG_X_ORIGIN" value="603"/>
 		<item key="DIALOG_Y_ORIGIN" value="596"/>
 		<item key="DIALOG_WIDTH" value="277"/>
 		<item key="DIALOG_HEIGHT" value="370"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
-=======
-		<item key="DIALOG_X_ORIGIN" value="1493"/>
-		<item key="DIALOG_Y_ORIGIN" value="449"/>
-		<item key="DIALOG_WIDTH" value="284"/>
-		<item key="DIALOG_HEIGHT" value="391"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
->>>>>>> refs/remotes/origin/master
 	</section>
 </section>
