@@ -102,8 +102,6 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper {
 		mc.fontRendererObj.drawString("Combat", sr.getScaledWidth() * 4 / 6, 10, 0x01579B);
 		drawRect(sr.getScaledWidth() * 5 / 6 - 10, 8, sr.getScaledWidth() * 5 / 6 + 100, 20, 0x80333366);
 		mc.fontRendererObj.drawString("Other", sr.getScaledWidth() * 5 / 6, 10, 0x01579B);
-		drawRect(282, sr.getScaledHeight() - 62, 380, sr.getScaledHeight() - 80, 0x80333366);
-		mc.fontRendererObj.drawString("   Tracer Options", 280, sr.getScaledHeight() - 75, 0x01579B);
 		super.drawScreen(mouseX, mouseY, partialTicks);
 	}
 
@@ -129,11 +127,7 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper {
 		buttonList.add(new GuiButton("Monster".hashCode(), 160, sr.getScaledHeight() - 60, 100, 20,
 				"Mobs: " + ma.getStatus(ma.getMobs())));
 		buttonList.add(new GuiButton("TracerPlayer".hashCode(), 280, sr.getScaledHeight() - 20, 100, 20,
-				"Players: " + tracer.printStatus(tracer.getPlayer())));
-		buttonList.add(new GuiButton("TracerFriend".hashCode(), 280, sr.getScaledHeight() - 40, 100, 20,
-				"Friends: " + tracer.printStatus(tracer.getFriend())));
-		buttonList.add(new GuiButton("TracerMob".hashCode(), 280, sr.getScaledHeight() - 60, 100, 20,
-				"Mobs: " + tracer.printStatus(tracer.getMob())));
+				"Tracer: " + Modules.printStatus(tracer.getTracerStatus())));
 		initSlider();
 		buttonList.add(mobAuraSlider);
 		buttonList.add(AntiKBSlider);
@@ -161,16 +155,8 @@ public class ClickGUI extends GuiScreen implements GuiSlider.FormatHelper {
 		}
 
 		if (button.id == "TracerPlayer".hashCode()) {
-			tracer.changePlayer();
-			button.changeDisplayString("Players: " + tracer.printStatus(tracer.getPlayer()));
-		}
-		if (button.id == "TracerFriend".hashCode()) {
-			tracer.changeFriend();
-			button.changeDisplayString("Friend: " + tracer.printStatus(tracer.getFriend()));
-		}
-		if (button.id == "TracerMob".hashCode()) {
-			tracer.changeMob();
-			button.changeDisplayString("Mob: " + tracer.printStatus(tracer.getMob()));
+			tracer.changeTracer();
+			button.changeDisplayString("Tracer: " + Modules.printStatus(tracer.getTracerStatus()));
 		}
 
 	}

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
 	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\Hamilton Lee\Desktop\Hack-Client\jars\libraries\com\mojang\realms\1.10.17"/>
+=======
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\Leon\Documents\Hack-Client\jars\libraries\com\mojang\realms\1.10.17"/>
+>>>>>>> refs/remotes/origin/master
 	<item key="TypeHierarchyViewPart.hierarchyview" value="2"/>
 	<item key="TypeHierarchyViewPart.qualifiednames" value="false"/>
 	<item key="TypeHierarchyViewPart.linkeditors" value="false"/>
@@ -40,6 +44,7 @@
 		<item key="create_constructor" value="false"/>
 		<item key="create_unimplemented" value="true"/>
 	</section>
+<<<<<<< HEAD
 	<section name="JavaSearchPage">
 		<item key="CASE_SENSITIVE" value="false"/>
 		<item key="INCLUDE_MASK" value="15"/>
@@ -191,17 +196,186 @@
 	</section>
 	<section name="NewPackageWizardPage">
 		<item key="create_package_info_java" value="false"/>
+=======
+	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH" value="350"/>
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT" value="306"/>
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE" value="true"/>
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
+>>>>>>> refs/remotes/origin/master
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.dialogs.OpenTypeSelectionDialog2">
 		<item key="ShowStatusLine" value="true"/>
 		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History/&gt;"/>
 		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
 		<section name="DialogBoundsSettings">
+<<<<<<< HEAD
 			<item key="DIALOG_HEIGHT" value="500"/>
 			<item key="DIALOG_WIDTH" value="600"/>
 			<item key="DIALOG_X_ORIGIN" value="456"/>
 			<item key="DIALOG_Y_ORIGIN" value="153"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+=======
+			<item key="DIALOG_HEIGHT" value="709"/>
+			<item key="DIALOG_WIDTH" value="505"/>
+			<item key="DIALOG_X_ORIGIN" value="668"/>
+			<item key="DIALOG_Y_ORIGIN" value="215"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-36|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="JavaEditorCodeMiningConfigurationBlock">
+		<item key="expanded0" value="true"/>
+	</section>
+	<section name="RenameInformationPopup">
+	</section>
+	<section name="JavaSearchPage">
+		<item key="CASE_SENSITIVE" value="false"/>
+		<item key="INCLUDE_MASK" value="15"/>
+		<item key="HISTORY_SIZE" value="12"/>
+		<section name="HISTORY0">
+			<item key="searchFor" value="3"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="//Tacohacks"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="15"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY1">
+			<item key="searchFor" value="3"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="renderShadow"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="15"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY2">
+			<item key="searchFor" value="3"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="block"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="15"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY3">
+			<item key="searchFor" value="3"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="fov"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="15"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY4">
+			<item key="searchFor" value="3"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="buttonlist"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="15"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY5">
+			<item key="searchFor" value="3"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="getFormatter"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="15"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY6">
+			<item key="searchFor" value="0"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="new GuiSlider"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="15"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY7">
+			<item key="searchFor" value="4"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="MouseListener"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="15"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY8">
+			<item key="searchFor" value="0"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="FormatHelper"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="15"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY9">
+			<item key="searchFor" value="1"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="modCategories"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="15"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY10">
+			<item key="searchFor" value="1"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="Delay"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="15"/>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY11">
+			<item key="searchFor" value="1"/>
+			<item key="scope" value="0"/>
+			<item key="pattern" value="UpdateArmSwing"/>
+			<item key="limitTo" value="2"/>
+			<item key="matchLocations" value="0"/>
+			<item key="javaElement" value=""/>
+			<item key="isCaseSensitive" value="false"/>
+			<item key="includeMask" value="15"/>
+			<list key="workingSets">
+			</list>
+>>>>>>> refs/remotes/origin/master
 		</section>
 	</section>
 	<section name="JarPackageWizard">
@@ -224,7 +398,14 @@
 		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value=""/>
 		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+<<<<<<< HEAD
 			<item value="C:\Users\Hamilton Lee\Desktop\TacoHacks.jar"/>
+=======
+			<item value="C:\Users\Leon\AppData\Roaming\.minecraft\versions\TacoHacks\TacoHacks.jar"/>
+			<item value="C:\Users\Leon\Desktop\TacoHacks\TacoHacks.jar"/>
+			<item value="C:\Users\Leon\Documents\Taco\TacoHacks.jar"/>
+			<item value="C:\Users\Leon\Documents\Taco\tacos.jar"/>
+>>>>>>> refs/remotes/origin/master
 		</list>
 	</section>
 	<section name="DialogBounds_SuperInterfaceSelectionDialog">

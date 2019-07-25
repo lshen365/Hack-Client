@@ -1638,7 +1638,6 @@ public abstract class EntityPlayer extends EntityLivingBase {
 	 */
 	public void jump() {
 		// Taco -------
-		System.out.println("EntityPlayer" + " " + Minecraft.getMinecraft().player.isAirBorne);
 		AirStrafe jumpCancel = (AirStrafe) Client.getMod(new AirStrafe());
 		if (jumpCancel != null && Minecraft.getMinecraft().player.isAirBorne) {
 			return;
