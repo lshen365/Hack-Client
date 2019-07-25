@@ -1,145 +1,157 @@
 package como.taco;
 
-import como.taco.GUI.ModCategories;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.monster.EntityMob;
-import net.minecraft.entity.player.EntityPlayer;
-
 import java.util.ArrayList;
-import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.World;
+import como.taco.Events.*;
 import como.taco.GUI.ModCategories;
-public class Tracer extends Hack{
-	
-	private boolean friend = true, player = true, mob = false;
-	public static double ticks;
-	private final ArrayList<EntityPlayer> players = new ArrayList<EntityPlayer>();
-	private final ArrayList<EntityMob> mobs = new ArrayList<EntityMob>();
-	public Tracer() {
-		super("Tracer", Keyboard.KEY_P,ModCategories.RENDER);
-		
-	}
-	
-	public void changeFriend() {
-		friend = !friend;
-	}
-	public void changePlayer() {
-		player = !player;
-	}
 
-	public void changeMob() {
-		mob = !mob;
+public class Tracer extends Hack {
+	private float partialTicks;
+	private int playerBox;
+	private boolean tracerOn = true;
+	private final ArrayList<EntityPlayer> players = new ArrayList<>();
+	
+	public Tracer()
+	{
+		super("ESP",Keyboard.KEY_P,ModCategories.RENDER);
 	}
 	
-	public boolean getFriend() {
-		return friend;
-	}
-	public boolean getPlayer() {
-		return player;
-	}
-	public boolean getMob() {
-		return mob;
-	}
-	public String printStatus(boolean name) {
-		if (name) {
-			return "Enabled";
-		}
-		return "Disabled";
-	}
+	
 	@Override
-	public void onDisable() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void onEnable() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void onUpdate() {
-		if(friend || player) {
-			players.clear();
-			Stream<EntityPlayer> stream = mc.world.playerEntities.parallelStream()
-				.filter(e -> !e.isDead && e.getHealth() > 0)
-				.filter(e -> e != mc.player)
-				.filter(e -> Math.abs(e.posY - mc.player.posY) <= 1e6)
-				.filter(e -> !e.isInvisible());
-			players.addAll(stream.collect(Collectors.toList()));
-		}
-		
-		if(mob) {
-			mobs.clear();
-			for(Object obj :mc.world.loadedEntityList) {
-				if(!(obj instanceof EntityMob)) {
-					continue;
-				}
-				mobs.add((EntityMob)obj);
-			}
-		}
-		
-	}
-
-    private void drawTracer(float red, float green, float blue, float alpha, EntityLivingBase entityLivingBase) {
-
-        double renderPosX = mc.getRenderManager().viewerPosX;
-        double renderPosY = mc.getRenderManager().viewerPosY;
-        double renderPosZ = mc.getRenderManager().viewerPosZ;
-        double xPos = (entityLivingBase.lastTickPosX + (entityLivingBase.posX - entityLivingBase.lastTickPosX) * ticks) - renderPosX;
-        double yPos = (entityLivingBase.lastTickPosY + (entityLivingBase.posY - entityLivingBase.lastTickPosY) * ticks) - renderPosY;
-        double zPos = (entityLivingBase.lastTickPosZ + (entityLivingBase.posZ - entityLivingBase.lastTickPosZ) * ticks) - renderPosZ;
-//        LogHelper.info("X:" + x + " Y:" + y + " Z:" + z);
-        RenderUtil.tracer(xPos, yPos, zPos, 1, red, green, blue, alpha);
-    }
-
-
-	@Override
-	public void onRender() {
-		if(getStatus()) {
-			if(friend || player)
-				renderPlayers();
-			if(mob)
-				renderMobs();
-
-		}
-		
+	public void onEnable()
+	{
+		playerBox = GL11.glGenLists(1);
+		GL11.glNewList(playerBox, GL11.GL_COMPILE);
+		AxisAlignedBB bb = new AxisAlignedBB(-0.5, 0, -0.5, 0.5, 1, 0.5);
+		RenderUtil.drawOutlinedBox(bb);
+		GL11.glEndList();
+		System.out.println("THIS IS RUN");
 	}
 	
-	private void renderPlayers() {
+	@Override
+	public void onDisable()
+	{
+		GL11.glDeleteLists(playerBox, 1);
+		playerBox = 0;
+		mc.gameSettings.viewBobbing = true;
+	}
+	
+	@Override
+	public void onUpdate()
+	{
+		EntityPlayer player = mc.player;
+		World world = mc.world;
+		mc.gameSettings.viewBobbing = false;
+		players.clear();
+		Stream<EntityPlayer> stream = world.playerEntities.parallelStream()
+			.filter(e -> !e.isDead && e.getHealth() > 0)
+			.filter(e -> e != player)
+			.filter(e -> Math.abs(e.posY - mc.player.posY) <= 1e6);
+		players.addAll(stream.collect(Collectors.toList()));
+	}
+	
+	public void changeTracer() {
+		tracerOn = !tracerOn;
+	}
+	public boolean getTracerStatus() {
+		return tracerOn;
+	}
+	
+	
+	@Override
+	public void onRender()
+	{
+		// GL settings
+		GL11.glEnable(GL11.GL_BLEND);
+		GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
+		GL11.glEnable(GL11.GL_LINE_SMOOTH);
+		GL11.glLineWidth(2);
+		GL11.glDisable(GL11.GL_TEXTURE_2D);
+		GL11.glDisable(GL11.GL_DEPTH_TEST);
+		
+		GL11.glPushMatrix();
+		GL11.glTranslated(-mc.getRenderManager().renderPosX,
+			-mc.getRenderManager().renderPosY,
+			-mc.getRenderManager().renderPosZ);
+		
+		// draw boxes
+		renderBoxes(partialTicks);
+		
+		if(tracerOn)
+			renderTracers(partialTicks);
+		
+		GL11.glPopMatrix();
+		
+		// GL resets
+		GL11.glEnable(GL11.GL_DEPTH_TEST);
+		GL11.glEnable(GL11.GL_TEXTURE_2D);
+		GL11.glDisable(GL11.GL_BLEND);
+		GL11.glDisable(GL11.GL_LINE_SMOOTH);
+	}
+	
+	private void renderBoxes(double partialTicks)
+	{
 		for(EntityPlayer e : players)
 		{
-			if(EntityUtil.isFriend(e.getName()) && friend){
-				RenderUtil.friendESP(e);
-				drawTracer(0, 1, 0, 0.5f, e);
-				continue;
-			}
-			if(player) {
-				RenderUtil.playerESP(e);
-				drawTracer(1, 0, 0, 0.5f, e);
-			}
+			// set position
+			GL11.glPushMatrix();
+			GL11.glTranslated(e.prevPosX + (e.posX - e.prevPosX) * partialTicks,
+				e.prevPosY + (e.posY - e.prevPosY) * partialTicks,
+				e.prevPosZ + (e.posZ - e.prevPosZ) * partialTicks);
+			GL11.glScaled(e.width + 0.1, e.height + 0.1, e.width + 0.1);
 			
 
+			GL11.glCallList(playerBox);
+			
+			GL11.glPopMatrix();
 		}
 	}
-	private void renderMobs() {
-		for(EntityMob e: mobs) {
-			RenderUtil.entityMobESP(e);
-			drawTracer(0, 0, 1, 0.5f, e);
+	
+	private void renderTracers(double partialTicks)
+	{
+		Vec3d start = RotationUtil.getClientLookVec()
+			.addVector(0, mc.player.getEyeHeight(), 0)
+			.addVector(mc.getRenderManager().renderPosX,
+				mc.getRenderManager().renderPosY,
+				mc.getRenderManager().renderPosZ);
+		
+		GL11.glBegin(GL11.GL_LINES);
+		for(EntityPlayer e : players)
+		{
+			Vec3d end = e.getEntityBoundingBox().getCenter()
+				.subtract(new Vec3d(e.posX, e.posY, e.posZ)
+					.subtract(e.prevPosX, e.prevPosY, e.prevPosZ)
+					.scale(1 - partialTicks));
+			if(EntityUtil.isFriend(e.getName())) {
+				GL11.glColor4f(0, 0, 1, 0.5F);
+			}
+			else
+			{
+				float f = mc.player.getDistanceToEntity(e) / 20F;
+				GL11.glColor4f(2 - f, f, 0, 0.5F);
+			}
+			
+			GL11.glVertex3d(start.xCoord, start.yCoord, start.zCoord);
+			GL11.glVertex3d(end.xCoord, end.yCoord, end.zCoord);
 		}
+		GL11.glEnd();
 	}
+
+
+
 
 	@Override
 	public void changeVariable(float position) {
 		// TODO Auto-generated method stub
 		
 	}
-
 }

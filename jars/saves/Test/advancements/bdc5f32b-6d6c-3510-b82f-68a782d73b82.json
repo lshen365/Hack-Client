@@ -1,0 +1,18 @@
+{
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_leggings": "2019-07-19 22:11:20 -0600",
+      "diamond_helmet": "2019-07-19 22:11:20 -0600",
+      "diamond_chestplate": "2019-07-19 22:11:20 -0600",
+      "diamond_boots": "2019-07-19 22:11:20 -0600"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "beaches": "2019-07-19 22:16:19 -0600",
+      "desert": "2019-07-19 22:12:16 -0600"
+    },
+    "done": false
+  }
+}

@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<<<<<<< HEAD
-<fullyQualifiedTypeName name="como.taco.AirStrafe"/>
-<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
-<fullyQualifiedTypeName name="como.taco.Client"/>
-<fullyQualifiedTypeName name="net.minecraft.client.entity.EntityPlayerSP"/>
-<fullyQualifiedTypeName name="net.minecraft.network.Packet"/>
-<fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketUseEntity"/>
-<fullyQualifiedTypeName name="net.minecraft.util.Timer"/>
-<fullyQualifiedTypeName name="como.taco.Events.Timer"/>
-<fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketPlayer"/>
-<fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketEntityAction"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.ai.EntityMoveHelper.Action"/>
-<fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketEntityAction.Action"/>
-<fullyQualifiedTypeName name="como.taco.Events.EventReceived"/>
-<fullyQualifiedTypeName name="como.taco.Events.EventHandler"/>
-<fullyQualifiedTypeName name="net.minecraft.network.play.server.SPacketEntityVelocity"/>
-<fullyQualifiedTypeName name="net.minecraft.client.renderer.Vector3d"/>
-<fullyQualifiedTypeName name="como.taco.AntiKB"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-=======
 <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiSlider"/>
 <fullyQualifiedTypeName name="java.util.Queue"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.util.Stack"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.passive.EntityAnimal"/>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.GuiButton"/>
@@ -35,17 +14,23 @@
 <fullyQualifiedTypeName name="net.minecraft.network.play.client.CPacketEntityAction"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.MathHelper"/>
 <fullyQualifiedTypeName name="como.taco.EntityUtil"/>
-<fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
 <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
 <fullyQualifiedTypeName name="net.minecraft.client.renderer.RenderGlobal"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.AxisAlignedBB"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 <fullyQualifiedTypeName name="como.taco.Tracer"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.monster.EntityMob"/>
 <fullyQualifiedTypeName name="net.minecraft.util.math.Vec3d"/>
-<fullyQualifiedTypeName name="como.taco.RenderUtil"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
 <fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
->>>>>>> refs/remotes/origin/master
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.EntityLivingBase"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.stream.Stream"/>
+<fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+<fullyQualifiedTypeName name="como.taco.RenderUtil"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.vertex.VertexBuffer"/>
+<fullyQualifiedTypeName name="net.minecraft.client.renderer.Tessellator"/>
+<fullyQualifiedTypeName name="como.taco.Events.Timer"/>
+<fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
 </qualifiedTypeNameHistroy>

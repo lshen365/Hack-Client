@@ -64,6 +64,11 @@ public abstract class Modules {
 	public void Event(Event e) {
 		
 	}
+	public static String printStatus(boolean var) {
+		if(var)
+			return "Enabled";
+		return "Disabled";
+	}
 	
 
 	public abstract void onUpdate();

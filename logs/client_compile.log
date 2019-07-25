@@ -1,4 +1,4 @@
-src\minecraft\net\minecraft\network\NetworkManager.java:22: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
+src\minecraft\net\minecraft\network\NetworkManager.java:23: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
 import io.netty.channel.local.LocalEventLoopGroup;
                              ^
 src\minecraft\net\minecraft\network\NetworkSystem.java:16: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
@@ -7,7 +7,7 @@ import io.netty.channel.local.LocalEventLoopGroup;
 src\minecraft\net\minecraft\world\chunk\storage\AnvilSaveConverter.java:18: warning: [deprecation] I18n in net.minecraft.util.text.translation has been deprecated
 import net.minecraft.util.text.translation.I18n;
                                           ^
-src\minecraft\net\minecraft\network\NetworkManager.java:22: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
+src\minecraft\net\minecraft\network\NetworkManager.java:23: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
 import io.netty.channel.local.LocalEventLoopGroup;
                              ^
 src\minecraft\net\minecraft\network\NetworkSystem.java:16: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
@@ -16,7 +16,7 @@ import io.netty.channel.local.LocalEventLoopGroup;
 src\minecraft\net\minecraft\world\chunk\storage\AnvilSaveConverter.java:18: warning: [deprecation] I18n in net.minecraft.util.text.translation has been deprecated
 import net.minecraft.util.text.translation.I18n;
                                           ^
-src\minecraft\net\minecraft\network\NetworkManager.java:22: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
+src\minecraft\net\minecraft\network\NetworkManager.java:23: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
 import io.netty.channel.local.LocalEventLoopGroup;
                              ^
 src\minecraft\net\minecraft\network\NetworkSystem.java:16: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
@@ -40,30 +40,30 @@ src\minecraft\net\minecraft\entity\Entity.java:2806: warning: [deprecation] tran
 src\minecraft\net\minecraft\client\settings\GameSettings.java:970: warning: [deprecation] readLines(InputStream) in IOUtils has been deprecated
             List<String> list = IOUtils.readLines(new FileInputStream(this.optionsFile));
                                        ^
-src\minecraft\net\minecraft\network\NetworkManager.java:53: warning: [deprecation] getMarker(String,Marker) in MarkerManager has been deprecated
+src\minecraft\net\minecraft\network\NetworkManager.java:54: warning: [deprecation] getMarker(String,Marker) in MarkerManager has been deprecated
 	public static final Marker NETWORK_PACKETS_MARKER = MarkerManager.getMarker("NETWORK_PACKETS", NETWORK_MARKER);
 	                                                                 ^
-src\minecraft\net\minecraft\network\NetworkManager.java:68: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
+src\minecraft\net\minecraft\network\NetworkManager.java:69: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
 	public static final LazyLoadBase<LocalEventLoopGroup> CLIENT_LOCAL_EVENTLOOP = new LazyLoadBase<LocalEventLoopGroup>() {
 	                                 ^
-src\minecraft\net\minecraft\network\NetworkManager.java:68: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
+src\minecraft\net\minecraft\network\NetworkManager.java:69: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
 	public static final LazyLoadBase<LocalEventLoopGroup> CLIENT_LOCAL_EVENTLOOP = new LazyLoadBase<LocalEventLoopGroup>() {
 	                                                                                                ^
-src\minecraft\net\minecraft\network\NetworkManager.java:69: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
+src\minecraft\net\minecraft\network\NetworkManager.java:70: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
 		protected LocalEventLoopGroup load() {
 		          ^
-src\minecraft\net\minecraft\network\NetworkManager.java:70: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
+src\minecraft\net\minecraft\network\NetworkManager.java:71: warning: [deprecation] LocalEventLoopGroup in io.netty.channel.local has been deprecated
 			return new LocalEventLoopGroup(0,
 			           ^
 src\minecraft\net\minecraft\client\renderer\color\ItemColors.java:119: warning: [deprecation] getStateFromMeta(int) in Block has been deprecated
                 IBlockState iblockstate = ((ItemBlock)stack.getItem()).getBlock().getStateFromMeta(stack.getMetadata());
                                                                                  ^
-src\minecraft\net\minecraft\client\network\NetHandlerPlayClient.java:807: warning: [deprecation] invalidateRegionAndSetBlock(BlockPos,IBlockState) in WorldClient has been deprecated
-            this.clientWorldController.invalidateRegionAndSetBlock(spacketmultiblockchange$blockupdatedata.getPos(), spacketmultiblockchange$blockupdatedata.getBlockState());
-                                      ^
-src\minecraft\net\minecraft\client\network\NetHandlerPlayClient.java:857: warning: [deprecation] invalidateRegionAndSetBlock(BlockPos,IBlockState) in WorldClient has been deprecated
-        this.clientWorldController.invalidateRegionAndSetBlock(packetIn.getBlockPosition(), packetIn.getBlockState());
-                                  ^
+src\minecraft\net\minecraft\client\network\NetHandlerPlayClient.java:751: warning: [deprecation] invalidateRegionAndSetBlock(BlockPos,IBlockState) in WorldClient has been deprecated
+			this.clientWorldController.invalidateRegionAndSetBlock(spacketmultiblockchange$blockupdatedata.getPos(),
+			                          ^
+src\minecraft\net\minecraft\client\network\NetHandlerPlayClient.java:800: warning: [deprecation] invalidateRegionAndSetBlock(BlockPos,IBlockState) in WorldClient has been deprecated
+		this.clientWorldController.invalidateRegionAndSetBlock(packetIn.getBlockPosition(), packetIn.getBlockState());
+		                          ^
 src\minecraft\net\minecraft\item\ItemStack.java:689: warning: [deprecation] I18n in net.minecraft.util.text.translation has been deprecated
                 return I18n.translateToLocal(nbttagcompound.getString("LocName"));
                        ^

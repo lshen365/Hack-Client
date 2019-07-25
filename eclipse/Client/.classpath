@@ -16,7 +16,11 @@
 	<classpathentry kind="lib" path="jars/libraries/com/paulscode/codecjorbis/20101023/codecjorbis-20101023.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/com/paulscode/codecwav/20101023/codecwav-20101023.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/com/paulscode/libraryjavasound/20101123/libraryjavasound-20101123.jar"/>
-	<classpathentry kind="lib" path="jars/libraries/com/paulscode/librarylwjglopenal/20100824/librarylwjglopenal-20100824.jar"/>
+	<classpathentry kind="lib" path="jars/libraries/com/paulscode/librarylwjglopenal/20100824/librarylwjglopenal-20100824.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Client/jars/versions/1.12.2/1.12.2-natives"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="jars/libraries/com/paulscode/soundsystem/20120107/soundsystem-20120107.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/io/netty/netty-all/4.1.9.Final/netty-all-4.1.9.Final.jar"/>
 	<classpathentry kind="lib" path="jars/libraries/com/google/guava/guava/21.0/guava-21.0.jar"/>
