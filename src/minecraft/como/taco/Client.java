@@ -27,6 +27,7 @@ public class Client {
 	public static ArrayList<Modules> enabledMods;
 
 	public static void init() {
+		RenderUtil.initXrayBlocks();
 		Display.setTitle(Name + " v. " + version);
 		gui = new ingameGUI();
 		C1 = new Client();
@@ -124,6 +125,7 @@ public class Client {
 		modList.add(new AirStrafe());
 		modList.add(new AntiKB());
 		modList.add(new Tracer());
+		modList.add(new Xray());
 	}
 
 	public static Modules getMod(Modules m) {

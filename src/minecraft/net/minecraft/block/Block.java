@@ -2,6 +2,11 @@ package net.minecraft.block;
 
 import com.google.common.collect.Sets;
 import com.google.common.collect.UnmodifiableIterator;
+
+import como.taco.Client;
+import como.taco.RenderUtil;
+import como.taco.Xray;
+
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
@@ -499,6 +504,9 @@ public class Block
     @Deprecated
     public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
     {
+    	if(Client.checkForModule(new Xray())) {
+    		return RenderUtil.isXrayBlock(this);
+    	}
         AxisAlignedBB axisalignedbb = blockState.getBoundingBox(blockAccess, pos);
 
         switch (side)
